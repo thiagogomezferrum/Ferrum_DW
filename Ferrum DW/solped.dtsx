@@ -1,0 +1,3297 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/20/2019 8:32:57 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="NTBK-PCCONNON"
+  DTS:CreatorName="NTFERRUM\pconnon"
+  DTS:DTSID="{E001CE8F-D7FF-49B5-A22C-5160DFB0A0E3}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.93"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="solped"
+  DTS:PackageType="5"
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{EDCFE1CA-5C18-469A-8333-94370490FE77}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[mm_solped]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5BDC53DC-E876-4DBC-A092-7B5948208F42}"
+      DTS:ObjectName="mm_solped">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil\dw\PRD\APROCESAR\mm_solped.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MANDANTE"
+              DTS:DTSID="{5F5F959E-AC26-4ADA-8A7F-BFEEAD7AF726}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA CREACIÓN"
+              DTS:DTSID="{3DDD6710-246B-44A9-8D35-82D3FF360DE0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA MODIFICACIÓN"
+              DTS:DTSID="{EF294786-489C-4770-B986-5330A3484EE5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPO DE IMPUTACIÓN"
+              DTS:DTSID="{B77554DF-2EEF-4DA4-B04B-7C22CCAB5658}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPO DE POSICIÓN"
+              DTS:DTSID="{49D9A314-3959-4FF6-9ED4-13ACA8FCB6CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NUMERO DE SOLPED"
+              DTS:DTSID="{F9B632BC-E4C8-4E4E-B6C7-EFB46D7002EA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="POSICIÓN DE SOLPED"
+              DTS:DTSID="{813DFB2D-AA35-4EB6-B19D-3C9B3A079D5A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CÓDIGO DE MATERIAL"
+              DTS:DTSID="{BAEC1544-4EBF-4832-9AA4-13DD310BA8B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DENOMINACIÓN MATERIAL"
+              DTS:DTSID="{EA40EAB5-D72B-44FC-8983-7988704297FE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD"
+              DTS:DTSID="{634F8B0B-8D5F-4D34-B35C-2DC81136C609}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UM SOLPED"
+              DTS:DTSID="{39F50385-10C1-4A58-9D92-0ECFEA8DA4D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GRUPO DE COMPRAS"
+              DTS:DTSID="{8AEF2607-5899-41CE-BF9B-A659D7DB7822}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SOLICITANTE"
+              DTS:DTSID="{97EE1D4C-849F-4F76-AF18-77B98D8F7F3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CLASE DE DOCUMENTO"
+              DTS:DTSID="{7B1A7AAB-8D19-4283-9337-32A882B60D17}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA DE ENTREGA"
+              DTS:DTSID="{9C491F37-30C4-4557-AB14-557F81C1817E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="STATUS DE LIBERACION"
+              DTS:DTSID="{576DC7FF-E67A-42A5-B42E-19C58EE4457D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GRUPO DE ARTÍCULO"
+              DTS:DTSID="{5EF56B6F-56EC-449B-891E-DD76C384AFBE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO"
+              DTS:DTSID="{64AA93E8-AD3A-42D7-A5B6-DD66756E8683}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ALMACEN"
+              DTS:DTSID="{70418244-02CF-4E79-BD8F-0A9E32042EC9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DENOMINACION ESTRATEGIA LIB "
+              DTS:DTSID="{0F01F96A-44BD-43FD-B6C2-4CFE37453C81}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="INDICADOR BORRADO"
+              DTS:DTSID="{4630FDE0-A2CE-48F4-8825-BD6898A73569}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ESTRATEGIA LIBERACIÓN"
+              DTS:DTSID="{3340C714-25CC-4E35-A1E2-6D275D609D4A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA LIBERACIÓN"
+              DTS:DTSID="{AF0707D8-4F5B-4CD9-AE1B-0508D09A1D02}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CONTRATO"
+              DTS:DTSID="{B23A710D-8492-4D04-A737-8D1ABFBECED9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="POSICION CONTRATO"
+              DTS:DTSID="{5A933DAB-D05E-4369-956E-EF065FE6AF89}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD ABIERTA"
+              DTS:DTSID="{F9D133EC-BE66-4563-AFB1-0C55EAA1F1A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ORDEN"
+              DTS:DTSID="{7E9722E5-635A-4D97-A46C-C9539EA1C957}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nº SOLPED"
+              DTS:DTSID="{90819354-307F-4C22-BFD4-71703DF65F96}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA SOLPED"
+              DTS:DTSID="{9EC63101-CFD4-42DA-90ED-D69205904DA3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DESCRIPCIÓN"
+              DTS:DTSID="{35BEC261-562B-4272-ADE3-AED2F1062B9F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD 2"
+              DTS:DTSID="{6F3B76D5-C300-4352-ABE9-F377C42A825A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UNIDAD"
+              DTS:DTSID="{BC5B72D2-3AAD-4F13-8F47-2AEDD54717F5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO ALMACEN"
+              DTS:DTSID="{EE278254-1F41-47BB-B1E5-D663F534C155}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GRUPO DE COMPRAS 2"
+              DTS:DTSID="{7F41995D-907D-424F-86F0-6E6DF42DBC5C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RESPONSABLE"
+              DTS:DTSID="{19E797ED-CB90-4CDC-B6E3-B15D8CE894A9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[mm_solped_imp]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7B0BDDB4-388A-4862-9B1D-511CB0DD1D2C}"
+      DTS:ObjectName="mm_solped_imp">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil\dw\PRD\APROCESAR\mm_solped_imp.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NUMERO DE SOLPED"
+              DTS:DTSID="{EED39B59-A6DD-413B-B353-78949394C56B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="POSICIÓN DE SOLPED"
+              DTS:DTSID="{C2E9B9C4-192E-415F-95A5-EEC2167C565E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NUM_IMP"
+              DTS:DTSID="{36294F62-0406-4F91-893C-71C6F06927A9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO_COSTO"
+              DTS:DTSID="{6441DD6E-D5DB-4ED7-9354-86A4CD18911B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IND_BORR"
+              DTS:DTSID="{CB3586EE-C852-469C-8E43-DC0AA5EAE2EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NUM_ORDEN"
+              DTS:DTSID="{B915681D-595E-4247-81BA-946B18BBF156}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ACT_FIJO"
+              DTS:DTSID="{2F4772E8-BC1D-4A39-8C1F-A2FFDA8E0EDE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANT_IMP"
+              DTS:DTSID="{EE70974F-4C4A-4EBE-A923-9B6707A6A6AB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PORCENTAJE_IMP"
+              DTS:DTSID="{47AB5EC2-1CBD-43DB-8849-44CAD39FCE43}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CEBE"
+              DTS:DTSID="{D2D3D069-D0AD-4248-AA3B-327CEB151354}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ORDEN"
+              DTS:DTSID="{6CAC711B-4340-4551-9FC2-63E2F769F22A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NRO_SOLPED"
+              DTS:DTSID="{1B35B45E-5162-454E-807E-1446DA5C5F74}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_SOLPED"
+              DTS:DTSID="{60929621-6D25-4D18-96AC-5BC8C9ED0718}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DESCRIPCION"
+              DTS:DTSID="{750DAB2A-3DA4-49C9-89EE-BD6D44374F8E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD"
+              DTS:DTSID="{D89DEB23-2B16-4CEB-8C0F-A379BA1AFAE2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UNIDAD"
+              DTS:DTSID="{0F1C2D33-D12F-4499-8751-2885B1EEB24C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO_ALMACEN"
+              DTS:DTSID="{9329827A-333B-41C1-AA9D-67AFC6260E0A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GRUPO_DE_COMPRAS"
+              DTS:DTSID="{B7EF60A4-65E5-42AA-8B1B-4FB5C85887C4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RESPONSABLE"
+              DTS:DTSID="{57F3CF4A-A4D3-42CB-8BFF-DF5D7D2CE6E6}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\COPIA A DWFE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{E2895596-4A79-44D1-8EA4-0F4622DF0F91}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="COPIA A DWFE"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec  sta.dbo.cleansing_sta;&#xA;exec DW_SOLPED;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{E7E787CA-944E-4711-87BC-8B3351DB120F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
+          SQLTask:SqlStatementSource="truncate table mm_solped;&#xA;truncate table mm_solped_imp;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\mm_solped"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{EFA53B6E-520B-4CC1-998D-A58F4F6C49A3}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="mm_solped">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\mm_solped\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\mm_solped\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[mm_solped]"
+                  connectionManagerRefId="Package.ConnectionManagers[mm_solped]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[MANDANTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MANDANTE]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[MANDANTE]"
+                      name="MANDANTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA CREACIÓN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA CREACIÓN]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA CREACIÓN]"
+                      name="FECHA CREACIÓN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA MODIFICACIÓN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA MODIFICACIÓN]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA MODIFICACIÓN]"
+                      name="FECHA MODIFICACIÓN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO DE IMPUTACIÓN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO DE IMPUTACIÓN]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO DE IMPUTACIÓN]"
+                      name="TIPO DE IMPUTACIÓN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO DE POSICIÓN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO DE POSICIÓN]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO DE POSICIÓN]"
+                      name="TIPO DE POSICIÓN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[NUMERO DE SOLPED]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUMERO DE SOLPED]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[NUMERO DE SOLPED]"
+                      name="NUMERO DE SOLPED"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[POSICIÓN DE SOLPED]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICIÓN DE SOLPED]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[POSICIÓN DE SOLPED]"
+                      name="POSICIÓN DE SOLPED"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CÓDIGO DE MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CÓDIGO DE MATERIAL]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CÓDIGO DE MATERIAL]"
+                      name="CÓDIGO DE MATERIAL"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[DENOMINACIÓN MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DENOMINACIÓN MATERIAL]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[DENOMINACIÓN MATERIAL]"
+                      name="DENOMINACIÓN MATERIAL"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD]"
+                      name="CANTIDAD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[UM SOLPED]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UM SOLPED]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[UM SOLPED]"
+                      name="UM SOLPED"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[GRUPO DE COMPRAS]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GRUPO DE COMPRAS]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[GRUPO DE COMPRAS]"
+                      name="GRUPO DE COMPRAS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[SOLICITANTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOLICITANTE]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[SOLICITANTE]"
+                      name="SOLICITANTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CLASE DE DOCUMENTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLASE DE DOCUMENTO]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CLASE DE DOCUMENTO]"
+                      name="CLASE DE DOCUMENTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA DE ENTREGA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA DE ENTREGA]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA DE ENTREGA]"
+                      name="FECHA DE ENTREGA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[STATUS DE LIBERACION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STATUS DE LIBERACION]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[STATUS DE LIBERACION]"
+                      name="STATUS DE LIBERACION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[GRUPO DE ARTÍCULO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GRUPO DE ARTÍCULO]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[GRUPO DE ARTÍCULO]"
+                      name="GRUPO DE ARTÍCULO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]"
+                      name="CENTRO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[ALMACEN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ALMACEN]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[ALMACEN]"
+                      name="ALMACEN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[DENOMINACION ESTRATEGIA LIB ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DENOMINACION ESTRATEGIA LIB ]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[DENOMINACION ESTRATEGIA LIB ]"
+                      name="DENOMINACION ESTRATEGIA LIB "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[INDICADOR BORRADO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[INDICADOR BORRADO]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[INDICADOR BORRADO]"
+                      name="INDICADOR BORRADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[ESTRATEGIA LIBERACIÓN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ESTRATEGIA LIBERACIÓN]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[ESTRATEGIA LIBERACIÓN]"
+                      name="ESTRATEGIA LIBERACIÓN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA LIBERACIÓN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA LIBERACIÓN]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA LIBERACIÓN]"
+                      name="FECHA LIBERACIÓN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CONTRATO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CONTRATO]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CONTRATO]"
+                      name="CONTRATO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION CONTRATO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICION CONTRATO]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION CONTRATO]"
+                      name="POSICION CONTRATO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD ABIERTA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD ABIERTA]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD ABIERTA]"
+                      name="CANTIDAD ABIERTA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[ORDEN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ORDEN]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[ORDEN]"
+                      name="ORDEN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[Nº SOLPED]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Nº SOLPED]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[Nº SOLPED]"
+                      name="Nº SOLPED"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA SOLPED]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA SOLPED]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA SOLPED]"
+                      name="FECHA SOLPED"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPCIÓN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCIÓN]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPCIÓN]"
+                      name="DESCRIPCIÓN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD 2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD 2]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD 2]"
+                      name="CANTIDAD 2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[UNIDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UNIDAD]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[UNIDAD]"
+                      name="UNIDAD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO ALMACEN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO ALMACEN]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO ALMACEN]"
+                      name="CODIGO ALMACEN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[GRUPO DE COMPRAS 2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GRUPO DE COMPRAS 2]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[GRUPO DE COMPRAS 2]"
+                      name="GRUPO DE COMPRAS 2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[RESPONSABLE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RESPONSABLE]"
+                      length="50"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[RESPONSABLE]"
+                      name="RESPONSABLE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MANDANTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="MANDANTE" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA CREACIÓN]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA CREACIÓN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA MODIFICACIÓN]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA MODIFICACIÓN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO DE IMPUTACIÓN]"
+                      dataType="wstr"
+                      length="50"
+                      name="TIPO DE IMPUTACIÓN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO DE POSICIÓN]"
+                      dataType="wstr"
+                      length="50"
+                      name="TIPO DE POSICIÓN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUMERO DE SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="NUMERO DE SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICIÓN DE SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICIÓN DE SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CÓDIGO DE MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CÓDIGO DE MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DENOMINACIÓN MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="DENOMINACIÓN MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UM SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="UM SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GRUPO DE COMPRAS]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO DE COMPRAS" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOLICITANTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="SOLICITANTE" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLASE DE DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CLASE DE DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA DE ENTREGA]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA DE ENTREGA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STATUS DE LIBERACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="STATUS DE LIBERACION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GRUPO DE ARTÍCULO]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO DE ARTÍCULO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DENOMINACION ESTRATEGIA LIB ]"
+                      dataType="wstr"
+                      length="50"
+                      name="DENOMINACION ESTRATEGIA LIB " />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[INDICADOR BORRADO]"
+                      dataType="wstr"
+                      length="50"
+                      name="INDICADOR BORRADO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ESTRATEGIA LIBERACIÓN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ESTRATEGIA LIBERACIÓN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA LIBERACIÓN]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA LIBERACIÓN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CONTRATO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CONTRATO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICION CONTRATO]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION CONTRATO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD ABIERTA]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD ABIERTA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ORDEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ORDEN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Nº SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="Nº SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCIÓN]"
+                      dataType="wstr"
+                      length="50"
+                      name="DESCRIPCIÓN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD 2]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD 2" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UNIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="UNIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GRUPO DE COMPRAS 2]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO DE COMPRAS 2" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RESPONSABLE]"
+                      dataType="wstr"
+                      length="50"
+                      name="RESPONSABLE" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\mm_solped\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[mm_solped]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\mm_solped\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MANDANTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MANDANTE"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MANDANTE]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[MANDANTE]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SOLICITANTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="SOLICITANTE"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOLICITANTE]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[SOLICITANTE]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CENTRO"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ALMACEN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ALMACEN"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALMACEN]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[ALMACEN]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA CREACIÓN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA CREACIÓN"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CREACION]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA CREACIÓN]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA MODIFICACIÓN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA MODIFICACIÓN"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_MODIFICACION]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA MODIFICACIÓN]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO DE IMPUTACIÓN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TIPO DE IMPUTACIÓN"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_DE_IMPUTACION]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO DE IMPUTACIÓN]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO DE POSICIÓN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TIPO DE POSICIÓN"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_DE_POSICION]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO DE POSICIÓN]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NUMERO DE SOLPED]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NUMERO DE SOLPED"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUMERO_DE_SOLPED]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[NUMERO DE SOLPED]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POSICIÓN DE SOLPED]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="POSICIÓN DE SOLPED"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION_DE_SOLPED]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[POSICIÓN DE SOLPED]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CÓDIGO DE MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CÓDIGO DE MATERIAL"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_DE_MATERIAL]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CÓDIGO DE MATERIAL]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DENOMINACIÓN MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DENOMINACIÓN MATERIAL"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DENOMINACION_MATERIAL]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[DENOMINACIÓN MATERIAL]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UM SOLPED]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="UM SOLPED"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UM_SOLPED]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[UM SOLPED]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GRUPO DE COMPRAS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="GRUPO DE COMPRAS"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_DE_COMPRAS]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[GRUPO DE COMPRAS]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CLASE DE DOCUMENTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CLASE DE DOCUMENTO"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLASE_DE_DOCUMENTO]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CLASE DE DOCUMENTO]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA DE ENTREGA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA DE ENTREGA"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_ENTREGA]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA DE ENTREGA]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[STATUS DE LIBERACION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="STATUS DE LIBERACION"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[STATUS_DE_LIBERACION]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[STATUS DE LIBERACION]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GRUPO DE ARTÍCULO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="GRUPO DE ARTÍCULO"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_DE_ARTICULO]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[GRUPO DE ARTÍCULO]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DENOMINACION ESTRATEGIA LIB ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DENOMINACION ESTRATEGIA LIB "
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DENOMINACION_ESTRATEGIA_LIB ]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[DENOMINACION ESTRATEGIA LIB ]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[INDICADOR BORRADO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="INDICADOR BORRADO"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[INDICADOR_BORRADO]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[INDICADOR BORRADO]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ESTRATEGIA LIBERACIÓN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ESTRATEGIA LIBERACIÓN"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ESTRATEGIA_LIBERACION]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[ESTRATEGIA LIBERACIÓN]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA LIBERACIÓN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA LIBERACIÓN"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_LIBERACION]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA LIBERACIÓN]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CONTRATO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CONTRATO"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CONTRATO]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CONTRATO]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POSICION CONTRATO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="POSICION CONTRATO"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION_CONTRATO]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION CONTRATO]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD ABIERTA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD ABIERTA"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_ABIERTA]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD ABIERTA]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ORDEN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ORDEN"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ORDEN]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[ORDEN]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Nº SOLPED]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Nº SOLPED"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_SOLPED]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[Nº SOLPED]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA SOLPED]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA SOLPED"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_SOLPED]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA SOLPED]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DESCRIPCIÓN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DESCRIPCIÓN"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPCION]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPCIÓN]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD 2]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD 2"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_2]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD 2]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UNIDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="UNIDAD"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UNIDAD]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[UNIDAD]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO ALMACEN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CODIGO ALMACEN"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_ALMACEN]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO ALMACEN]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GRUPO DE COMPRAS 2]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="GRUPO DE COMPRAS 2"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_DE_COMPRAS_2]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[GRUPO DE COMPRAS 2]" />
+                    <inputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RESPONSABLE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="RESPONSABLE"
+                      externalMetadataColumnId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RESPONSABLE]"
+                      lineageId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output].Columns[RESPONSABLE]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MANDANTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="MANDANTE" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CREACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_CREACION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_MODIFICACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_MODIFICACION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_DE_IMPUTACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="TIPO_DE_IMPUTACION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_DE_POSICION]"
+                      dataType="wstr"
+                      length="50"
+                      name="TIPO_DE_POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUMERO_DE_SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="NUMERO_DE_SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION_DE_SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION_DE_SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_DE_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO_DE_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DENOMINACION_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="DENOMINACION_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UM_SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="UM_SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_DE_COMPRAS]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_DE_COMPRAS" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOLICITANTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="SOLICITANTE" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLASE_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CLASE_DE_DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_ENTREGA]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DE_ENTREGA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[STATUS_DE_LIBERACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="STATUS_DE_LIBERACION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_DE_ARTICULO]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_DE_ARTICULO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DENOMINACION_ESTRATEGIA_LIB ]"
+                      dataType="wstr"
+                      length="50"
+                      name="DENOMINACION_ESTRATEGIA_LIB " />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[INDICADOR_BORRADO]"
+                      dataType="wstr"
+                      length="50"
+                      name="INDICADOR_BORRADO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ESTRATEGIA_LIBERACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="ESTRATEGIA_LIBERACION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_LIBERACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_LIBERACION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CONTRATO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CONTRATO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION_CONTRATO]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION_CONTRATO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_ABIERTA]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD_ABIERTA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ORDEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ORDEN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO_SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      name="DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_2]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD_2" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UNIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="UNIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO_ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_DE_COMPRAS_2]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_DE_COMPRAS_2" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RESPONSABLE]"
+                      dataType="wstr"
+                      length="50"
+                      name="RESPONSABLE" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\mm_solped\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\mm_solped\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\mm_solped\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\mm_solped\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\mm_solped.Paths[Flat File Source Output]"
+              endId="Package\mm_solped\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\mm_solped\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\mm_solped_imp"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D78C1C3D-53D4-481A-BF1C-9ED4D2DA58B3}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="mm_solped_imp"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\mm_solped_imp\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\mm_solped_imp\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[mm_solped_imp]"
+                  connectionManagerRefId="Package.ConnectionManagers[mm_solped_imp]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[NUMERO DE SOLPED]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUMERO DE SOLPED]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[NUMERO DE SOLPED]"
+                      name="NUMERO DE SOLPED"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[POSICIÓN DE SOLPED]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICIÓN DE SOLPED]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[POSICIÓN DE SOLPED]"
+                      name="POSICIÓN DE SOLPED"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[NUM_IMP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUM_IMP]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[NUM_IMP]"
+                      name="NUM_IMP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO_COSTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO_COSTO]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO_COSTO]"
+                      name="CENTRO_COSTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[IND_BORR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IND_BORR]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[IND_BORR]"
+                      name="IND_BORR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[NUM_ORDEN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUM_ORDEN]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[NUM_ORDEN]"
+                      name="NUM_ORDEN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[ACT_FIJO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ACT_FIJO]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[ACT_FIJO]"
+                      name="ACT_FIJO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CANT_IMP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANT_IMP]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CANT_IMP]"
+                      name="CANT_IMP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[PORCENTAJE_IMP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PORCENTAJE_IMP]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[PORCENTAJE_IMP]"
+                      name="PORCENTAJE_IMP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CEBE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CEBE]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CEBE]"
+                      name="CEBE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[ORDEN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ORDEN]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[ORDEN]"
+                      name="ORDEN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[NRO_SOLPED]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NRO_SOLPED]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[NRO_SOLPED]"
+                      name="NRO_SOLPED"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA_SOLPED]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA_SOLPED]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA_SOLPED]"
+                      name="FECHA_SOLPED"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPCION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPCION]"
+                      name="DESCRIPCION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD]"
+                      name="CANTIDAD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[UNIDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UNIDAD]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[UNIDAD]"
+                      name="UNIDAD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_ALMACEN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_ALMACEN]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_ALMACEN]"
+                      name="CODIGO_ALMACEN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[GRUPO_DE_COMPRAS]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GRUPO_DE_COMPRAS]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[GRUPO_DE_COMPRAS]"
+                      name="GRUPO_DE_COMPRAS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[RESPONSABLE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RESPONSABLE]"
+                      length="50"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[RESPONSABLE]"
+                      name="RESPONSABLE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUMERO DE SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="NUMERO DE SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICIÓN DE SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICIÓN DE SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUM_IMP]"
+                      dataType="wstr"
+                      length="50"
+                      name="NUM_IMP" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO_COSTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO_COSTO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IND_BORR]"
+                      dataType="wstr"
+                      length="50"
+                      name="IND_BORR" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUM_ORDEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="NUM_ORDEN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ACT_FIJO]"
+                      dataType="wstr"
+                      length="50"
+                      name="ACT_FIJO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANT_IMP]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANT_IMP" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PORCENTAJE_IMP]"
+                      dataType="wstr"
+                      length="50"
+                      name="PORCENTAJE_IMP" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CEBE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CEBE" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ORDEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ORDEN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NRO_SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO_SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA_SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      name="DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UNIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="UNIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO_ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO_ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GRUPO_DE_COMPRAS]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_DE_COMPRAS" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[RESPONSABLE]"
+                      dataType="wstr"
+                      length="50"
+                      name="RESPONSABLE" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\mm_solped_imp\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[mm_solped_imp]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\mm_solped_imp\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NUM_IMP]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NUM_IMP"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUM_IMP]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[NUM_IMP]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO_COSTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CENTRO_COSTO"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_COSTO]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO_COSTO]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IND_BORR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IND_BORR"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IND_BORR]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[IND_BORR]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NUM_ORDEN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NUM_ORDEN"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUM_ORDEN]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[NUM_ORDEN]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ACT_FIJO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ACT_FIJO"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ACT_FIJO]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[ACT_FIJO]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANT_IMP]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANT_IMP"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANT_IMP]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CANT_IMP]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PORCENTAJE_IMP]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="PORCENTAJE_IMP"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PORCENTAJE_IMP]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[PORCENTAJE_IMP]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CEBE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CEBE"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CEBE]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CEBE]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NUMERO DE SOLPED]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NUMERO DE SOLPED"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUMERO_DE_SOLPED]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[NUMERO DE SOLPED]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POSICIÓN DE SOLPED]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="POSICIÓN DE SOLPED"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION_DE_SOLPED]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[POSICIÓN DE SOLPED]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ORDEN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ORDEN"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ORDEN]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[ORDEN]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NRO_SOLPED]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NRO_SOLPED"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_SOLPED]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[NRO_SOLPED]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_SOLPED]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA_SOLPED"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_SOLPED]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA_SOLPED]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DESCRIPCION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DESCRIPCION"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPCION]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPCION]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UNIDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="UNIDAD"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UNIDAD]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[UNIDAD]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO_ALMACEN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CODIGO_ALMACEN"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_ALMACEN]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO_ALMACEN]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GRUPO_DE_COMPRAS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="GRUPO_DE_COMPRAS"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_DE_COMPRAS]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[GRUPO_DE_COMPRAS]" />
+                    <inputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RESPONSABLE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="RESPONSABLE"
+                      externalMetadataColumnId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RESPONSABLE]"
+                      lineageId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output].Columns[RESPONSABLE]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUMERO_DE_SOLPED]"
+                      dataType="i4"
+                      name="NUMERO_DE_SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION_DE_SOLPED]"
+                      dataType="i2"
+                      name="POSICION_DE_SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUM_IMP]"
+                      dataType="i2"
+                      name="NUM_IMP" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_COSTO]"
+                      dataType="wstr"
+                      length="15"
+                      name="CENTRO_COSTO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IND_BORR]"
+                      dataType="wstr"
+                      length="1"
+                      name="IND_BORR" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUM_ORDEN]"
+                      dataType="wstr"
+                      length="10"
+                      name="NUM_ORDEN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ACT_FIJO]"
+                      dataType="wstr"
+                      length="10"
+                      name="ACT_FIJO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANT_IMP]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANT_IMP" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PORCENTAJE_IMP]"
+                      dataType="wstr"
+                      length="6"
+                      name="PORCENTAJE_IMP" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CEBE]"
+                      dataType="wstr"
+                      length="16"
+                      name="CEBE" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ORDEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="ORDEN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO_SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_SOLPED]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_SOLPED" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPCION]"
+                      dataType="wstr"
+                      length="50"
+                      name="DESCRIPCION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UNIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="UNIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_ALMACEN]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO_ALMACEN" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GRUPO_DE_COMPRAS]"
+                      dataType="wstr"
+                      length="50"
+                      name="GRUPO_DE_COMPRAS" />
+                    <externalMetadataColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RESPONSABLE]"
+                      dataType="wstr"
+                      length="50"
+                      name="RESPONSABLE" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\mm_solped_imp\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\mm_solped_imp\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\mm_solped_imp\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\mm_solped_imp\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\mm_solped_imp.Paths[Flat File Source Output]"
+              endId="Package\mm_solped_imp\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\mm_solped_imp\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{61445FD8-3AEC-4B0A-9677-10EDAB4E2617}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\mm_solped" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{539846C9-F37A-4C17-AB5F-4CD2835C94FF}"
+      DTS:From="Package\mm_solped"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\mm_solped_imp" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{E90C4456-6979-418D-9BF1-E86457E58A14}"
+      DTS:From="Package\mm_solped_imp"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\COPIA A DWFE" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="159,42"
+          Id="Package\COPIA A DWFE"
+          TopLeft="478,135" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="84,30" />
+        <NodeLayout
+          Size="136,42"
+          Id="Package\mm_solped"
+          TopLeft="374.5,43.5" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\mm_solped_imp"
+          TopLeft="585,63" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="247,51">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="127.5,13.5"
+              Start="0,0"
+              End="120,13.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="59.75,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="59.75,0"
+                    Point2="63.75,0"
+                    Point3="63.75,4" />
+                  <mssgle:LineSegment
+                    End="63.75,9.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="63.75,9.5"
+                    Point2="63.75,13.5"
+                    Point3="67.75,13.5" />
+                  <mssgle:LineSegment
+                    End="120,13.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="510.5,64.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="74.5,19.5"
+              Start="0,0"
+              End="67,19.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="33.25,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="33.25,0"
+                    Point2="37.25,0"
+                    Point3="37.25,4" />
+                  <mssgle:LineSegment
+                    End="37.25,15.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="37.25,15.5"
+                    Point2="37.25,19.5"
+                    Point3="41.25,19.5" />
+                  <mssgle:LineSegment
+                    End="67,19.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="665,105">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-107.5,30"
+              Start="0,0"
+              End="-107.5,22.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11"
+                    Point2="0,15"
+                    Point3="-4,15" />
+                  <mssgle:LineSegment
+                    End="-103.5,15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-103.5,15"
+                    Point2="-107.5,15"
+                    Point3="-107.5,19" />
+                  <mssgle:LineSegment
+                    End="-107.5,22.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\mm_solped">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\mm_solped\OLE DB Destination"
+          TopLeft="479,88" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\mm_solped\Flat File Source"
+          TopLeft="122,75" />
+        <EdgeLayout
+          Id="Package\mm_solped.Paths[Flat File Source Output]"
+          TopLeft="273,96">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="206,13"
+              Start="0,0"
+              End="198.5,13">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="99,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="99,0"
+                    Point2="103,0"
+                    Point3="103,4" />
+                  <mssgle:LineSegment
+                    End="103,9" />
+                  <mssgle:CubicBezierSegment
+                    Point1="103,9"
+                    Point2="103,13"
+                    Point3="107,13" />
+                  <mssgle:LineSegment
+                    End="198.5,13" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\mm_solped\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\mm_solped_imp">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\mm_solped_imp\OLE DB Destination"
+          TopLeft="606,54" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\mm_solped_imp\Flat File Source"
+          TopLeft="350,57" />
+        <EdgeLayout
+          Id="Package\mm_solped_imp.Paths[Flat File Source Output]"
+          TopLeft="501,76.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="105,0"
+              Start="0,0"
+              End="97.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="97.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\mm_solped_imp\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

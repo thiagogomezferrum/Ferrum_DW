@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="MySQL_extranetsap.pconnon"
+  DTS:DTSID="{2DF073C9-4ED5-4308-8DE9-88F74B459323}"
+  DTS:CreationName="ODBC">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="uid=pconnon;Dsn=MySQL_extranetsap;">
+      <DTS:Password
+        DTS:Name="pwd"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAATmHh5nCZQ0et1Vi2AU33dQAAAAACAAAAAAADZgAAwAAAABAAAADlUdkCXzcKdeYof633FEIiAAAAAASAAACgAAAAEAAAACtT5Zc1MzdE4EM3yysdWZlwAAAAQwaeKBxAc1RGDt6rV7lNFOKBXQPkjX83wZPqBaxaCHhtID3Ha3Zr33DBTFPqP86yeSBpCVbG3Sp5b0q0HsyOwe8lBERqVLcQPiVfOj2x7SeapAlRaqK6uORNUh0WhVQmK9xihpZJYM0vKFPglHJylxQAAADAyEHAbJIVHz2sIRLGTKVMsCGthA==</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

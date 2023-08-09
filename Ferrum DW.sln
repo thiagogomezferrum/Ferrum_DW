@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Ferrum DW", "Ferrum DW\Ferrum DW.dtproj", "{ADADD3FD-79D7-4A19-AD01-0BE662E7A1DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADADD3FD-79D7-4A19-AD01-0BE662E7A1DA}.Development|Default.ActiveCfg = Development
+		{ADADD3FD-79D7-4A19-AD01-0BE662E7A1DA}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B72EB6C2-0550-4E6E-A3F7-84DC0A285E6D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,2733 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/27/2020 9:40:46 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="NTBK-PCCONNON"
+  DTS:CreatorName="NTFERRUM\pconnon"
+  DTS:DTSID="{ABA5A97B-2124-4A1C-8FAA-EAEB365F38DB}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.93"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="MySQL"
+  DTS:PackageType="5"
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{555F6937-4E33-46F1-B490-E458CA75A799}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CTACTE.txt]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2376E6D7-DE9A-4BBD-A727-2996D5407094}"
+      DTS:ObjectName="CTACTE.txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\linuxfil\DW\PRD\PROCESADOS\CTACTE.TXT">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BUKRS"
+              DTS:DTSID="{7A47F0DA-EF71-4DC5-818E-DCE0B77E35F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="KUNNR"
+              DTS:DTSID="{61242821-918C-4A5F-8AE4-3BECBFA16CA5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BLART"
+              DTS:DTSID="{30A592C3-1DE8-4170-9082-97E5B20FE5EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BELNR"
+              DTS:DTSID="{DF325A2A-18E6-4DFD-95CF-96F441990C0D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="GJAHR"
+              DTS:DTSID="{44365949-77FA-489E-B7F6-BFB5E32346E1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BUDAT"
+              DTS:DTSID="{E72C5DE8-8A1E-4554-ACF9-EE273E44491B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ZTERM"
+              DTS:DTSID="{A61C759B-75C9-4874-A3D7-AF9BD8DD7109}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="REBZG"
+              DTS:DTSID="{E26E3030-7090-4BB9-B70B-AF97559FB28A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="REBZJ"
+              DTS:DTSID="{240AEC2D-B5F4-4FE5-A216-90AA8ECB85AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="WRBTR"
+              DTS:DTSID="{68B90233-F661-4292-AC73-E084631C52DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VTO"
+              DTS:DTSID="{0DE05119-6526-4970-9AAC-92130F60F6CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="XBLNR"
+              DTS:DTSID="{5BB74527-1C1D-430B-B365-5C6B9FEFCF3D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BUZEI"
+              DTS:DTSID="{AEE7E326-CA25-4131-BF5A-A463729D5025}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BSCHL"
+              DTS:DTSID="{93D76C6E-5AEC-4B8D-803C-678F1EE915B0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MySQL_ferrum.pconnon]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{AB184328-3D12-45BD-84C4-296DF0434883}"
+      DTS:ObjectName="MySQL_ferrum.pconnon">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=pconnon;Dsn=MySQL_ferrum;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAhUhgREC+Rky2D5F3l2B0kgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAA+9rofc/X+elC7TujAD0iAAAAAASAAACgAAAAEAAAAALKoKa10bjXZsf9LbLw0B4YAAAAktk7kCt9lJMLnekeK+RLXkIlmkK4GCleFAAAAFT93pw/VCrVNaL/FFrXsRfCtIB2</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\CLEANSING"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5f3c9b41-2286-466a-9db6-7372e64a7860}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CLEANSING"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
+          SQLTask:SqlStatementSource="exec cleansing_cursos;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\CTACTE"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{3DE3FE23-5236-4D3C-9119-95A6BA7CA98C}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CTACTE">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\CTACTE\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CTACTE\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CTACTE.txt]"
+                  connectionManagerRefId="Package.ConnectionManagers[CTACTE.txt]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUKRS]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BUKRS]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUKRS]"
+                      name="BUKRS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[KUNNR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[KUNNR]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[KUNNR]"
+                      name="KUNNR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BLART]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BLART]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BLART]"
+                      name="BLART"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BELNR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BELNR]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BELNR]"
+                      name="BELNR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[GJAHR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GJAHR]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[GJAHR]"
+                      name="GJAHR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUDAT]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BUDAT]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUDAT]"
+                      name="BUDAT"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[ZTERM]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ZTERM]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[ZTERM]"
+                      name="ZTERM"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[REBZG]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REBZG]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[REBZG]"
+                      name="REBZG"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[REBZJ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REBZJ]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[REBZJ]"
+                      name="REBZJ"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[WRBTR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WRBTR]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[WRBTR]"
+                      name="WRBTR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[VTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VTO]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[VTO]"
+                      name="VTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[XBLNR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[XBLNR]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[XBLNR]"
+                      name="XBLNR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUZEI]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BUZEI]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUZEI]"
+                      name="BUZEI"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BSCHL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BSCHL]"
+                      length="50"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BSCHL]"
+                      name="BSCHL"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BUKRS]"
+                      dataType="wstr"
+                      length="50"
+                      name="BUKRS" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[KUNNR]"
+                      dataType="wstr"
+                      length="50"
+                      name="KUNNR" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BLART]"
+                      dataType="wstr"
+                      length="50"
+                      name="BLART" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BELNR]"
+                      dataType="wstr"
+                      length="50"
+                      name="BELNR" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GJAHR]"
+                      dataType="wstr"
+                      length="50"
+                      name="GJAHR" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BUDAT]"
+                      dataType="wstr"
+                      length="50"
+                      name="BUDAT" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ZTERM]"
+                      dataType="wstr"
+                      length="50"
+                      name="ZTERM" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REBZG]"
+                      dataType="wstr"
+                      length="50"
+                      name="REBZG" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REBZJ]"
+                      dataType="wstr"
+                      length="50"
+                      name="REBZJ" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[WRBTR]"
+                      dataType="wstr"
+                      length="50"
+                      name="WRBTR" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="VTO" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[XBLNR]"
+                      dataType="wstr"
+                      length="50"
+                      name="XBLNR" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BUZEI]"
+                      dataType="wstr"
+                      length="50"
+                      name="BUZEI" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BSCHL]"
+                      dataType="wstr"
+                      length="50"
+                      name="BSCHL" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CTACTE\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[ctacte]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CTACTE\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BUKRS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BUKRS"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BUKRS]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUKRS]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[KUNNR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="KUNNR"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KUNNR]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[KUNNR]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BLART]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BLART"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BLART]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BLART]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BELNR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BELNR"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BELNR]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BELNR]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GJAHR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="GJAHR"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GJAHR]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[GJAHR]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BUDAT]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BUDAT"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BUDAT]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUDAT]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ZTERM]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ZTERM"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZTERM]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[ZTERM]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[REBZG]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="REBZG"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REBZG]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[REBZG]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[REBZJ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="REBZJ"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REBZJ]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[REBZJ]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[WRBTR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="WRBTR"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WRBTR]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[WRBTR]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="VTO"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VTO]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[VTO]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[XBLNR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="XBLNR"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[XBLNR]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[XBLNR]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BUZEI]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BUZEI"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BUZEI]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUZEI]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BSCHL]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BSCHL"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BSCHL]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BSCHL]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BUKRS]"
+                      dataType="wstr"
+                      length="50"
+                      name="BUKRS" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KUNNR]"
+                      dataType="wstr"
+                      length="50"
+                      name="KUNNR" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BLART]"
+                      dataType="wstr"
+                      length="50"
+                      name="BLART" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BELNR]"
+                      dataType="wstr"
+                      length="50"
+                      name="BELNR" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GJAHR]"
+                      dataType="wstr"
+                      length="50"
+                      name="GJAHR" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BUDAT]"
+                      dataType="wstr"
+                      length="50"
+                      name="BUDAT" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZTERM]"
+                      dataType="wstr"
+                      length="50"
+                      name="ZTERM" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REBZG]"
+                      dataType="wstr"
+                      length="50"
+                      name="REBZG" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REBZJ]"
+                      dataType="wstr"
+                      length="50"
+                      name="REBZJ" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WRBTR]"
+                      dataType="wstr"
+                      length="50"
+                      name="WRBTR" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VTO]"
+                      dataType="dbDate"
+                      name="VTO" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[XBLNR]"
+                      dataType="wstr"
+                      length="50"
+                      name="XBLNR" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BUZEI]"
+                      dataType="wstr"
+                      length="50"
+                      name="BUZEI" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BSCHL]"
+                      dataType="wstr"
+                      length="50"
+                      name="BSCHL" />
+                    <externalMetadataColumn
+                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CTACTE\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CTACTE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CTACTE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CTACTE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\CTACTE.Paths[Flat File Source Output]"
+              endId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\CURSOS"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{0C9E47C2-3D5B-4E3F-8F74-18E84B117448}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CURSOS"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\CURSOS\contacto_capacitaciones"
+              componentClassID="Attunity.SSISODBCSrc"
+              description="ODBC Source"
+              name="contacto_capacitaciones"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">contacto_capacitaciones</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT p.cc_id, p.cc_contacto, p.cc_mail,p.cc_profesion,p.cc_pcia,p.cc_fecha,p.cc_curso,cc_referido
+from contacto_capacitaciones AS p
+WHERE cc_fecha BETWEEN DATE_ADD(NOW(),INTERVAL -15 DAY) AND NOW()</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines how the component exposes CHAR columns. If False, CHAR columns are exposed as (multi-)byte strings (DT_STR), if True, CHAR columns are exposed as wide strings (DT_WSTR)"
+                  expressionType="Notify"
+                  name="ExposeCharColumnsAsUnicode">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for fetching data."
+                  expressionType="Notify"
+                  name="FetchMethod">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  expressionType="Notify"
+                  name="AccessMode"
+                  typeConverter="AccessMode">1</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CURSOS\contacto_capacitaciones.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MySQL_ferrum.pconnon]"
+                  connectionManagerRefId="Package.ConnectionManagers[MySQL_ferrum.pconnon]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="ODBC Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_id]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_id]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_id]"
+                      name="cc_id"
+                      precision="18" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_contacto]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_contacto]"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_contacto]"
+                      name="cc_contacto" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_mail]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_mail]"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_mail]"
+                      name="cc_mail" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_profesion]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_profesion]"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_profesion]"
+                      name="cc_profesion" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_pcia]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_pcia]"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_pcia]"
+                      name="cc_pcia" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_fecha]"
+                      dataType="dbTimeStamp"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_fecha]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_fecha]"
+                      name="cc_fecha" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_curso]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_curso]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_curso]"
+                      name="cc_curso"
+                      precision="18" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_referido]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_referido]"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].Columns[cc_referido]"
+                      name="cc_referido" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_id]"
+                      dataType="i4"
+                      name="cc_id" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_contacto]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="cc_contacto" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_mail]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="cc_mail" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_profesion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="cc_profesion" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_pcia]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      name="cc_pcia" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_fecha]"
+                      dataType="dbTimeStamp"
+                      name="cc_fecha" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_curso]"
+                      dataType="i4"
+                      name="cc_curso" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_referido]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="cc_referido" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output]"
+                  isErrorOut="true"
+                  name="ODBC Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_id]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_id]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_id]"
+                      name="cc_id" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_contacto]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_contacto]"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_contacto]"
+                      name="cc_contacto" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_mail]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_mail]"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_mail]"
+                      name="cc_mail" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_profesion]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_profesion]"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_profesion]"
+                      name="cc_profesion" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_pcia]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_pcia]"
+                      length="20"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_pcia]"
+                      name="cc_pcia" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_fecha]"
+                      dataType="dbTimeStamp"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_fecha]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_fecha]"
+                      name="cc_fecha" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_curso]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_curso]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_curso]"
+                      name="cc_curso" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_referido]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Output].ExternalColumns[cc_referido]"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[cc_referido]"
+                      name="cc_referido" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\contacto_capacitaciones.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CURSOS\contacto_capacitaciones NEW"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="contacto_capacitaciones NEW"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT p.cc_id, p.cc_contacto, p.cc_mail,p.cc_profesion,p.cc_pcia,p.cc_fecha,p.cc_curso,cc_referido
+from contacto_capacitaciones AS p
+--WHERE cc_fecha BETWEEN DATE_ADD(NOW(),INTERVAL -15 DAY) AND NOW()
+where cc_fecha between dateadd(d,-15,getdate()) and getdate()</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CURSOS\contacto_capacitaciones NEW.Connections[OleDbConnection]"
+                  connectionManagerID="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.DWFE.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_id]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_id]"
+                      name="cc_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_contacto]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_contacto]"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_contacto]"
+                      name="cc_contacto"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_mail]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_mail]"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_mail]"
+                      name="cc_mail"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_profesion]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_profesion]"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_profesion]"
+                      name="cc_profesion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_pcia]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_pcia]"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_pcia]"
+                      name="cc_pcia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_fecha]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_fecha]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_fecha]"
+                      name="cc_fecha"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_curso]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_curso]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_curso]"
+                      name="cc_curso"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_referido]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_referido]"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_referido]"
+                      name="cc_referido"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_id]"
+                      dataType="i4"
+                      name="cc_id" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_contacto]"
+                      dataType="wstr"
+                      length="100"
+                      name="cc_contacto" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_mail]"
+                      dataType="wstr"
+                      length="100"
+                      name="cc_mail" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_profesion]"
+                      dataType="wstr"
+                      length="100"
+                      name="cc_profesion" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_pcia]"
+                      dataType="wstr"
+                      length="50"
+                      name="cc_pcia" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_fecha]"
+                      dataType="dbTimeStamp"
+                      name="cc_fecha" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_curso]"
+                      dataType="i4"
+                      name="cc_curso" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].ExternalColumns[cc_referido]"
+                      dataType="wstr"
+                      length="50"
+                      name="cc_referido" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_id]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_id]"
+                      name="cc_id" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_contacto]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_contacto]"
+                      name="cc_contacto" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_mail]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_mail]"
+                      name="cc_mail" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_profesion]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_profesion]"
+                      name="cc_profesion" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_pcia]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_pcia]"
+                      name="cc_pcia" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_fecha]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_fecha]"
+                      name="cc_fecha" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_curso]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_curso]"
+                      name="cc_curso" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_referido]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[cc_referido]"
+                      name="cc_referido" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CURSOS\contacto_cursos"
+              componentClassID="Attunity.SSISODBCSrc"
+              description="ODBC Source"
+              name="contacto_cursos"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">contacto_capacitaciones</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT c.curso_id, c.curso_descripcion, c.curso_estado, c.curso_fecha, c.curso_expositor, c.curso_medio, c.curso_hora
+from contacto_cursos AS c</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines how the component exposes CHAR columns. If False, CHAR columns are exposed as (multi-)byte strings (DT_STR), if True, CHAR columns are exposed as wide strings (DT_WSTR)"
+                  expressionType="Notify"
+                  name="ExposeCharColumnsAsUnicode">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for fetching data."
+                  expressionType="Notify"
+                  name="FetchMethod">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  expressionType="Notify"
+                  name="AccessMode"
+                  typeConverter="AccessMode">1</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CURSOS\contacto_cursos.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MySQL_ferrum.pconnon]"
+                  connectionManagerRefId="Package.ConnectionManagers[MySQL_ferrum.pconnon]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="ODBC Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_id]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_id]"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_id]"
+                      name="curso_id"
+                      precision="18" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_descripcion]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_descripcion]"
+                      length="500"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_descripcion]"
+                      name="curso_descripcion" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_estado]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_estado]"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_estado]"
+                      name="curso_estado" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_fecha]"
+                      dataType="date"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_fecha]"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_fecha]"
+                      name="curso_fecha" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_expositor]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_expositor]"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_expositor]"
+                      name="curso_expositor" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_medio]"
+                      dataType="wstr"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_medio]"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_medio]"
+                      name="curso_medio" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_hora]"
+                      dataType="dbTime"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_hora]"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].Columns[curso_hora]"
+                      name="curso_hora" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_id]"
+                      dataType="i4"
+                      name="curso_id" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_descripcion]"
+                      codePage="1252"
+                      dataType="str"
+                      length="500"
+                      name="curso_descripcion" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      length="25"
+                      name="curso_estado" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_fecha]"
+                      dataType="dbDate"
+                      name="curso_fecha" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_expositor]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="curso_expositor" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_medio]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="curso_medio" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_hora]"
+                      dataType="dbTime"
+                      name="curso_hora" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output]"
+                  isErrorOut="true"
+                  name="ODBC Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_id]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_id]"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_id]"
+                      name="curso_id" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_descripcion]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_descripcion]"
+                      length="500"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_descripcion]"
+                      name="curso_descripcion" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_estado]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_estado]"
+                      length="25"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_estado]"
+                      name="curso_estado" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_fecha]"
+                      dataType="dbDate"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_fecha]"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_fecha]"
+                      name="curso_fecha" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_expositor]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_expositor]"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_expositor]"
+                      name="curso_expositor" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_medio]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_medio]"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_medio]"
+                      name="curso_medio" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_hora]"
+                      dataType="dbTime"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Output].ExternalColumns[curso_hora]"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[curso_hora]"
+                      name="curso_hora" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\contacto_cursos.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CURSOS\contacto_cursos NEW"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="contacto_cursos NEW"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT c.curso_id, c.curso_descripcion, c.curso_estado, c.curso_fecha, c.curso_expositor, c.curso_medio, c.curso_hora
+		from contacto_cursos AS c</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CURSOS\contacto_cursos NEW.Connections[OleDbConnection]"
+                  connectionManagerID="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.DWFE.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_id]"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_id]"
+                      name="curso_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_descripcion]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_descripcion]"
+                      length="500"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_descripcion]"
+                      name="curso_descripcion"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_estado]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_estado]"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_estado]"
+                      name="curso_estado"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_fecha]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_fecha]"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_fecha]"
+                      name="curso_fecha"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_expositor]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_expositor]"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_expositor]"
+                      name="curso_expositor"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_medio]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_medio]"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_medio]"
+                      name="curso_medio"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_hora]"
+                      dataType="dbTime2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_hora]"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_hora]"
+                      name="curso_hora"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_id]"
+                      dataType="i4"
+                      name="curso_id" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_descripcion]"
+                      dataType="wstr"
+                      length="500"
+                      name="curso_descripcion" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_estado]"
+                      dataType="wstr"
+                      length="50"
+                      name="curso_estado" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_fecha]"
+                      dataType="dbDate"
+                      name="curso_fecha" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_expositor]"
+                      dataType="wstr"
+                      length="50"
+                      name="curso_expositor" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_medio]"
+                      dataType="wstr"
+                      length="100"
+                      name="curso_medio" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].ExternalColumns[curso_hora]"
+                      dataType="dbTime2"
+                      name="curso_hora"
+                      scale="7" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_id]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_id]"
+                      name="curso_id" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_descripcion]"
+                      dataType="wstr"
+                      length="500"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_descripcion]"
+                      name="curso_descripcion" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_estado]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_estado]"
+                      name="curso_estado" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_fecha]"
+                      dataType="dbDate"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_fecha]"
+                      name="curso_fecha" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_expositor]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_expositor]"
+                      name="curso_expositor" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_medio]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_medio]"
+                      name="curso_medio" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_hora]"
+                      dataType="dbTime2"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[curso_hora]"
+                      name="curso_hora"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CURSOS\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[contacto_capacitaciones]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CURSOS\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[cc_id]"
+                      cachedDataType="i4"
+                      cachedName="cc_id"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_id]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_id]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[cc_contacto]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="cc_contacto"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_contacto]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_contacto]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[cc_mail]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="cc_mail"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_mail]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_mail]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[cc_profesion]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="cc_profesion"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_profesion]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_profesion]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[cc_pcia]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="cc_pcia"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_pcia]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_pcia]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[cc_fecha]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="cc_fecha"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_fecha]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_fecha]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[cc_curso]"
+                      cachedDataType="i4"
+                      cachedName="cc_curso"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_curso]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_curso]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[cc_referido]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="cc_referido"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_referido]"
+                      lineageId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output].Columns[cc_referido]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_id]"
+                      dataType="i4"
+                      name="cc_id" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_contacto]"
+                      dataType="wstr"
+                      length="100"
+                      name="cc_contacto" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_mail]"
+                      dataType="wstr"
+                      length="100"
+                      name="cc_mail" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_profesion]"
+                      dataType="wstr"
+                      length="100"
+                      name="cc_profesion" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_pcia]"
+                      dataType="wstr"
+                      length="50"
+                      name="cc_pcia" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_fecha]"
+                      dataType="dbTimeStamp"
+                      name="cc_fecha" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_curso]"
+                      dataType="i4"
+                      name="cc_curso" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[cc_referido]"
+                      dataType="wstr"
+                      length="50"
+                      name="cc_referido" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CURSOS\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CURSOS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CURSOS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\CURSOS\OLE DB Destination 1"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[contacto_cursos]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\CURSOS\OLE DB Destination 1.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[curso_id]"
+                      cachedDataType="i4"
+                      cachedName="curso_id"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_id]"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_id]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[curso_descripcion]"
+                      cachedDataType="wstr"
+                      cachedLength="500"
+                      cachedName="curso_descripcion"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_descripcion]"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_descripcion]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[curso_estado]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="curso_estado"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_estado]"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_estado]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[curso_fecha]"
+                      cachedDataType="dbDate"
+                      cachedName="curso_fecha"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_fecha]"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_fecha]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[curso_expositor]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="curso_expositor"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_expositor]"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_expositor]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[curso_medio]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="curso_medio"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_medio]"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_medio]" />
+                    <inputColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[curso_hora]"
+                      cachedDataType="dbTime2"
+                      cachedName="curso_hora"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_hora]"
+                      lineageId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output].Columns[curso_hora]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_id]"
+                      dataType="i4"
+                      name="curso_id" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_descripcion]"
+                      dataType="wstr"
+                      length="500"
+                      name="curso_descripcion" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_estado]"
+                      dataType="wstr"
+                      length="50"
+                      name="curso_estado" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_fecha]"
+                      dataType="dbDate"
+                      name="curso_fecha" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_expositor]"
+                      dataType="wstr"
+                      length="50"
+                      name="curso_expositor" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_medio]"
+                      dataType="wstr"
+                      length="100"
+                      name="curso_medio" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                    <externalMetadataColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[curso_hora]"
+                      dataType="dbTime2"
+                      name="curso_hora"
+                      scale="7" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\CURSOS\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\CURSOS\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\CURSOS\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\CURSOS.Paths[OLE DB Source Output]"
+              endId="Package\CURSOS\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\CURSOS\contacto_capacitaciones NEW.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\CURSOS.Paths[OLE DB Source Output1]"
+              endId="Package\CURSOS\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\CURSOS\contacto_cursos NEW.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DW_MYSQL"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{8a55853a-9c5f-4431-86c9-ac86fb8f9072}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DW_MYSQL"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec DW_MYSQL;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\truncate"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{6AF9E912-015F-4E8E-A613-45F58227FEAE}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="truncate"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
+          SQLTask:SqlStatementSource="truncate table ctacte;&#xA;truncate table contacto_cursos;&#xA;truncate table contacto_capacitaciones;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{2602C7E7-D9FB-4175-A78A-FCECAFF908FB}"
+      DTS:From="Package\truncate"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\CTACTE" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{592D4B1F-0526-4B32-9B82-5A616A05E516}"
+      DTS:From="Package\CURSOS"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\CLEANSING" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{82006ED8-491B-46AE-89A5-7704B2919684}"
+      DTS:From="Package\CTACTE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\CURSOS" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{EB2BE695-160F-475D-A2EA-7B2682CE22EA}"
+      DTS:From="Package\CLEANSING"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\DW_MYSQL" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="134,42"
+          Id="Package\CLEANSING"
+          TopLeft="492,109" />
+        <NodeLayout
+          Size="118,42"
+          Id="Package\CURSOS"
+          TopLeft="283,110" />
+        <NodeLayout
+          Size="135,42"
+          Id="Package\DW_MYSQL"
+          TopLeft="685,114" />
+        <NodeLayout
+          Size="118,42"
+          Id="Package\truncate"
+          TopLeft="95,22" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="401,130.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="91,0"
+              Start="0,0"
+              End="83.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="83.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="626,132.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="59,0"
+              Start="0,0"
+              End="51.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="51.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="117,42"
+          Id="Package\CTACTE"
+          TopLeft="95.5,108.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="212.5,130.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="70.5,0"
+              Start="0,0"
+              End="63,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="63,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="154,64">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44.5"
+              Start="0,0"
+              End="0,37">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\CURSOS">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\CURSOS\OLE DB Destination"
+          TopLeft="520,60" />
+        <NodeLayout
+          Size="180,42"
+          Id="Package\CURSOS\OLE DB Destination 1"
+          TopLeft="484,147" />
+        <NodeLayout
+          Size="200,42"
+          Id="Package\CURSOS\contacto_capacitaciones"
+          TopLeft="124,69" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\CURSOS\contacto_cursos"
+          TopLeft="139,145" />
+        <NodeLayout
+          Size="228,42"
+          Id="Package\CURSOS\contacto_capacitaciones NEW"
+          TopLeft="120,10" />
+        <EdgeLayout
+          Id="Package\CURSOS.Paths[OLE DB Source Output]"
+          TopLeft="348,31">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="172,50"
+              Start="0,0"
+              End="164.5,50">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="82,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="82,0"
+                    Point2="86,0"
+                    Point3="86,4" />
+                  <mssgle:LineSegment
+                    End="86,46" />
+                  <mssgle:CubicBezierSegment
+                    Point1="86,46"
+                    Point2="86,50"
+                    Point3="90,50" />
+                  <mssgle:LineSegment
+                    End="164.5,50" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="188,42"
+          Id="Package\CURSOS\contacto_cursos NEW"
+          TopLeft="126,253" />
+        <EdgeLayout
+          Id="Package\CURSOS.Paths[OLE DB Source Output1]"
+          TopLeft="220,253">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="354,-64"
+              Start="0,0"
+              End="354,-56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-28"
+                    Point2="0,-32"
+                    Point3="4,-32" />
+                  <mssgle:LineSegment
+                    End="350,-32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="350,-32"
+                    Point2="354,-32"
+                    Point3="354,-36" />
+                  <mssgle:LineSegment
+                    End="354,-56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\CURSOS\contacto_cursos">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CURSOS\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CURSOS\contacto_capacitaciones NEW">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CURSOS\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CURSOS\contacto_capacitaciones">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\CURSOS\contacto_cursos NEW">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\CTACTE">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\CTACTE\Flat File Source"
+          TopLeft="207,94" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\CTACTE\OLE DB Destination"
+          TopLeft="476,61" />
+        <EdgeLayout
+          Id="Package\CTACTE.Paths[Flat File Source Output]"
+          TopLeft="358,115">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="118,-33"
+              Start="0,0"
+              End="110.5,-33">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="55,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="55,0"
+                    Point2="59,0"
+                    Point3="59,-4" />
+                  <mssgle:LineSegment
+                    End="59,-29" />
+                  <mssgle:CubicBezierSegment
+                    Point1="59,-29"
+                    Point2="59,-33"
+                    Point3="63,-33" />
+                  <mssgle:LineSegment
+                    End="110.5,-33" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

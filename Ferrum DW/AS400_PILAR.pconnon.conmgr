@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="AS400_PILAR pconnon"
+  DTS:DTSID="{B1C6F9CD-3D2F-4BFF-A3C8-F3E2F85B9D10}"
+  DTS:CreationName="ODBC">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="uid=pconnon;Dsn=AS400_PILAR;">
+      <DTS:Password
+        DTS:Name="pwd"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIZtf3Ci/3kWbmaToeP0MwAAAAAACAAAAAAADZgAAwAAAABAAAADZk9PDQo8Apc7Kyk/KKnxZAAAAAASAAACgAAAAEAAAAHDTb+HAD8JOmaoYkxvB/hZwAAAAEOkbenKrG9BYoc9iiGrZ9GbU4ngUQqLQvJOn20K/GYCrcqR+j90PWXM4LI9tU9eAqRlYqTHo0hvRVdr//96a2EjEmIGhZYD5LCn4wT9bqXhuuiC9QD5HZ5xLk58he0cs2wS7+I10EhZqEhNMFzSEZxQAAACTDk5j8ms1hB8EFNltZTKgHL07nw==</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

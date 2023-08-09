@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="AS400_AVELLANEDA pconnon"
+  DTS:DTSID="{61AA9091-8608-4539-8D2B-DA9799E64AA5}"
+  DTS:CreationName="ODBC">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="uid=pconnon;Dsn=AS400_AVELLANEDA;">
+      <DTS:Password
+        DTS:Name="pwd"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIZtf3Ci/3kWbmaToeP0MwAAAAAACAAAAAAADZgAAwAAAABAAAAAL63GXoFTWXkDzmt1T1A8nAAAAAASAAACgAAAAEAAAABCOi0HGTPjerOnC3Rz3Kld4AAAAgYCNBqswVPeLPBS4kPi9g0r0821u4gq+3DQQA+eVgNpK23X6RCL66JzHJmL0lEoUCWjiEaTcP/CyorolE490EckaOHtcVGXq/ITKuY6Su8hk7pwkIhfDm1naKxQWPMGqRX2vN299DztKCnzWiyg+fLivjULUztO4FAAAACg1zz+5vZwaopgEhvZ2nUudbcYx</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

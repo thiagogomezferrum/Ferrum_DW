@@ -1,0 +1,3104 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/26/2020 1:12:08 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="NTBK-PCCONNON"
+  DTS:CreatorName="NTFERRUM\pconnon"
+  DTS:DTSID="{2D715E7B-CEEE-4A39-B2BC-6D3C73473B0A}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.93"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="saldos contables"
+  DTS:PackageType="5"
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{D08CD3E3-67BD-4084-A693-5AC83D10B46C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SALDOSCONTABLES_ACTUAL]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5D299EA6-C732-4FBF-9A95-7637C4D65064}"
+      DTS:ObjectName="SALDOSCONTABLES_ACTUAL">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil\dw\PRD\APROCESAR\SALDOSCONTABLES_ACTUAL.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EJERCICIO"
+              DTS:DTSID="{97C62DEC-C815-477B-AB29-8797197275EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LEDGER"
+              DTS:DTSID="{1E7FAC6D-E62D-41FA-9C7A-E3E3C67E9C90}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NRO  CUENTA"
+              DTS:DTSID="{CDAEF47E-07D0-4272-9E19-488763005B94}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SOCIEDAD"
+              DTS:DTSID="{1473D5DB-911C-4DCF-A38E-DC9151726C61}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO COSTE"
+              DTS:DTSID="{59A7BF5E-E818-4FB1-B562-AC7A282CE3F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OP  REF "
+              DTS:DTSID="{3F622176-3F10-492D-B76E-A14C347CBC00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MONEDA"
+              DTS:DTSID="{DA53693A-B0BB-4BEC-8C61-060D46E4A54C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEBE HABER"
+              DTS:DTSID="{CBA1BB22-4E0A-46BC-BA19-89AD81A0DC67}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DIV  INTERLOC "
+              DTS:DTSID="{6BBC3185-7766-4239-BB5D-47220C12A7FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  01"
+              DTS:DTSID="{6DA564E9-35CC-4CF2-A9D1-FBD05A7A10B4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  02"
+              DTS:DTSID="{603360AC-4CF8-4C41-84E2-3BE9F80FA2C6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  03"
+              DTS:DTSID="{C214B992-DD06-42F2-887E-4DCB69308466}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  04"
+              DTS:DTSID="{BDC7EA52-50F1-4931-8F41-B566E7951F15}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  05"
+              DTS:DTSID="{7F6D8F85-6AA8-483A-9049-2493E8D5736B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  06"
+              DTS:DTSID="{95288929-D2B4-46B0-BF33-B7B20C45839A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  07"
+              DTS:DTSID="{93D8C16D-B011-4FBF-B5F9-A8EEA2E00884}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  08"
+              DTS:DTSID="{27EC5326-D479-435D-AE1A-4E493A4B7AE4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  09"
+              DTS:DTSID="{287ADD54-9103-4704-B424-5094581A5B1B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  10"
+              DTS:DTSID="{9C4D4AC9-62A6-46C0-AC73-2C7F9786E24A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  11"
+              DTS:DTSID="{BFD94C94-18A1-4551-81BC-26EB2166A190}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  12"
+              DTS:DTSID="{4E2CD37E-D974-48C5-A095-CAF0443B0A9B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  13"
+              DTS:DTSID="{77661225-926B-4AAE-AA87-0D192587800E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  14"
+              DTS:DTSID="{D9152DC5-246E-4978-8DF5-4D7C56A6A448}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  15"
+              DTS:DTSID="{FB8663E4-C1C0-49E3-A3F9-3B96B98EA09E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  16"
+              DTS:DTSID="{5673B06A-46C0-4F42-B666-5BC3DE97A27C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SALDOSCONTABLES_ANTERIOR]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{2dd0eefb-fe5a-43bc-86ee-836ef04c726b}"
+      DTS:ObjectName="SALDOSCONTABLES_ANTERIOR">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil\dw\PRD\APROCESAR\SALDOSCONTABLES_ANTERIOR.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EJERCICIO"
+              DTS:DTSID="{D4249BA1-C583-4048-BEE5-9A07045457D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LEDGER"
+              DTS:DTSID="{F4284F43-4AF8-4CF5-A695-7CF2F39EAED8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NRO  CUENTA"
+              DTS:DTSID="{025BCC1B-D294-4B28-9AF3-7C4B3CF36753}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SOCIEDAD"
+              DTS:DTSID="{E1112245-6EA3-44A3-86C1-299E056D263B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO COSTE"
+              DTS:DTSID="{7172F91C-F2B9-459C-9960-4FF4A48D8E3E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OP  REF "
+              DTS:DTSID="{7C0CE3A4-8723-47A6-A518-2A59239BA600}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MONEDA"
+              DTS:DTSID="{64EDF52E-FB84-456A-BDCE-9A4A56BEED09}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DEBE HABER"
+              DTS:DTSID="{F8F0A3A0-ACF5-4377-B70A-67652C40CCBC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DIV  INTERLOC "
+              DTS:DTSID="{ED0C956F-C432-49B8-812B-E71835931636}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  01"
+              DTS:DTSID="{A8249294-21B8-48E6-9E84-C1AACDE6A50F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  02"
+              DTS:DTSID="{2712823C-5AB8-4EBD-B799-977BDA173A25}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  03"
+              DTS:DTSID="{BA00AF69-4115-4AF9-B263-C04388BB96CD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  04"
+              DTS:DTSID="{22FE9C96-6CD0-4079-AC76-995B5C8859A6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  05"
+              DTS:DTSID="{3F0362A3-B783-46CA-BB6F-800588838955}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  06"
+              DTS:DTSID="{BFC68985-9DBE-424C-ABE7-1F4CF7AE242B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  07"
+              DTS:DTSID="{5FD57375-D44A-4FDF-AD0F-1DA8D8E84550}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  08"
+              DTS:DTSID="{088F0FD8-B2EA-4DB3-8A00-630285596195}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  09"
+              DTS:DTSID="{D452B695-DA4B-4A15-A705-06C5479FA711}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  10"
+              DTS:DTSID="{AFD3C3A9-7F49-4623-ADB2-083EE0C69F1A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  11"
+              DTS:DTSID="{187172D3-1D61-446B-BE54-A88AADC79B9F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  12"
+              DTS:DTSID="{63F7BB3B-61B0-41A9-B356-C3C18EB5D82F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  13"
+              DTS:DTSID="{48531623-3AB2-43A6-9152-D4ABD6A0253D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  14"
+              DTS:DTSID="{ECDE7427-CE74-430A-8455-F8BAB7343EE2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  15"
+              DTS:DTSID="{08849435-E971-4772-8B86-3DC7BABE7656}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TOTAL MOV  16"
+              DTS:DTSID="{3B9FC3BF-A7CD-4007-8A5F-2863881154B2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\COPIA A DWFE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{7325BABA-90A9-4D82-A76F-090CC7022572}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="COPIA A DWFE"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec  sta.dbo.cleansing_sta;&#xA;exec DW_SALDOS_CONTABLES;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SALDOS CONTABLES ACTUAL"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{8F98C672-1601-48CB-98E8-3F3A7FA33577}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SALDOS CONTABLES ACTUAL"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SALDOSCONTABLES_ACTUAL]"
+                  connectionManagerRefId="Package.ConnectionManagers[SALDOSCONTABLES_ACTUAL]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[EJERCICIO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EJERCICIO]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[EJERCICIO]"
+                      name="EJERCICIO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[LEDGER]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LEDGER]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[LEDGER]"
+                      name="LEDGER"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[NRO  CUENTA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NRO  CUENTA]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[NRO  CUENTA]"
+                      name="NRO  CUENTA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD]"
+                      name="SOCIEDAD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO COSTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO COSTE]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO COSTE]"
+                      name="CENTRO COSTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[OP  REF ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[OP  REF ]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[OP  REF ]"
+                      name="OP  REF "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[MONEDA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MONEDA]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[MONEDA]"
+                      name="MONEDA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[DEBE HABER]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEBE HABER]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[DEBE HABER]"
+                      name="DEBE HABER"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[DIV  INTERLOC ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DIV  INTERLOC ]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[DIV  INTERLOC ]"
+                      name="DIV  INTERLOC "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  01]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  01]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  01]"
+                      name="TOTAL MOV  01"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  02]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  02]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  02]"
+                      name="TOTAL MOV  02"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  03]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  03]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  03]"
+                      name="TOTAL MOV  03"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  04]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  04]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  04]"
+                      name="TOTAL MOV  04"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  05]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  05]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  05]"
+                      name="TOTAL MOV  05"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  06]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  06]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  06]"
+                      name="TOTAL MOV  06"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  07]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  07]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  07]"
+                      name="TOTAL MOV  07"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  08]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  08]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  08]"
+                      name="TOTAL MOV  08"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  09]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  09]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  09]"
+                      name="TOTAL MOV  09"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  10]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  10]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  10]"
+                      name="TOTAL MOV  10"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  11]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  11]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  11]"
+                      name="TOTAL MOV  11"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  12]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  12]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  12]"
+                      name="TOTAL MOV  12"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  13]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  13]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  13]"
+                      name="TOTAL MOV  13"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  14]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  14]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  14]"
+                      name="TOTAL MOV  14"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  15]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  15]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  15]"
+                      name="TOTAL MOV  15"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  16]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  16]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  16]"
+                      name="TOTAL MOV  16"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EJERCICIO]"
+                      dataType="wstr"
+                      length="50"
+                      name="EJERCICIO" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LEDGER]"
+                      dataType="wstr"
+                      length="50"
+                      name="LEDGER" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NRO  CUENTA]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO  CUENTA" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="SOCIEDAD" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO COSTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO COSTE" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[OP  REF ]"
+                      dataType="wstr"
+                      length="50"
+                      name="OP  REF " />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MONEDA]"
+                      dataType="wstr"
+                      length="50"
+                      name="MONEDA" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEBE HABER]"
+                      dataType="wstr"
+                      length="50"
+                      name="DEBE HABER" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DIV  INTERLOC ]"
+                      dataType="wstr"
+                      length="50"
+                      name="DIV  INTERLOC " />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  01]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  01" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  02]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  02" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  03]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  03" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  04]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  04" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  05]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  05" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  06]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  06" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  07]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  07" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  08]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  08" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  09]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  09" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  10]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  10" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  11]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  11" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  12]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  12" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  13]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  13" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  14]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  14" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  15]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  15" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  16]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  16" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[saldos_contables]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EJERCICIO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EJERCICIO"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EJERCICIO]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[EJERCICIO]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LEDGER]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="LEDGER"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LEDGER]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[LEDGER]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SOCIEDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="SOCIEDAD"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MONEDA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MONEDA"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[MONEDA]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NRO  CUENTA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NRO  CUENTA"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_CUENTA]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[NRO  CUENTA]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO COSTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CENTRO COSTE"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_COSTE]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO COSTE]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[OP  REF ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="OP  REF "
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OP_REF]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[OP  REF ]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEBE HABER]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DEBE HABER"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEBE_HABER]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[DEBE HABER]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIV  INTERLOC ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DIV  INTERLOC "
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIV_INTERLOC]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[DIV  INTERLOC ]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  01]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  01"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_01]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  01]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  02]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  02"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_02]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  02]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  03]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  03"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_03]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  03]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  04]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  04"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_04]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  04]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  05]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  05"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_05]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  05]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  06]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  06"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_06]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  06]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  07]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  07"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_07]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  07]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  08]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  08"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_08]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  08]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  09]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  09"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_09]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  09]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  10]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  10"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_10]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  10]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  11]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  11"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_11]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  11]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  12]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  12"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_12]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  12]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  13]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  13"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_13]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  13]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  14]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  14"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_14]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  14]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  15]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  15"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_15]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  15]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  16]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  16"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_16]"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  16]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EJERCICIO]"
+                      dataType="wstr"
+                      length="50"
+                      name="EJERCICIO" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LEDGER]"
+                      dataType="wstr"
+                      length="50"
+                      name="LEDGER" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_CUENTA]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO_CUENTA" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="SOCIEDAD" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_COSTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO_COSTE" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OP_REF]"
+                      dataType="wstr"
+                      length="50"
+                      name="OP_REF" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
+                      dataType="wstr"
+                      length="50"
+                      name="MONEDA" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEBE_HABER]"
+                      dataType="wstr"
+                      length="50"
+                      name="DEBE_HABER" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIV_INTERLOC]"
+                      dataType="wstr"
+                      length="50"
+                      name="DIV_INTERLOC" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_01]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_01" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_02]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_02" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_03]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_03" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_04]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_04" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_05]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_05" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_06]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_06" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_07]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_07" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_08]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_08" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_09]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_09" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_10]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_10" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_11]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_11" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_12]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_12" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_13]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_13" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_14]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_14" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_15]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_15" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_16]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_16" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\SALDOS CONTABLES ACTUAL.Paths[Flat File Source Output]"
+              endId="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\SALDOS CONTABLES ACTUAL\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SALDOS CONTABLES ANTERiOR"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{b675470e-194a-49fa-9b8f-acd1204b25c6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SALDOS CONTABLES ANTERiOR"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SALDOSCONTABLES_ANTERIOR]"
+                  connectionManagerRefId="Package.ConnectionManagers[SALDOSCONTABLES_ANTERIOR]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[EJERCICIO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EJERCICIO]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[EJERCICIO]"
+                      name="EJERCICIO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[LEDGER]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LEDGER]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[LEDGER]"
+                      name="LEDGER"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[NRO  CUENTA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NRO  CUENTA]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[NRO  CUENTA]"
+                      name="NRO  CUENTA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD]"
+                      name="SOCIEDAD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO COSTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO COSTE]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO COSTE]"
+                      name="CENTRO COSTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[OP  REF ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[OP  REF ]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[OP  REF ]"
+                      name="OP  REF "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[MONEDA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MONEDA]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[MONEDA]"
+                      name="MONEDA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[DEBE HABER]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEBE HABER]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[DEBE HABER]"
+                      name="DEBE HABER"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[DIV  INTERLOC ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DIV  INTERLOC ]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[DIV  INTERLOC ]"
+                      name="DIV  INTERLOC "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  01]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  01]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  01]"
+                      name="TOTAL MOV  01"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  02]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  02]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  02]"
+                      name="TOTAL MOV  02"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  03]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  03]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  03]"
+                      name="TOTAL MOV  03"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  04]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  04]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  04]"
+                      name="TOTAL MOV  04"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  05]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  05]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  05]"
+                      name="TOTAL MOV  05"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  06]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  06]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  06]"
+                      name="TOTAL MOV  06"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  07]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  07]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  07]"
+                      name="TOTAL MOV  07"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  08]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  08]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  08]"
+                      name="TOTAL MOV  08"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  09]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  09]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  09]"
+                      name="TOTAL MOV  09"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  10]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  10]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  10]"
+                      name="TOTAL MOV  10"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  11]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  11]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  11]"
+                      name="TOTAL MOV  11"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  12]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  12]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  12]"
+                      name="TOTAL MOV  12"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  13]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  13]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  13]"
+                      name="TOTAL MOV  13"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  14]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  14]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  14]"
+                      name="TOTAL MOV  14"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  15]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  15]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  15]"
+                      name="TOTAL MOV  15"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  16]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  16]"
+                      length="50"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  16]"
+                      name="TOTAL MOV  16"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EJERCICIO]"
+                      dataType="wstr"
+                      length="50"
+                      name="EJERCICIO" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LEDGER]"
+                      dataType="wstr"
+                      length="50"
+                      name="LEDGER" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NRO  CUENTA]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO  CUENTA" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="SOCIEDAD" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO COSTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO COSTE" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[OP  REF ]"
+                      dataType="wstr"
+                      length="50"
+                      name="OP  REF " />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MONEDA]"
+                      dataType="wstr"
+                      length="50"
+                      name="MONEDA" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEBE HABER]"
+                      dataType="wstr"
+                      length="50"
+                      name="DEBE HABER" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DIV  INTERLOC ]"
+                      dataType="wstr"
+                      length="50"
+                      name="DIV  INTERLOC " />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  01]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  01" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  02]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  02" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  03]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  03" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  04]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  04" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  05]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  05" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  06]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  06" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  07]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  07" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  08]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  08" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  09]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  09" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  10]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  10" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  11]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  11" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  12]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  12" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  13]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  13" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  14]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  14" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  15]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  15" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TOTAL MOV  16]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL MOV  16" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[saldos_contables]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EJERCICIO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EJERCICIO"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EJERCICIO]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[EJERCICIO]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LEDGER]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="LEDGER"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LEDGER]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[LEDGER]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SOCIEDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="SOCIEDAD"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MONEDA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MONEDA"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[MONEDA]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NRO  CUENTA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NRO  CUENTA"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_CUENTA]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[NRO  CUENTA]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO COSTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CENTRO COSTE"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_COSTE]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO COSTE]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[OP  REF ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="OP  REF "
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OP_REF]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[OP  REF ]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEBE HABER]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DEBE HABER"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEBE_HABER]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[DEBE HABER]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DIV  INTERLOC ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DIV  INTERLOC "
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIV_INTERLOC]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[DIV  INTERLOC ]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  01]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  01"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_01]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  01]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  02]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  02"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_02]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  02]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  03]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  03"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_03]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  03]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  04]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  04"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_04]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  04]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  05]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  05"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_05]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  05]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  06]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  06"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_06]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  06]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  07]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  07"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_07]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  07]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  08]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  08"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_08]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  08]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  09]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  09"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_09]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  09]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  10]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  10"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_10]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  10]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  11]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  11"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_11]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  11]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  12]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  12"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_12]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  12]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  13]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  13"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_13]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  13]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  14]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  14"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_14]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  14]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  15]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  15"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_15]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  15]" />
+                    <inputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TOTAL MOV  16]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TOTAL MOV  16"
+                      externalMetadataColumnId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_16]"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output].Columns[TOTAL MOV  16]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EJERCICIO]"
+                      dataType="wstr"
+                      length="50"
+                      name="EJERCICIO" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LEDGER]"
+                      dataType="wstr"
+                      length="50"
+                      name="LEDGER" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_CUENTA]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO_CUENTA" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="SOCIEDAD" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_COSTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO_COSTE" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OP_REF]"
+                      dataType="wstr"
+                      length="50"
+                      name="OP_REF" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
+                      dataType="wstr"
+                      length="50"
+                      name="MONEDA" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEBE_HABER]"
+                      dataType="wstr"
+                      length="50"
+                      name="DEBE_HABER" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DIV_INTERLOC]"
+                      dataType="wstr"
+                      length="50"
+                      name="DIV_INTERLOC" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_01]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_01" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_02]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_02" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_03]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_03" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_04]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_04" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_05]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_05" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_06]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_06" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_07]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_07" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_08]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_08" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_09]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_09" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_10]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_10" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_11]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_11" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_12]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_12" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_13]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_13" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_14]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_14" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_15]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_15" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TOTAL_MOV_16]"
+                      dataType="wstr"
+                      length="50"
+                      name="TOTAL_MOV_16" />
+                    <externalMetadataColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\SALDOS CONTABLES ANTERiOR.Paths[Flat File Source Output]"
+              endId="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\SALDOS CONTABLES ANTERiOR\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\truncate"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{B7692950-031E-4C7B-B050-32FB0B69C405}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="truncate"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
+          SQLTask:SqlStatementSource="truncate table saldos_contables;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{BAF149BA-3FD7-4937-B13C-54A1EF9F3908}"
+      DTS:From="Package\SALDOS CONTABLES ACTUAL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\SALDOS CONTABLES ANTERiOR" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{0275A167-A91B-4BB0-8AB0-025C31AB61CE}"
+      DTS:From="Package\truncate"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\SALDOS CONTABLES ACTUAL" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{E51C8FFA-6117-409D-8DF3-6F0354C85560}"
+      DTS:From="Package\SALDOS CONTABLES ANTERiOR"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\COPIA A DWFE" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="159,42"
+          Id="Package\COPIA A DWFE"
+          TopLeft="673,85" />
+        <NodeLayout
+          Size="239,42"
+          Id="Package\SALDOS CONTABLES ACTUAL"
+          TopLeft="269,50" />
+        <NodeLayout
+          Size="252,42"
+          Id="Package\SALDOS CONTABLES ANTERiOR"
+          TopLeft="269,152" />
+        <NodeLayout
+          Size="119,42"
+          Id="Package\truncate"
+          TopLeft="42,37" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="391.75,92">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="161,58">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="108,13"
+              Start="0,0"
+              End="100.5,13">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="50,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="50,0"
+                    Point2="54,0"
+                    Point3="54,4" />
+                  <mssgle:LineSegment
+                    End="54,9" />
+                  <mssgle:CubicBezierSegment
+                    Point1="54,9"
+                    Point2="54,13"
+                    Point3="58,13" />
+                  <mssgle:LineSegment
+                    End="100.5,13" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="435.666666666667,152">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="322.333333333333,-25"
+              Start="0,0"
+              End="322.333333333333,-17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-6.09463722397476" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-6.09463722397476"
+                    Point2="0,-10.0946372239748"
+                    Point3="4,-10.0946372239748" />
+                  <mssgle:LineSegment
+                    End="318.333333333333,-10.0946372239748" />
+                  <mssgle:CubicBezierSegment
+                    Point1="318.333333333333,-10.0946372239748"
+                    Point2="322.333333333333,-10.0946372239748"
+                    Point3="322.333333333333,-14.0946372239748" />
+                  <mssgle:LineSegment
+                    End="322.333333333333,-17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\SALDOS CONTABLES ACTUAL">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination"
+          TopLeft="754,111" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\SALDOS CONTABLES ACTUAL\Flat File Source"
+          TopLeft="180,20" />
+        <EdgeLayout
+          Id="Package\SALDOS CONTABLES ACTUAL.Paths[Flat File Source Output]"
+          TopLeft="258,62">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="584.5,49"
+              Start="0,0"
+              End="584.5,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.5"
+                    Point2="0,24.5"
+                    Point3="4,24.5" />
+                  <mssgle:LineSegment
+                    End="580.5,24.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="580.5,24.5"
+                    Point2="584.5,24.5"
+                    Point3="584.5,28.5" />
+                  <mssgle:LineSegment
+                    End="584.5,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\SALDOS CONTABLES ACTUAL\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\SALDOS CONTABLES ANTERiOR">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\SALDOS CONTABLES ANTERiOR\OLE DB Destination"
+          TopLeft="409,115" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\SALDOS CONTABLES ANTERiOR\Flat File Source"
+          TopLeft="180,20" />
+        <EdgeLayout
+          Id="Package\SALDOS CONTABLES ANTERiOR.Paths[Flat File Source Output]"
+          TopLeft="258,62">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="239.5,53"
+              Start="0,0"
+              End="239.5,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.5"
+                    Point2="0,26.5"
+                    Point3="4,26.5" />
+                  <mssgle:LineSegment
+                    End="235.5,26.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="235.5,26.5"
+                    Point2="239.5,26.5"
+                    Point3="239.5,30.5" />
+                  <mssgle:LineSegment
+                    End="239.5,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
