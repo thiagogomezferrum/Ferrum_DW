@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="AS400_PILAR pconnon"
+  DTS:DTSID="{B1C6F9CD-3D2F-4BFF-A3C8-F3E2F85B9D10}"
+  DTS:CreationName="ODBC">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="uid=pconnon;Dsn=AS400_PILAR;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

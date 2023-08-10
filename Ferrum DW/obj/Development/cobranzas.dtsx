@@ -1,0 +1,2211 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/30/2020 1:16:33 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="NTBK-PCCONNON"
+  DTS:CreatorName="NTFERRUM\pconnon"
+  DTS:DTSID="{41BD6C15-C44F-4D9D-B4B4-88D557F13A66}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5270.0"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="cobranzas"
+  DTS:PackageType="5"
+  DTS:VersionBuild="24"
+  DTS:VersionGUID="{168F3C8B-2252-48A2-BEDA-1731C95CEA14}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[detalle]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{ACA46E9E-A97F-4E29-AE67-D0D8D4D9EBB5}"
+      DTS:ObjectName="detalle">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil\dw\PRD\APROCESAR\Cobranzas_realizadas_Detalles.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA DE DOCUMENTO"
+              DTS:DTSID="{9234A1B2-B5A3-4B93-BD9D-4E16863DA097}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RECIBO"
+              DTS:DTSID="{44A62D12-B39E-433B-A3D3-1DCD7AD434E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CLIENTE"
+              DTS:DTSID="{B7AB0CB6-986D-4356-92FA-3143CE9FC44F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CUENTA CONTABLE"
+              DTS:DTSID="{40C2484F-FDA1-4A43-841C-337A8108E33D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MONTO"
+              DTS:DTSID="{F3D3E3C4-1DBE-4226-8F5C-1771876F5386}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MEDIO DE PAGO"
+              DTS:DTSID="{530E92CD-82C7-4769-B8DF-4C5C05A67E47}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPO"
+              DTS:DTSID="{B54C0241-82DB-4C23-A5A6-0AD5BD304DAA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NUMERO DE CHEQUE"
+              DTS:DTSID="{2110AC6D-7E19-4623-AD36-5EBA6B128647}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VENCIMIENTO"
+              DTS:DTSID="{1CE4E890-C5FF-4DC2-ACFC-CC0B0F2234A8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="500"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BANCO "
+              DTS:DTSID="{32651B3C-52BD-49DC-B377-8E256567A2E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MONEDA"
+              DTS:DTSID="{495BE618-17C6-408A-8A4D-94E9E8666287}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NUMERO_DE_DOC"
+              DTS:DTSID="{A604E4ED-DC6C-4FEB-B097-E32EF5EC3791}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EJERCICIO"
+              DTS:DTSID="{965041FF-AB5E-47C2-BD9A-246E9823FA7E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA CONTABILIZACION"
+              DTS:DTSID="{1157284C-3506-44B9-AD83-A6F73B53D05A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA DE REGISTRO"
+              DTS:DTSID="{1D3A3E14-8589-4A68-B20D-6956E3F1826D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SOCIEDAD"
+              DTS:DTSID="{6A1F8763-9F63-48C0-A489-F99C1D6E8E02}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[recibo]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{8890E709-ABB8-4A68-878B-8FF1FECDFF47}"
+      DTS:ObjectName="recibo">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil\dw\PRD\APROCESAR\Cobranzas_realizadas_Recibos.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA DEL RECIBO"
+              DTS:DTSID="{31A28432-CD80-420E-BF7F-932A1D4D3C28}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RECIBO"
+              DTS:DTSID="{8948D28A-B652-4BF5-B9C7-154C45AF37ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CLIENTE"
+              DTS:DTSID="{F5A0F6B7-95C3-426A-8667-33E4C148609B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CLASE DE DOCUMENTO"
+              DTS:DTSID="{C1785EC7-A5A7-49EC-8DC3-D7A02CBF69AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IMPORTE CANCELADO"
+              DTS:DTSID="{01EEF117-4A97-4E32-BD23-6EECE0F9DFFA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="REFERENCIA"
+              DTS:DTSID="{7096B3C1-A629-485A-8179-581489D7C5AF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA DE DOCUMENTO"
+              DTS:DTSID="{0DC06F07-D930-46CA-A040-D96D3A410AD3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPO DE CANCELACION"
+              DTS:DTSID="{EBD58211-F208-43D1-87C8-AAED9A174183}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO DE BENEFICIO "
+              DTS:DTSID="{4EB90536-24C5-4625-A32A-86B8DD375CD3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IMPORTE"
+              DTS:DTSID="{CFF3D96D-B734-4647-BE02-E03B4B86E22F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_CONTABILIZACION"
+              DTS:DTSID="{FF5C7F69-9EBD-4403-A825-9616236B5291}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_DE_REGISTRO"
+              DTS:DTSID="{D28E47A8-03E5-45C1-B1B8-5F8C6503C6DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DOCUMENTO_ANULACION"
+              DTS:DTSID="{DB8F702D-FD7D-40F9-AF11-5D0B09E5E7E2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EJERCICIO_ANULACION"
+              DTS:DTSID="{6F7AADBC-2D53-47FF-BDFD-D794F3B55214}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SOCIEDAD"
+              DTS:DTSID="{752C99E2-6461-43AB-8CE2-2A46B540112F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\COPIA A DWFE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{08A2C399-4BA6-43C1-B34B-5D72ED74A386}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="COPIA A DWFE"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec  sta.dbo.cleansing_sta;&#xA;exec DW_COBRANZAS;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\COPIA A DWPG"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{ad68568d-7d9e-4b96-9c0a-48088274f9c5}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="COPIA A DWPG"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{0670813F-7C2F-42BD-9E80-AD816BF595ED}"
+          SQLTask:SqlStatementSource="exec DW_COBRANZAS;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\recibos y detalle"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{8E2F7174-2F55-4912-A800-62D207394333}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="recibos y detalle">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\recibos y detalle\detalle"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="detalle"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\recibos y detalle\detalle.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[detalle]"
+                  connectionManagerRefId="Package.ConnectionManagers[detalle]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[RECIBO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[RECIBO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[RECIBO]"
+                      name="RECIBO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[FECHA DE DOCUMENTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[FECHA DE DOCUMENTO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[FECHA DE DOCUMENTO]"
+                      name="FECHA DE DOCUMENTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[CUENTA CONTABLE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[CUENTA CONTABLE]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[CUENTA CONTABLE]"
+                      name="CUENTA CONTABLE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[MONTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[MONTO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[MONTO]"
+                      name="MONTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[MEDIO DE PAGO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[MEDIO DE PAGO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[MEDIO DE PAGO]"
+                      name="MEDIO DE PAGO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[NUMERO DE CHEQUE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[NUMERO DE CHEQUE]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[NUMERO DE CHEQUE]"
+                      name="NUMERO DE CHEQUE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[VENCIMIENTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[VENCIMIENTO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[VENCIMIENTO]"
+                      name="VENCIMIENTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[CLIENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[CLIENTE]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[CLIENTE]"
+                      name="CLIENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[TIPO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[TIPO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[TIPO]"
+                      name="TIPO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[BANCO ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[BANCO ]"
+                      length="500"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[BANCO ]"
+                      name="BANCO "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[MONEDA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[MONEDA]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[MONEDA]"
+                      name="MONEDA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[NUMERO_DE_DOC]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[NUMERO_DE_DOC]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[NUMERO_DE_DOC]"
+                      name="NUMERO_DE_DOC"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[EJERCICIO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[EJERCICIO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[EJERCICIO]"
+                      name="EJERCICIO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[FECHA CONTABILIZACION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[FECHA CONTABILIZACION]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[FECHA CONTABILIZACION]"
+                      name="FECHA CONTABILIZACION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[FECHA DE REGISTRO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[FECHA DE REGISTRO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[FECHA DE REGISTRO]"
+                      name="FECHA DE REGISTRO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[SOCIEDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD]"
+                      length="10"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[SOCIEDAD]"
+                      name="SOCIEDAD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[RECIBO]"
+                      dataType="wstr"
+                      length="50"
+                      name="RECIBO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[FECHA DE DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA DE DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[CUENTA CONTABLE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CUENTA CONTABLE" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[MONTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="MONTO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[MEDIO DE PAGO]"
+                      dataType="wstr"
+                      length="50"
+                      name="MEDIO DE PAGO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[NUMERO DE CHEQUE]"
+                      dataType="wstr"
+                      length="50"
+                      name="NUMERO DE CHEQUE" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[VENCIMIENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="VENCIMIENTO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[CLIENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CLIENTE" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[TIPO]"
+                      dataType="wstr"
+                      length="50"
+                      name="TIPO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[BANCO ]"
+                      dataType="wstr"
+                      length="500"
+                      name="BANCO " />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[MONEDA]"
+                      dataType="wstr"
+                      length="50"
+                      name="MONEDA" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[NUMERO_DE_DOC]"
+                      dataType="wstr"
+                      length="50"
+                      name="NUMERO_DE_DOC" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[EJERCICIO]"
+                      dataType="wstr"
+                      length="50"
+                      name="EJERCICIO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[FECHA CONTABILIZACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA CONTABILIZACION" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[FECHA DE REGISTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA DE REGISTRO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD]"
+                      dataType="wstr"
+                      length="10"
+                      name="SOCIEDAD" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\recibos y detalle\detalle.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\recibos y detalle\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[cobranzas_realizadas_recibos]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\recibos y detalle\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RECIBO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="RECIBO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RECIBO]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[RECIBO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA DE DOCUMENTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA DE DOCUMENTO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[FECHA DE DOCUMENTO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA DEL RECIBO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA DEL RECIBO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DEL_RECIBO]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[FECHA DEL RECIBO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CLASE DE DOCUMENTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CLASE DE DOCUMENTO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLASE_DE_DOCUMENTO]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[CLASE DE DOCUMENTO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IMPORTE CANCELADO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IMPORTE CANCELADO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IMPORTE_CANCELADO]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[IMPORTE CANCELADO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[REFERENCIA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="REFERENCIA"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REFERENCIA]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[REFERENCIA]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO DE CANCELACION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TIPO DE CANCELACION"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_DE_CANCELACION]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[TIPO DE CANCELACION]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO DE BENEFICIO ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CENTRO DE BENEFICIO "
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_DE_BENEFICIO]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[CENTRO DE BENEFICIO ]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CLIENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CLIENTE"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLIENTE]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[CLIENTE]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IMPORTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IMPORTE"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IMPORTE]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[IMPORTE]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_CONTABILIZACION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA_CONTABILIZACION"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CONTABILIZACION]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[FECHA_CONTABILIZACION]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_DE_REGISTRO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA_DE_REGISTRO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_REGISTRO]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[FECHA_DE_REGISTRO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DOCUMENTO_ANULACION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DOCUMENTO_ANULACION"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DOCUMENTO_ANULACION]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[DOCUMENTO_ANULACION]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EJERCICIO_ANULACION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EJERCICIO_ANULACION"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EJERCICIO_ANULACION]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[EJERCICIO_ANULACION]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SOCIEDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="SOCIEDAD"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[SOCIEDAD]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DE_DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RECIBO]"
+                      dataType="wstr"
+                      length="50"
+                      name="RECIBO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DEL_RECIBO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DEL_RECIBO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLASE_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CLASE_DE_DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IMPORTE_CANCELADO]"
+                      dataType="wstr"
+                      length="50"
+                      name="IMPORTE_CANCELADO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REFERENCIA]"
+                      dataType="wstr"
+                      length="50"
+                      name="REFERENCIA" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_DE_CANCELACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="TIPO_DE_CANCELACION" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_DE_BENEFICIO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO_DE_BENEFICIO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLIENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CLIENTE" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IMPORTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="IMPORTE" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CONTABILIZACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_CONTABILIZACION" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_REGISTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DE_REGISTRO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DOCUMENTO_ANULACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="DOCUMENTO_ANULACION" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EJERCICIO_ANULACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="EJERCICIO_ANULACION" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
+                      dataType="wstr"
+                      length="10"
+                      name="SOCIEDAD" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\recibos y detalle\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\recibos y detalle\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\recibos y detalle\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\recibos y detalle\OLE DB Destination 1"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 1"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[cobranzas_realizadas_detalles]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\recibos y detalle\OLE DB Destination 1.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[RECIBO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="RECIBO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[RECIBO]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[RECIBO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FECHA DE DOCUMENTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA DE DOCUMENTO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[FECHA DE DOCUMENTO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CUENTA CONTABLE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CUENTA CONTABLE"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CUENTA_CONTABLE]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[CUENTA CONTABLE]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MONTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MONTO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MONTO]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[MONTO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MEDIO DE PAGO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MEDIO DE PAGO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MEDIO_DE_PAGO]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[MEDIO DE PAGO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[NUMERO DE CHEQUE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NUMERO DE CHEQUE"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NUMERO_DE_CHEQUE]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[NUMERO DE CHEQUE]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[VENCIMIENTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="VENCIMIENTO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[VENCIMIENTO]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[VENCIMIENTO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BANCO ]"
+                      cachedDataType="wstr"
+                      cachedLength="500"
+                      cachedName="BANCO "
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BANCO]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[BANCO ]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CLIENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CLIENTE"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CLIENTE]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[CLIENTE]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TIPO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TIPO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TIPO]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[TIPO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MONEDA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MONEDA"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[MONEDA]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[NUMERO_DE_DOC]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NUMERO_DE_DOC"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NUMERO_DE_DOC]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[NUMERO_DE_DOC]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[EJERCICIO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EJERCICIO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EJERCICIO]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[EJERCICIO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FECHA CONTABILIZACION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA CONTABILIZACION"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CONTABILIZACION]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[FECHA CONTABILIZACION]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FECHA DE REGISTRO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA DE REGISTRO"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_REGISTRO]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[FECHA DE REGISTRO]" />
+                    <inputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[SOCIEDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="10"
+                      cachedName="SOCIEDAD"
+                      externalMetadataColumnId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
+                      lineageId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output].Columns[SOCIEDAD]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[RECIBO]"
+                      dataType="wstr"
+                      length="50"
+                      name="RECIBO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DE_DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CUENTA_CONTABLE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CUENTA_CONTABLE" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MONTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="MONTO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MEDIO_DE_PAGO]"
+                      dataType="wstr"
+                      length="50"
+                      name="MEDIO_DE_PAGO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NUMERO_DE_CHEQUE]"
+                      dataType="wstr"
+                      length="50"
+                      name="NUMERO_DE_CHEQUE" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[VENCIMIENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="VENCIMIENTO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BANCO]"
+                      dataType="wstr"
+                      length="100"
+                      name="BANCO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CLIENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CLIENTE" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TIPO]"
+                      dataType="wstr"
+                      length="50"
+                      name="TIPO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
+                      dataType="wstr"
+                      length="50"
+                      name="MONEDA" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NUMERO_DE_DOC]"
+                      dataType="wstr"
+                      length="50"
+                      name="NUMERO_DE_DOC" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EJERCICIO]"
+                      dataType="wstr"
+                      length="50"
+                      name="EJERCICIO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CONTABILIZACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_CONTABILIZACION" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_REGISTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DE_REGISTRO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
+                      dataType="wstr"
+                      length="10"
+                      name="SOCIEDAD" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\recibos y detalle\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\recibos y detalle\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\recibos y detalle\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\recibos y detalle\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\recibos y detalle\recibos"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="recibos"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\recibos y detalle\recibos.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[recibo]"
+                  connectionManagerRefId="Package.ConnectionManagers[recibo]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[FECHA DE DOCUMENTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[FECHA DE DOCUMENTO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[FECHA DE DOCUMENTO]"
+                      name="FECHA DE DOCUMENTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[RECIBO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[RECIBO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[RECIBO]"
+                      name="RECIBO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[FECHA DEL RECIBO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[FECHA DEL RECIBO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[FECHA DEL RECIBO]"
+                      name="FECHA DEL RECIBO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[CLASE DE DOCUMENTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[CLASE DE DOCUMENTO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[CLASE DE DOCUMENTO]"
+                      name="CLASE DE DOCUMENTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[IMPORTE CANCELADO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[IMPORTE CANCELADO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[IMPORTE CANCELADO]"
+                      name="IMPORTE CANCELADO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[REFERENCIA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[REFERENCIA]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[REFERENCIA]"
+                      name="REFERENCIA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[TIPO DE CANCELACION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[TIPO DE CANCELACION]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[TIPO DE CANCELACION]"
+                      name="TIPO DE CANCELACION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[CLIENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[CLIENTE]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[CLIENTE]"
+                      name="CLIENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[CENTRO DE BENEFICIO ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[CENTRO DE BENEFICIO ]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[CENTRO DE BENEFICIO ]"
+                      name="CENTRO DE BENEFICIO "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[IMPORTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[IMPORTE]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[IMPORTE]"
+                      name="IMPORTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[FECHA_CONTABILIZACION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[FECHA_CONTABILIZACION]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[FECHA_CONTABILIZACION]"
+                      name="FECHA_CONTABILIZACION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[FECHA_DE_REGISTRO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[FECHA_DE_REGISTRO]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[FECHA_DE_REGISTRO]"
+                      name="FECHA_DE_REGISTRO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[DOCUMENTO_ANULACION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[DOCUMENTO_ANULACION]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[DOCUMENTO_ANULACION]"
+                      name="DOCUMENTO_ANULACION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[EJERCICIO_ANULACION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[EJERCICIO_ANULACION]"
+                      length="50"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[EJERCICIO_ANULACION]"
+                      name="EJERCICIO_ANULACION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[SOCIEDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD]"
+                      length="10"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].Columns[SOCIEDAD]"
+                      name="SOCIEDAD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[FECHA DE DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA DE DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[RECIBO]"
+                      dataType="wstr"
+                      length="50"
+                      name="RECIBO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[FECHA DEL RECIBO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA DEL RECIBO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[CLASE DE DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CLASE DE DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[IMPORTE CANCELADO]"
+                      dataType="wstr"
+                      length="50"
+                      name="IMPORTE CANCELADO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[REFERENCIA]"
+                      dataType="wstr"
+                      length="50"
+                      name="REFERENCIA" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[TIPO DE CANCELACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="TIPO DE CANCELACION" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[CLIENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CLIENTE" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[CENTRO DE BENEFICIO ]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO DE BENEFICIO " />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[IMPORTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="IMPORTE" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[FECHA_CONTABILIZACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_CONTABILIZACION" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[FECHA_DE_REGISTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DE_REGISTRO" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[DOCUMENTO_ANULACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="DOCUMENTO_ANULACION" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[EJERCICIO_ANULACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="EJERCICIO_ANULACION" />
+                    <externalMetadataColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD]"
+                      dataType="wstr"
+                      length="10"
+                      name="SOCIEDAD" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\recibos y detalle\recibos.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\recibos y detalle\recibos.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\recibos y detalle.Paths[Flat File Source Output]"
+              endId="Package\recibos y detalle\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\recibos y detalle\recibos.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\recibos y detalle.Paths[Flat File Source Output1]"
+              endId="Package\recibos y detalle\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\recibos y detalle\detalle.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\truncate"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{B06EB8B2-3780-40DE-8593-100652299D09}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="truncate"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
+          SQLTask:SqlStatementSource="truncate table cobranzas_realizadas_recibos;&#xA;truncate table cobranzas_realizadas_detalles;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{E68949CA-9AB4-4492-8FF4-081677B529BD}"
+      DTS:From="Package\truncate"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\recibos y detalle" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{C3C3ED5A-0686-4B13-B3F0-B23478AA9F5C}"
+      DTS:From="Package\recibos y detalle"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\COPIA A DWFE" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{D3B2824A-50C2-4D35-9707-113DD3BB67D5}"
+      DTS:From="Package\COPIA A DWFE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\COPIA A DWPG" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="159,42"
+          Id="Package\COPIA A DWFE"
+          TopLeft="621,75" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\recibos y detalle"
+          TopLeft="360.5,87.5" />
+        <NodeLayout
+          Size="119,42"
+          Id="Package\truncate"
+          TopLeft="177,42" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="296,63">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="64.5,45.5"
+              Start="0,0"
+              End="57,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="28.25,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="28.25,0"
+                    Point2="32.25,0"
+                    Point3="32.25,4" />
+                  <mssgle:LineSegment
+                    End="32.25,41.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="32.25,41.5"
+                    Point2="32.25,45.5"
+                    Point3="36.25,45.5" />
+                  <mssgle:LineSegment
+                    End="57,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="518.5,108.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="102.5,-12.5"
+              Start="0,0"
+              End="95,-12.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="47.25,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="47.25,0"
+                    Point2="51.25,0"
+                    Point3="51.25,-4" />
+                  <mssgle:LineSegment
+                    End="51.25,-8.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.25,-8.5"
+                    Point2="51.25,-12.5"
+                    Point3="55.25,-12.5" />
+                  <mssgle:LineSegment
+                    End="95,-12.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="161,42"
+          Id="Package\COPIA A DWPG"
+          TopLeft="625,165.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="703,117">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,48.5"
+              Start="0,0"
+              End="0,41">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\recibos y detalle">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="177,42"
+          Id="Package\recibos y detalle\OLE DB Destination"
+          TopLeft="732,59" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\recibos y detalle\OLE DB Destination 1"
+          TopLeft="671,143" />
+        <NodeLayout
+          Size="112,42"
+          Id="Package\recibos y detalle\detalle"
+          TopLeft="348,113" />
+        <NodeLayout
+          Size="115,42"
+          Id="Package\recibos y detalle\recibos"
+          TopLeft="440,50" />
+        <EdgeLayout
+          Id="Package\recibos y detalle.Paths[Flat File Source Output1]"
+          TopLeft="460,134">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="211,30"
+              Start="0,0"
+              End="203.5,30">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="101.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="101.5,0"
+                    Point2="105.5,0"
+                    Point3="105.5,4" />
+                  <mssgle:LineSegment
+                    End="105.5,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="105.5,26"
+                    Point2="105.5,30"
+                    Point3="109.5,30" />
+                  <mssgle:LineSegment
+                    End="203.5,30" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\recibos y detalle.Paths[Flat File Source Output]"
+          TopLeft="555,71">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="177,9"
+              Start="0,0"
+              End="169.5,9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="84.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="84.5,0"
+                    Point2="88.5,0"
+                    Point3="88.5,4" />
+                  <mssgle:LineSegment
+                    End="88.5,5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="88.5,5"
+                    Point2="88.5,9"
+                    Point3="92.5,9" />
+                  <mssgle:LineSegment
+                    End="169.5,9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\recibos y detalle\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\recibos y detalle\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

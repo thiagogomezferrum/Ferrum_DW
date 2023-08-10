@@ -1,0 +1,1592 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/8/2020 8:32:51 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="NTBK-PCCONNON"
+  DTS:CreatorName="NTFERRUM\pconnon"
+  DTS:DTSID="{EAD152A8-E863-4521-AC17-8D6FD5563E25}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5270.0"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="transportes"
+  DTS:PackageType="5"
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{7D068B3C-04A4-4E8C-A590-950017C15625}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[sd_transportes]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{4AE7579E-F4ED-4451-A786-18F4F87EAC53}"
+      DTS:ObjectName="sd_transportes">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil\DW\PRD\APROCESAR\sd_transportes.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NRO  TRANSPORTE"
+              DTS:DTSID="{7F9A95A8-00AA-41FA-8D0B-85F320649263}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA TRANSPORTE"
+              DTS:DTSID="{EDC5BC22-29FA-4195-95FD-E6DC61744CDC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TRANSPORTISTA"
+              DTS:DTSID="{002E2BC8-0473-4D55-8E47-F8EBEBCCBC7D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CHOFER"
+              DTS:DTSID="{102A145D-A2F5-4711-B0B9-95A1A41F7780}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PATENTE"
+              DTS:DTSID="{4F0E5FD2-A9DE-444F-BA67-42CFAB797794}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="RUTA"
+              DTS:DTSID="{83F6FCD5-FCF7-4762-BAED-63B1EC29E51C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="KM RECORRIDOS"
+              DTS:DTSID="{967B318C-9DB6-4968-87E2-23561B1D86C1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="R S TRANSPORTISTA"
+              DTS:DTSID="{37D06BB8-86D5-4F99-8CE1-571629517430}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA_PLANIFICACION"
+              DTS:DTSID="{FFF22AB8-8ECF-407F-9577-2F5DC84D91E9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PTO.PLANIF"
+              DTS:DTSID="{68D03D66-41FE-41B3-BD64-25544B978E7A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[sd_transportes_costo]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B2EB51A8-E210-4BAF-8D7F-685900CDE3AD}"
+      DTS:ObjectName="sd_transportes_costo">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil\DW\PRD\APROCESAR\sd_transportes_costo.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NRO  TRANSPORTE"
+              DTS:DTSID="{DAEEB74C-97A1-457F-BB39-BB9E8D17094D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NRO  GASTO"
+              DTS:DTSID="{F8552CDD-035E-40D1-BB5A-B1744D0518F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NRO  POSICIÓN"
+              DTS:DTSID="{2B56FA7E-94AD-4A18-9051-1F11D02D8CBD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COSTO POSICIÓN"
+              DTS:DTSID="{0C7CF56A-716D-4135-A037-BA924AA1B92E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MONEDA"
+              DTS:DTSID="{D898EFC0-670E-4D90-8259-99D4BE94999D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ESTATUS CÁLCULO POS "
+              DTS:DTSID="{8B173617-EFFA-4B9C-9084-D95099881598}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ESTATUS IMPUTACIÓN POS "
+              DTS:DTSID="{8CC81592-84C0-4D68-9F7D-6C4C392DABD7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ESTATUS TRANSFERENCIA POS "
+              DTS:DTSID="{28F63520-FDBB-4FE6-B057-9890FCFAE5D5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\COPIA A DWFE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{DF5FAD8E-7A05-48E8-84D3-9A9112EB883E}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="COPIA A DWFE"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec  sta.dbo.cleansing_sta;&#xA;exec DW_TRANSPORTES;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{00571C21-F61E-4A54-9FAB-9BBA3F21D6F0}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
+          SQLTask:SqlStatementSource="truncate table sd_transportes;&#xA;truncate table sd_transportes_costo;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\sd_transportes"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F387B755-6E21-4A01-90F8-30ED1C146E0D}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="sd_transportes">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\sd_transportes\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[sd_transportes]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\sd_transportes\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TRANSPORTISTA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TRANSPORTISTA"
+                      externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TRANSPORTISTA]"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[TRANSPORTISTA]" />
+                    <inputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CHOFER]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CHOFER"
+                      externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHOFER]"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[CHOFER]" />
+                    <inputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PATENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="PATENTE"
+                      externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PATENTE]"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[PATENTE]" />
+                    <inputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[RUTA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="RUTA"
+                      externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RUTA]"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[RUTA]" />
+                    <inputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NRO  TRANSPORTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NRO  TRANSPORTE"
+                      externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_TRANSPORTE]"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[NRO  TRANSPORTE]" />
+                    <inputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA TRANSPORTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA TRANSPORTE"
+                      externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_TRANSPORTE]"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[FECHA TRANSPORTE]" />
+                    <inputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[KM RECORRIDOS]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="KM RECORRIDOS"
+                      externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KM_RECORRIDOS]"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[KM RECORRIDOS]" />
+                    <inputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[R S TRANSPORTISTA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="R S TRANSPORTISTA"
+                      externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RS_TRANSPORTISTA]"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[R S TRANSPORTISTA]" />
+                    <inputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_PLANIFICACION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA_PLANIFICACION"
+                      externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_PLANIFICACION]"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[FECHA_PLANIFICACION]" />
+                    <inputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PTO.PLANIF]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="PTO.PLANIF"
+                      externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PTO_PLANIF]"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[PTO.PLANIF]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_TRANSPORTE]"
+                      dataType="i4"
+                      name="NRO_TRANSPORTE" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_TRANSPORTE]"
+                      dataType="wstr"
+                      length="10"
+                      name="FECHA_TRANSPORTE" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TRANSPORTISTA]"
+                      dataType="wstr"
+                      length="50"
+                      name="TRANSPORTISTA" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CHOFER]"
+                      dataType="wstr"
+                      length="50"
+                      name="CHOFER" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PATENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="PATENTE" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RUTA]"
+                      dataType="wstr"
+                      length="10"
+                      name="RUTA" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KM_RECORRIDOS]"
+                      dataType="wstr"
+                      length="50"
+                      name="KM_RECORRIDOS" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RS_TRANSPORTISTA]"
+                      dataType="wstr"
+                      length="50"
+                      name="RS_TRANSPORTISTA" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_PLANIFICACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_PLANIFICACION" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PTO_PLANIF]"
+                      dataType="wstr"
+                      length="50"
+                      name="PTO_PLANIF" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\sd_transportes\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\sd_transportes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\sd_transportes\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\sd_transportes\sd_transportes"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="sd_transportes"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\sd_transportes\sd_transportes.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[sd_transportes]"
+                  connectionManagerRefId="Package.ConnectionManagers[sd_transportes]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[NRO  TRANSPORTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[NRO  TRANSPORTE]"
+                      length="50"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[NRO  TRANSPORTE]"
+                      name="NRO  TRANSPORTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[FECHA TRANSPORTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[FECHA TRANSPORTE]"
+                      length="50"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[FECHA TRANSPORTE]"
+                      name="FECHA TRANSPORTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[TRANSPORTISTA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[TRANSPORTISTA]"
+                      length="50"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[TRANSPORTISTA]"
+                      name="TRANSPORTISTA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[CHOFER]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[CHOFER]"
+                      length="50"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[CHOFER]"
+                      name="CHOFER"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[PATENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[PATENTE]"
+                      length="50"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[PATENTE]"
+                      name="PATENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[RUTA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[RUTA]"
+                      length="50"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[RUTA]"
+                      name="RUTA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[KM RECORRIDOS]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[KM RECORRIDOS]"
+                      length="50"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[KM RECORRIDOS]"
+                      name="KM RECORRIDOS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[R S TRANSPORTISTA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[R S TRANSPORTISTA]"
+                      length="50"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[R S TRANSPORTISTA]"
+                      name="R S TRANSPORTISTA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[FECHA_PLANIFICACION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[FECHA_PLANIFICACION]"
+                      length="50"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[FECHA_PLANIFICACION]"
+                      name="FECHA_PLANIFICACION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[PTO.PLANIF]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[PTO.PLANIF]"
+                      length="50"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[PTO.PLANIF]"
+                      name="PTO.PLANIF"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[NRO  TRANSPORTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO  TRANSPORTE" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[FECHA TRANSPORTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA TRANSPORTE" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[TRANSPORTISTA]"
+                      dataType="wstr"
+                      length="50"
+                      name="TRANSPORTISTA" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[CHOFER]"
+                      dataType="wstr"
+                      length="50"
+                      name="CHOFER" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[PATENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="PATENTE" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[RUTA]"
+                      dataType="wstr"
+                      length="50"
+                      name="RUTA" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[KM RECORRIDOS]"
+                      dataType="wstr"
+                      length="50"
+                      name="KM RECORRIDOS" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[R S TRANSPORTISTA]"
+                      dataType="wstr"
+                      length="50"
+                      name="R S TRANSPORTISTA" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[FECHA_PLANIFICACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_PLANIFICACION" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[PTO.PLANIF]"
+                      dataType="wstr"
+                      length="50"
+                      name="PTO.PLANIF" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\sd_transportes.Paths[Flat File Source Output]"
+              endId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\sd_transportes_costo"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{5846a38c-dba8-4cdc-a04a-6de1d47a84b9}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="sd_transportes_costo">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\sd_transportes_costo\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[sd_transportes_costo]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\sd_transportes_costo\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NRO  TRANSPORTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NRO  TRANSPORTE"
+                      externalMetadataColumnId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_TRANSPORTE]"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[NRO  TRANSPORTE]" />
+                    <inputColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NRO  GASTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NRO  GASTO"
+                      externalMetadataColumnId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_GASTO]"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[NRO  GASTO]" />
+                    <inputColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NRO  POSICIÓN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NRO  POSICIÓN"
+                      externalMetadataColumnId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_POSICION]"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[NRO  POSICIÓN]" />
+                    <inputColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ESTATUS TRANSFERENCIA POS ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ESTATUS TRANSFERENCIA POS "
+                      externalMetadataColumnId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ESTATUS_TRANSFERENCIA_POS]"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[ESTATUS TRANSFERENCIA POS ]" />
+                    <inputColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MONEDA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="MONEDA"
+                      externalMetadataColumnId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[MONEDA]" />
+                    <inputColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ESTATUS IMPUTACIÓN POS ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ESTATUS IMPUTACIÓN POS "
+                      externalMetadataColumnId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ESTATUS_IMPUTACION_POS]"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[ESTATUS IMPUTACIÓN POS ]" />
+                    <inputColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ESTATUS CÁLCULO POS ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ESTATUS CÁLCULO POS "
+                      externalMetadataColumnId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ESTATUS_CALCULO_POS]"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[ESTATUS CÁLCULO POS ]" />
+                    <inputColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COSTO POSICIÓN]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="COSTO POSICIÓN"
+                      externalMetadataColumnId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COSTO_POSICION]"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[COSTO POSICIÓN]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_TRANSPORTE]"
+                      dataType="i4"
+                      name="NRO_TRANSPORTE" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COSTO_DEL_TRANSPORTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="COSTO_DEL_TRANSPORTE" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_GASTO]"
+                      dataType="i4"
+                      name="NRO_GASTO" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_POSICION]"
+                      dataType="i4"
+                      name="NRO_POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COSTO_POSICION]"
+                      dataType="wstr"
+                      length="50"
+                      name="COSTO_POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
+                      dataType="wstr"
+                      length="10"
+                      name="MONEDA" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ESTATUS_CALCULO_POS]"
+                      dataType="wstr"
+                      length="10"
+                      name="ESTATUS_CALCULO_POS" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ESTATUS_IMPUTACION_POS]"
+                      dataType="wstr"
+                      length="10"
+                      name="ESTATUS_IMPUTACION_POS" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ESTATUS_TRANSFERENCIA_POS]"
+                      dataType="wstr"
+                      length="10"
+                      name="ESTATUS_TRANSFERENCIA_POS" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\sd_transportes_costo\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\sd_transportes_costo\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\sd_transportes_costo\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\sd_transportes_costo\sd_transportes_costo"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="sd_transportes_costo"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\sd_transportes_costo\sd_transportes_costo.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[sd_transportes_costo]"
+                  connectionManagerRefId="Package.ConnectionManagers[sd_transportes_costo]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[NRO  TRANSPORTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[NRO  TRANSPORTE]"
+                      length="50"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[NRO  TRANSPORTE]"
+                      name="NRO  TRANSPORTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[NRO  GASTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[NRO  GASTO]"
+                      length="50"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[NRO  GASTO]"
+                      name="NRO  GASTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[NRO  POSICIÓN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[NRO  POSICIÓN]"
+                      length="50"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[NRO  POSICIÓN]"
+                      name="NRO  POSICIÓN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[COSTO POSICIÓN]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[COSTO POSICIÓN]"
+                      length="50"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[COSTO POSICIÓN]"
+                      name="COSTO POSICIÓN"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[MONEDA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[MONEDA]"
+                      length="50"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[MONEDA]"
+                      name="MONEDA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[ESTATUS CÁLCULO POS ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[ESTATUS CÁLCULO POS ]"
+                      length="50"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[ESTATUS CÁLCULO POS ]"
+                      name="ESTATUS CÁLCULO POS "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[ESTATUS IMPUTACIÓN POS ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[ESTATUS IMPUTACIÓN POS ]"
+                      length="50"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[ESTATUS IMPUTACIÓN POS ]"
+                      name="ESTATUS IMPUTACIÓN POS "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[ESTATUS TRANSFERENCIA POS ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[ESTATUS TRANSFERENCIA POS ]"
+                      length="50"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].Columns[ESTATUS TRANSFERENCIA POS ]"
+                      name="ESTATUS TRANSFERENCIA POS "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[NRO  TRANSPORTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO  TRANSPORTE" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[NRO  GASTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO  GASTO" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[NRO  POSICIÓN]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO  POSICIÓN" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[COSTO POSICIÓN]"
+                      dataType="wstr"
+                      length="50"
+                      name="COSTO POSICIÓN" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[MONEDA]"
+                      dataType="wstr"
+                      length="50"
+                      name="MONEDA" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[ESTATUS CÁLCULO POS ]"
+                      dataType="wstr"
+                      length="50"
+                      name="ESTATUS CÁLCULO POS " />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[ESTATUS IMPUTACIÓN POS ]"
+                      dataType="wstr"
+                      length="50"
+                      name="ESTATUS IMPUTACIÓN POS " />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output].ExternalColumns[ESTATUS TRANSFERENCIA POS ]"
+                      dataType="wstr"
+                      length="50"
+                      name="ESTATUS TRANSFERENCIA POS " />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\sd_transportes_costo.Paths[Flat File Source Output]"
+              endId="Package\sd_transportes_costo\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\sd_transportes_costo\sd_transportes_costo.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{7F5BE182-45BD-4084-94D0-CAC25B4862F0}"
+      DTS:From="Package\sd_transportes"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\sd_transportes_costo" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{C8F5AAE1-D8DF-4794-AF09-991039ECB3D0}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\sd_transportes" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{497D89D0-1B12-4FAF-ACD7-9BCA2B13C35B}"
+      DTS:From="Package\sd_transportes_costo"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\COPIA A DWFE" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="159,42"
+          Id="Package\COPIA A DWFE"
+          TopLeft="691,75" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="30,23" />
+        <NodeLayout
+          Size="152,42"
+          Id="Package\sd_transportes"
+          TopLeft="167.5,71.5" />
+        <NodeLayout
+          Size="184,42"
+          Id="Package\sd_transportes_costo"
+          TopLeft="403.5,78.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="319.5,96">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="84,0"
+              Start="0,0"
+              End="76.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="76.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="193,44">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50.5,27.5"
+              Start="0,0"
+              End="50.5,20">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="46.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="46.5,0"
+                    Point2="50.5,0"
+                    Point3="50.5,4" />
+                  <mssgle:LineSegment
+                    End="50.5,20" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="587.5,97.75">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="103.5,0"
+              Start="0,0"
+              End="96,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="96,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\sd_transportes">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="149,42"
+          Id="Package\sd_transportes\sd_transportes"
+          TopLeft="53,23" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\sd_transportes\OLE DB Destination"
+          TopLeft="261,80" />
+        <EdgeLayout
+          Id="Package\sd_transportes.Paths[Flat File Source Output]"
+          TopLeft="202,44">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="59,57"
+              Start="0,0"
+              End="51.5,57">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="25.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="25.5,0"
+                    Point2="29.5,0"
+                    Point3="29.5,4" />
+                  <mssgle:LineSegment
+                    End="29.5,53" />
+                  <mssgle:CubicBezierSegment
+                    Point1="29.5,53"
+                    Point2="29.5,57"
+                    Point3="33.5,57" />
+                  <mssgle:LineSegment
+                    End="51.5,57" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\sd_transportes\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\sd_transportes_costo">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="179,42"
+          Id="Package\sd_transportes_costo\sd_transportes_costo"
+          TopLeft="144,45" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\sd_transportes_costo\OLE DB Destination"
+          TopLeft="445,56" />
+        <EdgeLayout
+          Id="Package\sd_transportes_costo.Paths[Flat File Source Output]"
+          TopLeft="323,66">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="122,11"
+              Start="0,0"
+              End="114.5,11">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="57,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="57,0"
+                    Point2="61,0"
+                    Point3="61,4" />
+                  <mssgle:LineSegment
+                    End="61,7" />
+                  <mssgle:CubicBezierSegment
+                    Point1="61,7"
+                    Point2="61,11"
+                    Point3="65,11" />
+                  <mssgle:LineSegment
+                    End="114.5,11" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\sd_transportes_costo\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
