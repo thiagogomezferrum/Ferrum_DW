@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="10/9/2019 10:21:05 AM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="facturas"
   DTS:PackageType="5"
-  DTS:VersionBuild="97"
-  DTS:VersionGUID="{3F923CCC-7194-47C3-9D10-775A072D79EE}">
+  DTS:VersionBuild="96"
+  DTS:VersionGUID="{A63FD0F7-6C9D-47D7-8C46-DEC6E3AB70C8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -9017,15 +9017,39 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Finaliza en error  DWPG"
+      DTS:refId="Package\Finaliza en error"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{2d7339a3-59f1-49d8-afa5-a163ee7935b2}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Finaliza en error"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 7, 'FI OCASIONAL'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Finaliza en error  2 1"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:DTSID="{d0608e49-3556-41ce-8fdf-4d1204fb3ebe}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Finaliza en error  DWPG"
+      DTS:ObjectName="Finaliza en error  2 1"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -9066,6 +9090,30 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Finaliza en error 1 2 2"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{efdd06f2-c585-4cad-9d9c-50d6dd91964e}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Finaliza en error 1 2 2"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 5, 'Carga Fact DWFE'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Finaliza en error CABECERA FACTURAS"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
@@ -9080,30 +9128,6 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
           SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 7, 'CABECERA FACTURAS'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="0"
-            SQLTask:DtsVariableName="Proceso"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="3"
-            SQLTask:ParameterSize="-1" />
-        </SQLTask:SqlTaskData>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Finaliza en error COPIA A DWFE"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{efdd06f2-c585-4cad-9d9c-50d6dd91964e}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Finaliza en error COPIA A DWFE"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
-          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 5, 'Carga Fact DWFE'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="Proceso"
@@ -9152,30 +9176,6 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
           SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 7, 'FACTURA FI'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="0"
-            SQLTask:DtsVariableName="Proceso"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="3"
-            SQLTask:ParameterSize="-1" />
-        </SQLTask:SqlTaskData>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Finaliza en error FI OCASIONAL"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{2d7339a3-59f1-49d8-afa5-a163ee7935b2}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Finaliza en error FI OCASIONAL"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
-          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 7, 'FI OCASIONAL'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="Proceso"
@@ -9265,7 +9265,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Finalizo Ok"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -13635,7 +13635,7 @@
       DTS:From="Package\FI OCASIONAL"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 20"
-      DTS:To="Package\Finaliza en error FI OCASIONAL"
+      DTS:To="Package\Finaliza en error"
       DTS:Value="1" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 21]"
@@ -13644,7 +13644,7 @@
       DTS:From="Package\COPIA A DWFE"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 21"
-      DTS:To="Package\Finaliza en error COPIA A DWFE"
+      DTS:To="Package\Finaliza en error 1 2 2"
       DTS:Value="1" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 22]"
@@ -13653,7 +13653,7 @@
       DTS:From="Package\DWPG"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 22"
-      DTS:To="Package\Finaliza en error  DWPG"
+      DTS:To="Package\Finaliza en error  2 1"
       DTS:Value="1" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 23]"
@@ -13741,7 +13741,7 @@
           Id="Package\Comienza Ejecución"
           TopLeft="273.66666286687,204.099996350408" />
         <NodeLayout
-          Size="152,42.6666666666667"
+          Size="158.666666666667,42"
           Id="Package\COPIA A DWFE"
           TopLeft="296.666674191753,1005.18332904448" />
         <NodeLayout
@@ -13749,7 +13749,7 @@
           Id="Package\DEUDA FACTURAS"
           TopLeft="280.291672543312,463.016661099295" />
         <NodeLayout
-          Size="109.333333333334,42.6666666666667"
+          Size="113.333333333334,42"
           Id="Package\DWPG"
           TopLeft="326.291663230087,1105.88332906773" />
         <NodeLayout
@@ -13769,8 +13769,8 @@
           Id="Package\Finaliza en error CABECERA FACTURAS"
           TopLeft="523.541662354643,305.033345211942" />
         <NodeLayout
-          Size="192,42.6666666666667"
-          Id="Package\Finaliza en error  DWPG"
+          Size="177.333333333334,42.6666666666667"
+          Id="Package\Finaliza en error  2 1"
           TopLeft="542.666660259167,1105.69999560654" />
         <NodeLayout
           Size="261.333333333334,42.6666666666667"
@@ -13789,8 +13789,8 @@
           Id="Package\Finaliza en error mm_fc"
           TopLeft="513.624993806705,660.866663086812" />
         <NodeLayout
-          Size="230.666666666667,42.6666666666667"
-          Id="Package\Finaliza en error COPIA A DWFE"
+          Size="182.666666666667,42.6666666666667"
+          Id="Package\Finaliza en error 1 2 2"
           TopLeft="532.791660287107,1004.8333288004" />
         <NodeLayout
           Size="213.333333333334,42.6666666666667"
@@ -13801,8 +13801,8 @@
           Id="Package\Finaliza en error FACTURA FI"
           TopLeft="513.791660510624,817.999995350838" />
         <NodeLayout
-          Size="228,42.6666666666667"
-          Id="Package\Finaliza en error FI OCASIONAL"
+          Size="156,42.6666666666667"
+          Id="Package\Finaliza en error"
           TopLeft="515.041660491998,916.733330125411" />
         <NodeLayout
           Size="131.333333333334,42.6666666666667"
@@ -14158,66 +14158,66 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 21]"
-          TopLeft="448.666674191753,1026.34166225577">
+          TopLeft="455.33334085842,1026.17499558911">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="84.124986095354,0"
+              EndConnector="77.4583194286872,0"
               Start="0,0"
-              End="76.624986095354,0">
+              End="69.9583194286872,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="76.624986095354,0" />
+                    End="69.9583194286872,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="23.071145391427,5,30.4826953125,9.7490234375"
+              BoundingBox="19.7378120580936,5,30.4826953125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 22]"
-          TopLeft="435.62499656342,1127.12499567047">
+          TopLeft="439.62499656342,1126.9583290038">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="107.041663695747,0"
+              EndConnector="103.041663695747,0"
               Start="0,0"
-              End="99.5416636957466,0">
+              End="95.5416636957473,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="99.5416636957466,0" />
+                    End="95.5416636957473,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="34.5294841916233,5,30.4826953125,9.7490234375"
+              BoundingBox="32.5294841916237,5,30.4826953125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 23]"
-          TopLeft="383.999996721745,1148.5499957344">
+          TopLeft="384.999996721745,1147.88332906773">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,52.7999991631432"
+              EndConnector="0,53.4666658298174"
               Start="0,0"
-              End="0,45.2999991631432">
+              End="0,45.9666658298174">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,45.2999991631432" />
+                    End="0,45.9666658298174" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14316,18 +14316,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="372.12500233762,955.09999728024">
+          TopLeft="373.791669004287,955.09999728024">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,50.0833317642404"
+              EndConnector="0,50.0833317642405"
               Start="0,0"
-              End="0,42.5833317642404">
+              End="0,42.5833317642405">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,42.5833317642404" />
+                    End="0,42.5833317642405" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14360,30 +14360,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
-          TopLeft="372.666674191753,1047.84999571115">
+          TopLeft="379.47916871092,1047.18332904448">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="8.29165570500072,58.0333333565834"
+              EndConnector="0,58.700000023246"
               Start="0,0"
-              End="8.29165570500072,50.5333333565834">
+              End="0,51.200000023246">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.0166666782917" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.0166666782917"
-                    Point2="0,29.0166666782917"
-                    Point3="4,29.0166666782917" />
-                  <mssgle:LineSegment
-                    End="4.29165570500072,29.0166666782917" />
-                  <mssgle:CubicBezierSegment
-                    Point1="4.29165570500072,29.0166666782917"
-                    Point2="8.29165570500072,29.0166666782917"
-                    Point3="8.29165570500072,33.0166666782917" />
-                  <mssgle:LineSegment
-                    End="8.29165570500072,50.5333333565834" />
+                    End="0,51.200000023246" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

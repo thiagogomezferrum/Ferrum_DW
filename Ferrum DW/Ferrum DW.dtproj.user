@@ -11,8 +11,20 @@
         <ServerName>SQLServer-ferrumdba</ServerName>
         <PathOnServer>/SSISDB/BI/BI ferrum</PathOnServer>
         <StartObjectID>00_GLOBAL.dtsx</StartObjectID>
-        <UserIDs />
-        <UserPasswords />
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>{4872443F-8F47-4522-A516-531857DA7FB7}</Id>
+            <Name>{4872443F-8F47-4522-A516-531857DA7FB7}</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIqXjDgVII0KJV7pusLWjVQAAAABOAAAAewA0ADgANwAyADQANAAzAEYALQA4AEYANAA3AC0ANAA1ADIAMgAtAEEANQAxADYALQA1ADMAMQA4ADUANwBEAEEANwBGAEIANwB9AAAAEGYAAAABAAAgAAAAWSz1+uRedpMVGtCEp0QSa5SKB9DnsL8rxZGv78nlv0kAAAAADoAAAAACAAAgAAAAFHIN5rYSbKAP0GP/224s1Lz81CiUBh8V+gHFhGPtkrYgAAAAfXIWyoU778J+4TUarNV05aO4cvirOT+1JfWPIDYwns5AAAAAgxK9r+S7PQfTxghuQ0SqdRKJziaNhHvGK/TzCnikuzgcCIvkJfWUSc8+OV3ytcGcne1wwKtUYu1GR5cPigCI6g==</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>{4872443F-8F47-4522-A516-531857DA7FB7}</Id>
+            <Name>{4872443F-8F47-4522-A516-531857DA7FB7}</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAIqXjDgVII0KJV7pusLWjVQAAAABOAAAAewA0ADgANwAyADQANAAzAEYALQA4AEYANAA3AC0ANAA1ADIAMgAtAEEANQAxADYALQA1ADMAMQA4ADUANwBEAEEANwBGAEIANwB9AAAAEGYAAAABAAAgAAAAkzsBp5VKhbWs50aWAe4rq5iiAK/jxD9ZWlHR1adxiycAAAAADoAAAAACAAAgAAAAptjKywBS6Mm95LYEfXamXLe41pU2xE+dmbFj26TOd9sgAAAAL5cvxHvs+Qd4L6xp4suYEGf/Oha7MvPygfYGJL5ZY/BAAAAAXzvu74zPaqUFfOm5XUR/rm38ZtwSRnAUgRg3DS7uNy9m4srIn+l/0aSCPpXM+9IQOxqzUOeA0HL2cvlGtsohXw==</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
         <OfflineMode>false</OfflineMode>
         <ProgressReporting>true</ProgressReporting>
         <ParameterConfigurationSensitiveValues>
