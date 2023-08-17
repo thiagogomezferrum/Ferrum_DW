@@ -13,47 +13,47 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>facturas.dtsx</Name>
-      <LastWriteTime>2023-08-09T13:43:26.6900253Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:27:10.6537823Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>pedidos.dtsx</Name>
-      <LastWriteTime>2023-08-09T13:43:26.7056552Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T12:42:45.1323679Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>maestros.dtsx</Name>
-      <LastWriteTime>2023-08-09T13:43:26.7056552Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:03:07.9725295Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>costos.dtsx</Name>
-      <LastWriteTime>2023-08-09T13:43:26.6900253Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:25:20.2288907Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ordenes de compra.dtsx</Name>
-      <LastWriteTime>2023-08-09T13:43:26.7056552Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:24:58.3888803Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>stock.dtsx</Name>
-      <LastWriteTime>2023-08-10T18:01:30.359289Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:23:44.9675915Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>entregas.dtsx</Name>
-      <LastWriteTime>2023-08-09T13:43:26.6900253Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:22:31.6468453Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>solped.dtsx</Name>
-      <LastWriteTime>2023-08-10T17:45:48.7250219Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:21:26.1092621Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>transportes.dtsx</Name>
-      <LastWriteTime>2023-08-10T17:33:06.0443171Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:20:34.6396694Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -63,7 +63,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>condiciones de precio.dtsx</Name>
-      <LastWriteTime>2023-08-10T14:44:07.223468Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:16:44.3679584Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -73,12 +73,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>datos FV.dtsx</Name>
-      <LastWriteTime>2023-08-10T14:48:22.7700283Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:15:32.3999697Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>cobranzas.dtsx</Name>
-      <LastWriteTime>2023-08-10T17:26:31.6130862Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:19:30.7066785Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -93,22 +93,22 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>proveedores.dtsx</Name>
-      <LastWriteTime>2023-08-10T14:55:27.5955171Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:11:59.0507779Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>saldos contables.dtsx</Name>
-      <LastWriteTime>2023-08-10T17:14:40.9281742Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:18:50.0504877Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>almacenes y calidad.dtsx</Name>
-      <LastWriteTime>2023-08-10T17:19:40.1120277Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:18:00.9629853Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>precios transferencia.dtsx</Name>
-      <LastWriteTime>2023-08-10T15:31:14.8374936Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T13:17:12.3426952Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -123,7 +123,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>desvios_masivos.dtsx</Name>
-      <LastWriteTime>2023-08-10T14:50:44.280389Z</LastWriteTime>
+      <LastWriteTime>2023-08-17T12:25:38.084072Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
