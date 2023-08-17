@@ -1,0 +1,1263 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/23/2022 1:51:22 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FE-PCONNON"
+  DTS:CreatorName="NTFERRUM\pconnon"
+  DTS:DTSID="{CE97A608-6D06-4B0F-9AD9-7256012E393A}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5270.0"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{21DA0BE9-9FD9-48C2-B766-D954A9738373}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[pp_bom]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B4B3D6D6-DDF5-410A-8E39-5373968E8D12}"
+      DTS:ObjectName="pp_bom">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil\DW\PRD\APROCESAR\pp_bom.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO MATERIAL"
+              DTS:DTSID="{5BBD453E-31C8-4FE7-A415-10A336A64B67}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO"
+              DTS:DTSID="{7AAB8E06-E56F-4896-B4DE-97D13D9752C9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ALTERNATIVA"
+              DTS:DTSID="{E253CB30-993C-48E1-A921-798B9E41B9B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="POSICION"
+              DTS:DTSID="{167B0B5D-CCE0-4B0B-83E3-80D1638FEE47}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD BASE"
+              DTS:DTSID="{A052D1F6-30FE-438E-B817-C0F4C330894C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COMPONENTE"
+              DTS:DTSID="{0C1E9297-DD73-425C-B29C-FA30260D5DFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD COMPONENTE"
+              DTS:DTSID="{FB6B145D-8173-433A-B757-EEA1C8D79295}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UM COMPONENTE"
+              DTS:DTSID="{49F615EA-BB18-4B72-9572-74C8F3B6CB07}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{98EB850B-5D8E-45A8-8CCD-BDA7EF68884F}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Proceso">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Comienza Ejecución"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5efb4b98-c2e0-4588-a442-95d538964ed5}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Comienza Ejecución"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 1, 'Procesando'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DWFE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{16BA68E5-A5ED-462B-A4FC-D669186DCF53}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DWFE"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="EXEC DW_PP;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DWPG"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{49DBC96C-BC9E-4ECC-83CF-AEC9F7F6825B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DWPG"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{0670813F-7C2F-42BD-9E80-AD816BF595ED}"
+          SQLTask:SqlStatementSource="EXEC DW_PP;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Finaliza en error"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{03f82ecf-5a9a-4a61-baeb-fc6f120c19c4}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Finaliza en error"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 7, 'pp_bom'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Finaliza en error  DWPG"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{edeab4f1-4c19-4d22-a71c-ca0838d119d5}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Finaliza en error  DWPG"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 12, 'Carga Fact DWPG'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Finaliza en error COPIA A DWFE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{ad9e5727-ba32-4adf-8308-e35f3574c672}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Finaliza en error COPIA A DWFE"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 5, 'Carga Fact DWFE'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Finalizo Ok"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{d744eff5-9258-4f70-95ba-937e0f0c7ce9}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Finalizo Ok"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 2, 'Ok'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Genera número de proceso"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{07e76131-5b6f-42f6-a78c-e1a8e703ab25}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Genera número de proceso"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="declare @nMaxCodProceso int&#xA;SELECT @nMaxCodProceso = MAX(proceso_key) &#xA;FROM DW_Procesos_Info&#xA;IF @nMaxCodProceso is null&#xA;SET @nMaxCodProceso = 0&#xA;DBCC CHECKIDENT ('DW_Procesos_Info', RESEED, @nMaxCodProceso)&#xA; &#xA;Insert Into DW_Procesos_Info (lote_key, &#xA; inicio_ejecucion, &#xA; fin_ejecucion, &#xA; Estado_Key)&#xA;SELECT 30023,getdate() inicio_ejecucion, getdate() fin_ejecucion, &#xA; 0 Estado_Key" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\pp_bom"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{5783FF69-1EFF-480C-8690-A3C8F9026FC8}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="pp_bom">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\pp_bom\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\pp_bom\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[pp_bom]"
+                  connectionManagerRefId="Package.ConnectionManagers[pp_bom]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO MATERIAL]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO MATERIAL]"
+                      name="CODIGO MATERIAL"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]"
+                      name="CENTRO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[ALTERNATIVA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ALTERNATIVA]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[ALTERNATIVA]"
+                      name="ALTERNATIVA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICION]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION]"
+                      name="POSICION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD BASE]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]"
+                      name="CANTIDAD BASE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMPONENTE]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTE]"
+                      name="COMPONENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD COMPONENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD COMPONENTE]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD COMPONENTE]"
+                      name="CANTIDAD COMPONENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[UM COMPONENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UM COMPONENTE]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[UM COMPONENTE]"
+                      name="UM COMPONENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ALTERNATIVA]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALTERNATIVA" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICION]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD BASE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD BASE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UM COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="UM COMPONENTE" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\pp_bom\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[pp_bom]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\pp_bom\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CENTRO"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ALTERNATIVA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ALTERNATIVA"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALTERNATIVA]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[ALTERNATIVA]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POSICION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="POSICION"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COMPONENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="COMPONENTE"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPONENTE]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTE]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CODIGO MATERIAL"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_MATERIAL]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO MATERIAL]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD BASE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD BASE"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_BASE]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD COMPONENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD COMPONENTE"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_COMPONENTE]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD COMPONENTE]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UM COMPONENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="UM COMPONENTE"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UM_COMPONENTE]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[UM COMPONENTE]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALTERNATIVA]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALTERNATIVA" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_BASE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD_BASE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD_COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UM_COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="UM_COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\pp_bom\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\pp_bom\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\pp_bom\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\pp_bom.Paths[Flat File Source Output]"
+              endId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Selecciono el número de proceso"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{d1a87784-47da-4c0c-af14-60dd6135073f}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Selecciono el número de proceso"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="SELECT     MAX(proceso_key) AS Proceso&#xA;FROM dbo.DW_Procesos_Info&#xA;WHERE lote_Key = 30023"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::Proceso" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5E7524A2-CA27-460A-95B3-B209ED851693}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
+          SQLTask:SqlStatementSource="truncate table pp_bom;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{4159E58E-26CB-4EC4-B369-5229B04BC420}"
+      DTS:From="Package\Genera número de proceso"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Selecciono el número de proceso" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{1F422BE5-9329-4250-B185-B33909648225}"
+      DTS:From="Package\pp_bom"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\DWFE" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{CA9DAA82-DAB1-45AB-A953-DC3AE385D966}"
+      DTS:From="Package\DWFE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\DWPG" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{051975DE-D54A-44D1-BFE8-80A5E6CF7856}"
+      DTS:From="Package\Selecciono el número de proceso"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Truncate" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{AAF522A1-286E-4339-B6B6-2501D056BB50}"
+      DTS:From="Package\Truncate"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Comienza Ejecución" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{DD01E76A-059F-4902-A2B1-06E52D1020A7}"
+      DTS:From="Package\Comienza Ejecución"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\pp_bom" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{9842037B-2A01-401C-BDEE-FDCA1B896AF3}"
+      DTS:From="Package\pp_bom"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Finaliza en error"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{88285356-07AB-4C9D-A06D-7174AB746F0C}"
+      DTS:From="Package\DWFE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\Finaliza en error COPIA A DWFE"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{36195E57-814C-4358-BD2A-080C9E6FCA14}"
+      DTS:From="Package\DWPG"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 8"
+      DTS:To="Package\Finaliza en error  DWPG"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
+      DTS:CreationName=""
+      DTS:DTSID="{BDF417A1-F8A1-4E8A-96DA-87E7DFE7EEFF}"
+      DTS:From="Package\DWPG"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 9"
+      DTS:To="Package\Finalizo Ok" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="110.666666666667,42"
+          Id="Package\DWFE"
+          TopLeft="180.875004963949,323.499995234609" />
+        <NodeLayout
+          Size="113.333333333334,42"
+          Id="Package\DWPG"
+          TopLeft="181.750006053597,406.433330381115" />
+        <NodeLayout
+          Size="121.333333333334,42.6666666666667"
+          Id="Package\Truncate"
+          TopLeft="173.999998286367,85.9999988377094" />
+        <NodeLayout
+          Size="117.333333333334,42.6666666666667"
+          Id="Package\pp_bom"
+          TopLeft="177.12500170432,238.649996850192" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="236.000003334135,281.316663516859">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42.1833317177495"
+              Start="0,0"
+              End="0,34.6833317177495">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.6833317177495" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="237.312505508773,365.499995234609">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,40.9333351465066"
+              Start="0,0"
+              End="0,33.4333351465066">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.4333351465066" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Genera número de proceso"
+          TopLeft="433.124993545935,18.1071425333624" />
+        <NodeLayout
+          Size="234.666666666667,42.6666666666667"
+          Id="Package\Selecciono el número de proceso"
+          TopLeft="118.660712517532,13.649999755919" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="433.124993545935,37.0452378113074">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-79.7976143617363,0"
+              Start="0,0"
+              End="-72.2976143617363,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-72.2976143617363,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="235.330355401949,56.3166664225856">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29.6833324151238"
+              Start="0,0"
+              End="0,22.1833324151238">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.1833324151238" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="173.333333333334,42.6666666666667"
+          Id="Package\Comienza Ejecución"
+          TopLeft="147.499997802079,157.299997187257" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="234.416664710889,128.666665504376">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,28.6333316828808"
+              Start="0,0"
+              End="0,21.1333316828808">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.1333316828808" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="234.979166419866,199.966663853924">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,38.683332996269"
+              Start="0,0"
+              End="0,31.183332996269">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.183332996269" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="156,42.6666666666667"
+          Id="Package\Finaliza en error"
+          TopLeft="358.035708950566,239.333335192998" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="294.458335037654,260.324999354929">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="63.5773739129128,0"
+              Start="0,0"
+              End="56.0773739129128,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="56.0773739129128,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="12.7973393002064,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="230.666666666667,42.6666666666667"
+          Id="Package\Finaliza en error COPIA A DWFE"
+          TopLeft="355.624994700774,326.466662807862" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="291.541671630616,346.149995687902">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="64.0833230701585,0"
+              Start="0,0"
+              End="56.5833230701585,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="56.5833230701585,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="13.0503138788293,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="192,42.6666666666667"
+          Id="Package\Finaliza en error  DWPG"
+          TopLeft="357.499994672835,409.316661540965" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="295.08333938693,429.041662627707">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="62.4166552859049,0"
+              Start="0,0"
+              End="54.9166552859049,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="54.9166552859049,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="12.2169799867025,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="131.333333333334,42.6666666666667"
+          Id="Package\Finalizo Ok"
+          TopLeft="166.874997513369,500.016660169462" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="235.479168450149,448.433330381115">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,51.5833297883472"
+              Start="0,0"
+              End="0,44.0833297883472">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.0833297883472" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\pp_bom">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="156,42"
+          Id="Package\pp_bom\Flat File Source"
+          TopLeft="141,106" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\pp_bom\OLE DB Destination"
+          TopLeft="485,87" />
+        <EdgeLayout
+          Id="Package\pp_bom.Paths[Flat File Source Output]"
+          TopLeft="297,127">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="188,-19"
+              Start="0,0"
+              End="180.5,-19">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="90,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="90,0"
+                    Point2="94,0"
+                    Point3="94,-4" />
+                  <mssgle:LineSegment
+                    End="94,-15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="94,-15"
+                    Point2="94,-19"
+                    Point3="98,-19" />
+                  <mssgle:LineSegment
+                    End="180.5,-19" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\pp_bom\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

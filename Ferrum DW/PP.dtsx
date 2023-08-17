@@ -1,0 +1,886 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/23/2022 1:51:22 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FE-PCONNON"
+  DTS:CreatorName="NTFERRUM\pconnon"
+  DTS:DTSID="{A1E72C93-328F-4B5E-A47F-26E3A1E0A4D7}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3026.27"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{308AF2EB-871D-4F8C-B66A-58D05F62E8F2}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[pp_bom]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{3D32D216-E485-422E-ACA4-49D90F3CB33C}"
+      DTS:ObjectName="pp_bom">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil\DW\PRD\APROCESAR\pp_bom.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CODIGO MATERIAL"
+              DTS:DTSID="{166F0FDA-20DF-473F-A63A-B3D085992A1C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO"
+              DTS:DTSID="{CDE049A4-497A-4296-ABBC-2A5F4A88E423}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ALTERNATIVA"
+              DTS:DTSID="{BE17B4E6-0607-4786-A375-A4EB13CC2B69}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="POSICION"
+              DTS:DTSID="{0BDCF962-7D80-4B60-AEA7-DE058E9E4739}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD BASE"
+              DTS:DTSID="{8F1CCB2E-64FE-43A1-A315-5BD9878FADBD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="COMPONENTE"
+              DTS:DTSID="{B98D79E4-9245-436B-8C83-43AF1C914F79}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD COMPONENTE"
+              DTS:DTSID="{A6BB4EA2-B34A-4B54-A1A1-8BADB2952C49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UM COMPONENTE"
+              DTS:DTSID="{CB7F6377-59C4-4B58-8DC8-F016BA246B94}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DWFE"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{f734b5e7-ea98-4cef-88ad-ccd8d549a96c}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DWFE"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="EXEC DW_PP;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DWPG"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{3369dab4-d4ec-4c52-9ae4-6ebc1384109e}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DWPG"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{0670813F-7C2F-42BD-9E80-AD816BF595ED}"
+          SQLTask:SqlStatementSource="EXEC DW_PP;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5252A462-4EC9-4AC2-9375-269679BDAFD9}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
+          SQLTask:SqlStatementSource="truncate table pp_bom;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\pp_bom"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{F9B91CE2-E384-4DB7-B141-A979B76E8ECD}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="pp_bom">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\pp_bom\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\pp_bom\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[pp_bom]"
+                  connectionManagerRefId="Package.ConnectionManagers[pp_bom]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO MATERIAL]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO MATERIAL]"
+                      name="CODIGO MATERIAL"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]"
+                      name="CENTRO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[ALTERNATIVA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ALTERNATIVA]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[ALTERNATIVA]"
+                      name="ALTERNATIVA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICION]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION]"
+                      name="POSICION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD BASE]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]"
+                      name="CANTIDAD BASE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMPONENTE]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTE]"
+                      name="COMPONENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD COMPONENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD COMPONENTE]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD COMPONENTE]"
+                      name="CANTIDAD COMPONENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[UM COMPONENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UM COMPONENTE]"
+                      length="50"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[UM COMPONENTE]"
+                      name="UM COMPONENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CODIGO MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ALTERNATIVA]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALTERNATIVA" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICION]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD BASE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD BASE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UM COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="UM COMPONENTE" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\pp_bom\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[pp_bom]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\pp_bom\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CENTRO"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ALTERNATIVA]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="ALTERNATIVA"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALTERNATIVA]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[ALTERNATIVA]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POSICION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="POSICION"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COMPONENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="COMPONENTE"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPONENTE]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[COMPONENTE]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CODIGO MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CODIGO MATERIAL"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_MATERIAL]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CODIGO MATERIAL]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD BASE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD BASE"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_BASE]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD COMPONENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD COMPONENTE"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_COMPONENTE]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD COMPONENTE]" />
+                    <inputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UM COMPONENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="UM COMPONENTE"
+                      externalMetadataColumnId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UM_COMPONENTE]"
+                      lineageId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output].Columns[UM COMPONENTE]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CODIGO_MATERIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="CODIGO_MATERIAL" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALTERNATIVA]"
+                      dataType="wstr"
+                      length="50"
+                      name="ALTERNATIVA" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_BASE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD_BASE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD_COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UM_COMPONENTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="UM_COMPONENTE" />
+                    <externalMetadataColumn
+                      refId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\pp_bom\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\pp_bom\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\pp_bom\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\pp_bom\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\pp_bom.Paths[Flat File Source Output]"
+              endId="Package\pp_bom\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\pp_bom\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{1166166D-2B55-41F8-833D-0BBC5A49D4DB}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\pp_bom" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{6308E478-A4C0-452F-801E-E1400698333A}"
+      DTS:From="Package\pp_bom"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\DWFE" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{EE959E9A-578D-4263-90EF-BBEBDFD28C10}"
+      DTS:From="Package\DWFE"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\DWPG" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="119,42"
+          Id="Package\pp_bom"
+          TopLeft="291.5,62.5" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="59,21" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="229,42">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="62.5,41.5"
+              Start="0,0"
+              End="55,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="27.25,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="27.25,0"
+                    Point2="31.25,0"
+                    Point3="31.25,4" />
+                  <mssgle:LineSegment
+                    End="31.25,37.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="31.25,37.5"
+                    Point2="31.25,41.5"
+                    Point3="35.25,41.5" />
+                  <mssgle:LineSegment
+                    End="55,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="111,42"
+          Id="Package\DWFE"
+          TopLeft="514,43" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="410.5,83.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="103.5,-19.5"
+              Start="0,0"
+              End="96,-19.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="47.75,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="47.75,0"
+                    Point2="51.75,0"
+                    Point3="51.75,-4" />
+                  <mssgle:LineSegment
+                    End="51.75,-15.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="51.75,-15.5"
+                    Point2="51.75,-19.5"
+                    Point3="55.75,-19.5" />
+                  <mssgle:LineSegment
+                    End="96,-19.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="113,42"
+          Id="Package\DWPG"
+          TopLeft="588,114" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="569.5,85">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="75,29"
+              Start="0,0"
+              End="75,21.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.5"
+                    Point2="0,14.5"
+                    Point3="4,14.5" />
+                  <mssgle:LineSegment
+                    End="71,14.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="71,14.5"
+                    Point2="75,14.5"
+                    Point3="75,18.5" />
+                  <mssgle:LineSegment
+                    End="75,21.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\pp_bom">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="156,42"
+          Id="Package\pp_bom\Flat File Source"
+          TopLeft="141,106" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\pp_bom\OLE DB Destination"
+          TopLeft="485,87" />
+        <EdgeLayout
+          Id="Package\pp_bom.Paths[Flat File Source Output]"
+          TopLeft="297,127">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="188,-19"
+              Start="0,0"
+              End="180.5,-19">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="90,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="90,0"
+                    Point2="94,0"
+                    Point3="94,-4" />
+                  <mssgle:LineSegment
+                    End="94,-15" />
+                  <mssgle:CubicBezierSegment
+                    Point1="94,-15"
+                    Point2="94,-19"
+                    Point3="98,-19" />
+                  <mssgle:LineSegment
+                    End="180.5,-19" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\pp_bom\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
