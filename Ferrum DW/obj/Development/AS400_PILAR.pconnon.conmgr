@@ -5,6 +5,10 @@
   DTS:CreationName="ODBC">
   <DTS:ObjectData>
     <DTS:ConnectionManager
-      DTS:ConnectionString="uid=pconnon;Dsn=AS400_PILAR;" />
+      DTS:ConnectionString="uid=pconnon;Dsn=AS400_PILAR;">
+      <DTS:Password
+        DTS:Name="pwd"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACZRZ8IGgH0S/zybCA2d5XQAAAAACAAAAAAADZgAAwAAAABAAAABn+06bFbl97AUwPVPiqUErAAAAAASAAACgAAAAEAAAAHHvy5ewDNc7Jm31yjb2gftwAAAAklir+LPp1gUWQGh2Eck+uZUubLr8X+VC1H+6QUQmL7wq/+9IW0JFKLnU7FSM5z9qYKGje0NVJGhWJ5G1d1rFp3tcQOC7SDAHpqBNve8MJvCErlatKC0dgy3e4VSeA3+R15j7Hc+J/2J/krN49rRJ6BQAAACvdlSBfo2RKDgpdL3G7eqbaX9lxw==</DTS:Password>
+    </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

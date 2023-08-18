@@ -7,12 +7,12 @@
   DTS:CreatorName="NTFERRUM\pconnon"
   DTS:DTSID="{D8AF0AA9-D13B-42A7-B0C6-8B22B5D6F740}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5270.0"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
   DTS:LocaleID="11274"
   DTS:ObjectName="ordenes de compra"
   DTS:PackageType="5"
-  DTS:VersionBuild="63"
-  DTS:VersionGUID="{BCF2EC58-CF4A-44B5-B9CB-82EC8C35B7D7}">
+  DTS:VersionBuild="64"
+  DTS:VersionGUID="{E9DF66FB-273F-4FBF-8D7C-C6B2DD9AECF4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1146,7 +1146,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="COPIA A DWFE"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1162,7 +1162,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="COPIA A DWPG"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1227,7 +1227,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error COPIA A DWPG"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1251,7 +1251,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error fi_doc_pagados"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1299,7 +1299,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error mm_ocserv"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1322,7 +1322,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Finalizo Ok"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -6250,6 +6250,46 @@
                       refId="Package\mm_ocserv\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
                       dataType="dbTimeStamp"
                       name="fecha" />
+                    <externalMetadataColumn
+                      refId="Package\mm_ocserv\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_DE_ANTICIPO]"
+                      dataType="wstr"
+                      length="50"
+                      name="TIPO_DE_ANTICIPO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_ocserv\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ANTICIPO_2]"
+                      dataType="wstr"
+                      length="50"
+                      name="ANTICIPO_2" />
+                    <externalMetadataColumn
+                      refId="Package\mm_ocserv\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CONTAB_ANT]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_CONTAB_ANT" />
+                    <externalMetadataColumn
+                      refId="Package\mm_ocserv\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IMP_MON_LOCAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="IMP_MON_LOCAL" />
+                    <externalMetadataColumn
+                      refId="Package\mm_ocserv\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IMPORTE]"
+                      dataType="wstr"
+                      length="50"
+                      name="IMPORTE" />
+                    <externalMetadataColumn
+                      refId="Package\mm_ocserv\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
+                      dataType="wstr"
+                      length="50"
+                      name="MONEDA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_ocserv\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REF_ANTICIPO]"
+                      dataType="wstr"
+                      length="50"
+                      name="REF_ANTICIPO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_ocserv\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CREADOR]"
+                      dataType="wstr"
+                      length="50"
+                      name="CREADOR" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -6484,25 +6524,25 @@
           Id="Package\fi_doc_pagados"
           TopLeft="240.250004600733,458.699995374083" />
         <NodeLayout
-          Size="221.333333333334,42.6666666666667"
-          Id="Package\Finaliza en error mm_cond_oc"
-          TopLeft="467.624998947605,287.266667782465" />
+          Size="196.666666666667,42.6666666666667"
+          Id="Package\Finaliza en error  mm_oc"
+          TopLeft="466.374998966232,370.466666294734" />
+        <NodeLayout
+          Size="230.666666666667,42.6666666666667"
+          Id="Package\Finaliza en error COPIA A DWFE"
+          TopLeft="471.374998891726,549.866663086811" />
         <NodeLayout
           Size="232,42.6666666666667"
           Id="Package\Finaliza en error COPIA A DWPG"
           TopLeft="468.874998928979,639.56666148285" />
         <NodeLayout
-          Size="196.666666666667,42.6666666666667"
-          Id="Package\Finaliza en error  mm_oc"
-          TopLeft="466.374998966232,370.466666294734" />
-        <NodeLayout
           Size="232,42.6666666666667"
           Id="Package\Finaliza en error fi_doc_pagados"
           TopLeft="476.37499881722,461.466664667527" />
         <NodeLayout
-          Size="230.666666666667,42.6666666666667"
-          Id="Package\Finaliza en error COPIA A DWFE"
-          TopLeft="471.374998891726,549.866663086811" />
+          Size="221.333333333334,42.6666666666667"
+          Id="Package\Finaliza en error mm_cond_oc"
+          TopLeft="467.624998947605,287.266667782465" />
         <NodeLayout
           Size="213.333333333334,42.6666666666667"
           Id="Package\Finaliza en error mm_ocserv"
@@ -6526,7 +6566,7 @@
         <NodeLayout
           Size="133.333333333334,42.6666666666667"
           Id="Package\mm_ocserv"
-          TopLeft="59.5000050291418,47.0666695026555" />
+          TopLeft="58.875005038455,47.0666695026555" />
         <NodeLayout
           Size="234.666666666667,42.6666666666667"
           Id="Package\Selecciono el número de proceso"
@@ -6699,37 +6739,37 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 14]"
-          TopLeft="126.166671695808,89.7333361693222">
+          TopLeft="125.541671705122,89.7333361693222">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-19.3333383252222,38.3166615409654"
+              EndConnector="-18.7083383345354,38.3166615409658"
               Start="0,0"
-              End="-19.3333383252222,30.8166615409654">
+              End="-18.7083383345354,30.8166615409658">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.1583307704827" />
+                    End="0,15.1583307704829" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,15.1583307704827"
-                    Point2="0,19.1583307704827"
-                    Point3="-4,19.1583307704827" />
+                    Point1="0,15.1583307704829"
+                    Point2="0,19.1583307704829"
+                    Point3="-4,19.1583307704829" />
                   <mssgle:LineSegment
-                    End="-15.3333383252222,19.1583307704827" />
+                    End="-14.7083383345354,19.1583307704829" />
                   <mssgle:CubicBezierSegment
-                    Point1="-15.3333383252222,19.1583307704827"
-                    Point2="-19.3333383252222,19.1583307704827"
-                    Point3="-19.3333383252222,23.1583307704827" />
+                    Point1="-14.7083383345354,19.1583307704829"
+                    Point2="-18.7083383345354,19.1583307704829"
+                    Point3="-18.7083383345354,23.1583307704829" />
                   <mssgle:LineSegment
-                    End="-19.3333383252222,30.8166615409654" />
+                    End="-18.7083383345354,30.8166615409658" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-24.9080168188611,24.1583307704827,30.4826953125,9.7490234375"
+              BoundingBox="-24.5955168235177,24.1583307704829,30.4826953125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -7109,7 +7149,7 @@
           Id="Package\mm_ocserv\Flat File Source"
           TopLeft="373,45" />
         <NodeLayout
-          Size="177,42"
+          Size="177.333333333334,42"
           Id="Package\mm_ocserv\OLE DB Destination"
           TopLeft="632,54" />
         <EdgeLayout

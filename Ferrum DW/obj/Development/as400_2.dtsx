@@ -1,0 +1,1490 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="9/12/2022 8:18:21 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="FE-PCONNON"
+  DTS:CreatorName="NTFERRUM\pconnon"
+  DTS:DTSID="{9D732419-3723-444E-A56E-E9A86F04C106}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5270.0"
+  DTS:LocaleID="11274"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{2BA28EF6-3990-4644-9AC4-353C1604708F}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{955917F2-9858-481C-8517-8919BB5524B1}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
+          SQLTask:SqlStatementSource="truncate table as400_pat;&#xA;truncate table as400_PARPROOAC;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PARPROAC"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D0D66B2A-43B1-4472-85D4-95C0C6FDE96C}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PARPROAC">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\PARPROAC\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[as400_PARPROOAC]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\PARPROAC\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:invalid"
+                  connectionManagerRefId="{4872443F-8F47-4522-A516-531857DA7FB7}:invalid"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VSEC]"
+                      cachedDataType="numeric"
+                      cachedName="VSEC"
+                      cachedPrecision="3"
+                      externalMetadataColumnId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VSEC]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VSEC]" />
+                    <inputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VTUR]"
+                      cachedDataType="numeric"
+                      cachedName="VTUR"
+                      cachedPrecision="1"
+                      externalMetadataColumnId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VTUR]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VTUR]" />
+                    <inputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VDD]"
+                      cachedDataType="numeric"
+                      cachedName="VDD"
+                      cachedPrecision="2"
+                      externalMetadataColumnId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VDD]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VDD]" />
+                    <inputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VMM]"
+                      cachedDataType="numeric"
+                      cachedName="VMM"
+                      cachedPrecision="2"
+                      externalMetadataColumnId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VMM]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VMM]" />
+                    <inputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VAA]"
+                      cachedDataType="numeric"
+                      cachedName="VAA"
+                      cachedPrecision="2"
+                      externalMetadataColumnId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VAA]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VAA]" />
+                    <inputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VLEG]"
+                      cachedDataType="numeric"
+                      cachedName="VLEG"
+                      cachedPrecision="5"
+                      externalMetadataColumnId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VLEG]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VLEG]" />
+                    <inputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VTAR1]"
+                      cachedDataType="numeric"
+                      cachedName="VTAR1"
+                      cachedPrecision="2"
+                      externalMetadataColumnId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VTAR1]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VTAR1]" />
+                    <inputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VTAR2]"
+                      cachedDataType="numeric"
+                      cachedName="VTAR2"
+                      cachedPrecision="2"
+                      externalMetadataColumnId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VTAR2]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VTAR2]" />
+                    <inputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VH10]"
+                      cachedDataType="numeric"
+                      cachedName="VH10"
+                      cachedPrecision="3"
+                      cachedScale="1"
+                      externalMetadataColumnId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VH10]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VH10]" />
+                    <inputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VH20]"
+                      cachedDataType="numeric"
+                      cachedName="VH20"
+                      cachedPrecision="3"
+                      cachedScale="1"
+                      externalMetadataColumnId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VH20]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VH20]" />
+                    <inputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VH30]"
+                      cachedDataType="numeric"
+                      cachedName="VH30"
+                      cachedPrecision="3"
+                      cachedScale="1"
+                      externalMetadataColumnId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VH30]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VH30]" />
+                    <inputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VH60]"
+                      cachedDataType="numeric"
+                      cachedName="VH60"
+                      cachedPrecision="3"
+                      cachedScale="1"
+                      externalMetadataColumnId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VH60]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VH60]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VSEC]"
+                      dataType="numeric"
+                      name="VSEC"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VTUR]"
+                      dataType="numeric"
+                      name="VTUR"
+                      precision="1" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VDD]"
+                      dataType="numeric"
+                      name="VDD"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VMM]"
+                      dataType="numeric"
+                      name="VMM"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VAA]"
+                      dataType="numeric"
+                      name="VAA"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VLEG]"
+                      dataType="numeric"
+                      name="VLEG"
+                      precision="5" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VTAR1]"
+                      dataType="numeric"
+                      name="VTAR1"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VTAR2]"
+                      dataType="numeric"
+                      name="VTAR2"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VH10]"
+                      dataType="numeric"
+                      name="VH10"
+                      precision="3"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VH20]"
+                      dataType="numeric"
+                      name="VH20"
+                      precision="3"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VH30]"
+                      dataType="numeric"
+                      name="VH30"
+                      precision="3"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VH60]"
+                      dataType="numeric"
+                      name="VH60"
+                      precision="3"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha_AS400]"
+                      dataType="dbDate"
+                      name="fecha_AS400" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbDate"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\PARPROAC\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PARPROAC\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PARPROAC\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PARPROAC\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\PARPROAC\PARPROAC"
+              componentClassID="Attunity.SSISODBCSrc"
+              description="ODBC Source"
+              name="PARPROAC"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT VSEC,VTUR,VDD,VMM,VAA,VLEG,VTAR1,VTAR2,VH10,VH20,VH30,VH60
+FROM QS36F.PARPROAC</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines how the component exposes CHAR columns. If False, CHAR columns are exposed as (multi-)byte strings (DT_STR), if True, CHAR columns are exposed as wide strings (DT_WSTR)"
+                  expressionType="Notify"
+                  name="ExposeCharColumnsAsUnicode">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for fetching data."
+                  expressionType="Notify"
+                  name="FetchMethod">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  expressionType="Notify"
+                  name="AccessMode"
+                  typeConverter="AccessMode">1</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\PARPROAC\PARPROAC.Connections[ODBCConnection]"
+                  connectionManagerID="{B1C6F9CD-3D2F-4BFF-A3C8-F3E2F85B9D10}:invalid"
+                  connectionManagerRefId="{B1C6F9CD-3D2F-4BFF-A3C8-F3E2F85B9D10}:invalid"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="ODBC Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VSEC]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VSEC]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VSEC]"
+                      name="VSEC"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VTUR]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VTUR]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VTUR]"
+                      name="VTUR"
+                      precision="1" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VDD]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VDD]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VDD]"
+                      name="VDD"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VMM]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VMM]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VMM]"
+                      name="VMM"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VAA]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VAA]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VAA]"
+                      name="VAA"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VLEG]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VLEG]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VLEG]"
+                      name="VLEG"
+                      precision="5" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VTAR1]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VTAR1]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VTAR1]"
+                      name="VTAR1"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VTAR2]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VTAR2]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VTAR2]"
+                      name="VTAR2"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VH10]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VH10]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VH10]"
+                      name="VH10"
+                      precision="3"
+                      scale="1" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VH20]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VH20]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VH20]"
+                      name="VH20"
+                      precision="3"
+                      scale="1" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VH30]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VH30]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VH30]"
+                      name="VH30"
+                      precision="3"
+                      scale="1" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VH60]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VH60]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].Columns[VH60]"
+                      name="VH60"
+                      precision="3"
+                      scale="1" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VSEC]"
+                      dataType="numeric"
+                      name="VSEC"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VTUR]"
+                      dataType="numeric"
+                      name="VTUR"
+                      precision="1" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VDD]"
+                      dataType="numeric"
+                      name="VDD"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VMM]"
+                      dataType="numeric"
+                      name="VMM"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VAA]"
+                      dataType="numeric"
+                      name="VAA"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VLEG]"
+                      dataType="numeric"
+                      name="VLEG"
+                      precision="5" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VTAR1]"
+                      dataType="numeric"
+                      name="VTAR1"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VTAR2]"
+                      dataType="numeric"
+                      name="VTAR2"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VH10]"
+                      dataType="numeric"
+                      name="VH10"
+                      precision="3"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VH20]"
+                      dataType="numeric"
+                      name="VH20"
+                      precision="3"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VH30]"
+                      dataType="numeric"
+                      name="VH30"
+                      precision="3"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VH60]"
+                      dataType="numeric"
+                      name="VH60"
+                      precision="3"
+                      scale="1" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output]"
+                  isErrorOut="true"
+                  name="ODBC Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VSEC]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VSEC]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VSEC]"
+                      name="VSEC"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VTUR]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VTUR]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VTUR]"
+                      name="VTUR"
+                      precision="1" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VDD]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VDD]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VDD]"
+                      name="VDD"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VMM]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VMM]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VMM]"
+                      name="VMM"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VAA]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VAA]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VAA]"
+                      name="VAA"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VLEG]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VLEG]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VLEG]"
+                      name="VLEG"
+                      precision="5" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VTAR1]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VTAR1]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VTAR1]"
+                      name="VTAR1"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VTAR2]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VTAR2]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VTAR2]"
+                      name="VTAR2"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VH10]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VH10]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VH10]"
+                      name="VH10"
+                      precision="3"
+                      scale="1" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VH20]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VH20]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VH20]"
+                      name="VH20"
+                      precision="3"
+                      scale="1" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VH30]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VH30]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VH30]"
+                      name="VH30"
+                      precision="3"
+                      scale="1" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VH60]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output].ExternalColumns[VH60]"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[VH60]"
+                      name="VH60"
+                      precision="3"
+                      scale="1" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\PARPROAC.Paths[ODBC Source Output]"
+              endId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="ODBC Source Output"
+              startId="Package\PARPROAC\PARPROAC.Outputs[ODBC Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PAT"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{85556F68-1C48-4DD1-9450-DD854224FE3C}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PAT">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\PAT\OLE DB Destination 12"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination 12"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[as400_PAT]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\PAT\OLE DB Destination 12.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:invalid"
+                  connectionManagerRefId="{4872443F-8F47-4522-A516-531857DA7FB7}:invalid"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].Columns[PHDIA]"
+                      cachedDataType="numeric"
+                      cachedName="PHDIA"
+                      cachedPrecision="2"
+                      externalMetadataColumnId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHDIA]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHDIA]" />
+                    <inputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].Columns[PHMES]"
+                      cachedDataType="numeric"
+                      cachedName="PHMES"
+                      cachedPrecision="2"
+                      externalMetadataColumnId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHMES]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHMES]" />
+                    <inputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].Columns[PHSEC]"
+                      cachedDataType="numeric"
+                      cachedName="PHSEC"
+                      cachedPrecision="3"
+                      externalMetadataColumnId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHSEC]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHSEC]" />
+                    <inputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].Columns[PHORD]"
+                      cachedDataType="numeric"
+                      cachedName="PHORD"
+                      cachedPrecision="5"
+                      externalMetadataColumnId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHORD]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHORD]" />
+                    <inputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].Columns[PHTER]"
+                      cachedDataType="numeric"
+                      cachedName="PHTER"
+                      cachedPrecision="2"
+                      externalMetadataColumnId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHTER]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHTER]" />
+                    <inputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].Columns[PHLEG]"
+                      cachedDataType="numeric"
+                      cachedName="PHLEG"
+                      cachedPrecision="5"
+                      externalMetadataColumnId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHLEG]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHLEG]" />
+                    <inputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].Columns[PHCPA]"
+                      cachedDataType="numeric"
+                      cachedName="PHCPA"
+                      cachedPrecision="3"
+                      externalMetadataColumnId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHCPA]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHCPA]" />
+                    <inputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].Columns[PHHRS]"
+                      cachedDataType="numeric"
+                      cachedName="PHHRS"
+                      cachedPrecision="3"
+                      cachedScale="1"
+                      externalMetadataColumnId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHHRS]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHHRS]" />
+                    <inputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].Columns[PHDEC]"
+                      cachedDataType="numeric"
+                      cachedName="PHDEC"
+                      cachedPrecision="1"
+                      cachedScale="1"
+                      externalMetadataColumnId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHDEC]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHDEC]" />
+                    <inputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].Columns[PHDES]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="8"
+                      cachedName="PHDES"
+                      externalMetadataColumnId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHDES]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHDES]" />
+                    <inputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].Columns[PHEQU]"
+                      cachedDataType="numeric"
+                      cachedName="PHEQU"
+                      cachedPrecision="5"
+                      externalMetadataColumnId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHEQU]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHEQU]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHDIA]"
+                      dataType="numeric"
+                      name="PHDIA"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHMES]"
+                      dataType="numeric"
+                      name="PHMES"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHSEC]"
+                      dataType="numeric"
+                      name="PHSEC"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHORD]"
+                      dataType="numeric"
+                      name="PHORD"
+                      precision="5" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHTER]"
+                      dataType="numeric"
+                      name="PHTER"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHLEG]"
+                      dataType="numeric"
+                      name="PHLEG"
+                      precision="5" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHCPA]"
+                      dataType="numeric"
+                      name="PHCPA"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHHRS]"
+                      dataType="numeric"
+                      name="PHHRS"
+                      precision="3"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHDEC]"
+                      dataType="numeric"
+                      name="PHDEC"
+                      precision="1"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHDES]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="PHDES" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[fecha_AS400]"
+                      dataType="dbDate"
+                      name="fecha_AS400" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHEQU]"
+                      dataType="numeric"
+                      name="PHEQU"
+                      precision="5" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\PAT\OLE DB Destination 12.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PAT\OLE DB Destination 12.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PAT\OLE DB Destination 12.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PAT\OLE DB Destination 12.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\PAT\PAT"
+              componentClassID="Attunity.SSISODBCSrc"
+              description="ODBC Source"
+              name="PAT"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT PAT01F.PHDIA, PAT01F.PHMES, PAT01F.PHSEC, PAT01F.PHORD, PAT01F.PHTER, PAT01F.PHLEG, PAT01F.PHCPA, PAT01F.PHHRS, PAT01F.PHDEC, PAT01F.PHDES,PAT01F.PHEQU
+FROM S108583F.QS36F.PAT01F PAT01F
+ORDER BY PAT01F.PHLEG, PAT01F.PHDIA, PAT01F.PHORD</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines how the component exposes CHAR columns. If False, CHAR columns are exposed as (multi-)byte strings (DT_STR), if True, CHAR columns are exposed as wide strings (DT_WSTR)"
+                  expressionType="Notify"
+                  name="ExposeCharColumnsAsUnicode">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for fetching data."
+                  expressionType="Notify"
+                  name="FetchMethod">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The mode used to access the database."
+                  expressionType="Notify"
+                  name="AccessMode"
+                  typeConverter="AccessMode">1</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\PAT\PAT.Connections[ODBCConnection]"
+                  connectionManagerID="{61AA9091-8608-4539-8D2B-DA9799E64AA5}:invalid"
+                  connectionManagerRefId="{61AA9091-8608-4539-8D2B-DA9799E64AA5}:invalid"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\PAT\PAT.Outputs[ODBC Source Output]"
+                  errorRowDisposition="FailComponent"
+                  name="ODBC Source Output"
+                  truncationRowDisposition="FailComponent">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHDIA]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHDIA]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHDIA]"
+                      name="PHDIA"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHMES]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHMES]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHMES]"
+                      name="PHMES"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHSEC]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHSEC]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHSEC]"
+                      name="PHSEC"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHORD]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHORD]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHORD]"
+                      name="PHORD"
+                      precision="5" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHTER]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHTER]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHTER]"
+                      name="PHTER"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHLEG]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHLEG]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHLEG]"
+                      name="PHLEG"
+                      precision="5" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHCPA]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHCPA]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHCPA]"
+                      name="PHCPA"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHHRS]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHHRS]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHHRS]"
+                      name="PHHRS"
+                      precision="3"
+                      scale="1" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHDEC]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHDEC]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHDEC]"
+                      name="PHDEC"
+                      precision="1"
+                      scale="1" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHDES]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHDES]"
+                      length="8"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHDES]"
+                      name="PHDES" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHEQU]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHEQU]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Output].Columns[PHEQU]"
+                      name="PHEQU"
+                      precision="5" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHDIA]"
+                      dataType="numeric"
+                      name="PHDIA"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHMES]"
+                      dataType="numeric"
+                      name="PHMES"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHSEC]"
+                      dataType="numeric"
+                      name="PHSEC"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHORD]"
+                      dataType="numeric"
+                      name="PHORD"
+                      precision="5" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHTER]"
+                      dataType="numeric"
+                      name="PHTER"
+                      precision="2" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHLEG]"
+                      dataType="numeric"
+                      name="PHLEG"
+                      precision="5" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHCPA]"
+                      dataType="numeric"
+                      name="PHCPA"
+                      precision="3" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHHRS]"
+                      dataType="numeric"
+                      name="PHHRS"
+                      precision="3"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHDEC]"
+                      dataType="numeric"
+                      name="PHDEC"
+                      precision="1"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHDES]"
+                      codePage="1252"
+                      dataType="str"
+                      length="8"
+                      name="PHDES" />
+                    <externalMetadataColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHEQU]"
+                      dataType="numeric"
+                      name="PHEQU"
+                      precision="5" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\PAT\PAT.Outputs[ODBC Source Error Output]"
+                  isErrorOut="true"
+                  name="ODBC Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHDIA]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHDIA]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHDIA]"
+                      name="PHDIA"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHMES]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHMES]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHMES]"
+                      name="PHMES"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHSEC]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHSEC]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHSEC]"
+                      name="PHSEC"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHORD]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHORD]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHORD]"
+                      name="PHORD"
+                      precision="5" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHTER]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHTER]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHTER]"
+                      name="PHTER"
+                      precision="2" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHLEG]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHLEG]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHLEG]"
+                      name="PHLEG"
+                      precision="5" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHCPA]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHCPA]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHCPA]"
+                      name="PHCPA"
+                      precision="3" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHHRS]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHHRS]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHHRS]"
+                      name="PHHRS"
+                      precision="3"
+                      scale="1" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHDEC]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHDEC]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHDEC]"
+                      name="PHDEC"
+                      precision="1"
+                      scale="1" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHDES]"
+                      codePage="1252"
+                      dataType="str"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHDES]"
+                      length="8"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHDES]"
+                      name="PHDES" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHEQU]"
+                      dataType="numeric"
+                      externalMetadataColumnId="Package\PAT\PAT.Outputs[ODBC Source Output].ExternalColumns[PHEQU]"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[PHEQU]"
+                      name="PHEQU"
+                      precision="5" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PAT\PAT.Outputs[ODBC Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\PAT.Paths[ODBC Source Output]"
+              endId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input]"
+              name="ODBC Source Output"
+              startId="Package\PAT\PAT.Outputs[ODBC Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{4DB9C5D2-32F3-440E-8976-CD85B3463B8C}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\PAT" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{4D3FB598-7434-4C55-BA55-068C0C4013F5}"
+      DTS:From="Package\PAT"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\PARPROAC" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="100,42"
+          Id="Package\PAT"
+          TopLeft="248.5,63.5" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="63,15" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="233,36">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="65.5,27.5"
+              Start="0,0"
+              End="65.5,20">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="61.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="61.5,0"
+                    Point2="65.5,0"
+                    Point3="65.5,4" />
+                  <mssgle:LineSegment
+                    End="65.5,20" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="141,42"
+          Id="Package\PARPROAC"
+          TopLeft="235,131.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="302,105.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26"
+              Start="0,0"
+              End="0,18.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\PAT">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="192,42"
+          Id="Package\PAT\OLE DB Destination 12"
+          TopLeft="222,60" />
+        <NodeLayout
+          Size="100,42"
+          Id="Package\PAT\PAT"
+          TopLeft="60,62" />
+        <EdgeLayout
+          Id="Package\PAT.Paths[ODBC Source Output]"
+          TopLeft="160,82">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="62,0"
+              Start="0,0"
+              End="54.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="54.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\PAT\OLE DB Destination 12">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\PAT\PAT">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\PARPROAC">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="141,42"
+          Id="Package\PARPROAC\PARPROAC"
+          TopLeft="60,62" />
+        <NodeLayout
+          Size="177,42"
+          Id="Package\PARPROAC\OLE DB Destination"
+          TopLeft="356,62" />
+        <EdgeLayout
+          Id="Package\PARPROAC.Paths[ODBC Source Output]"
+          TopLeft="201,83">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="155,0"
+              Start="0,0"
+              End="147.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="147.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\PARPROAC\PARPROAC">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\PARPROAC\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
