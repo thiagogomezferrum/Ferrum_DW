@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="9/12/2022 8:18:21 AM"
@@ -7,30 +7,135 @@
   DTS:CreatorName="NTFERRUM\pconnon"
   DTS:DTSID="{9D732419-3723-444E-A56E-E9A86F04C106}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5270.0"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="8"
-  DTS:VersionGUID="{2BA28EF6-3990-4644-9AC4-353C1604708F}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{8F850B98-1791-4460-AD5A-AE0368B74877}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EB6F6B5F-354E-402B-ACBE-0E0A29D5BE13}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Proceso">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Execute SQL Task"
+      DTS:refId="Package\Comienza Ejecución"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{955917F2-9858-481C-8517-8919BB5524B1}"
+      DTS:DTSID="{059f9d2c-6939-4f07-8732-ab0fe21daf79}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Execute SQL Task"
+      DTS:ObjectName="Comienza Ejecución"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
-          SQLTask:SqlStatementSource="truncate table as400_pat;&#xA;truncate table as400_PARPROOAC;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 1, 'Comienza'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Finaliza en error"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{665782c3-2d31-43d0-8fe0-62fcb80e8d3d}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Finaliza en error"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 7, 'Carga as400 PAT'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Finaliza en error 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{3a83869f-a9f1-4cb6-93cb-bf531d9534ab}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Finaliza en error 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 7, 'Carga as400_PARPROAC'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Finalizo Ok"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{bf29848b-ef9c-46dc-8d79-80301f453a42}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Finalizo Ok"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 2, 'Ok'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Genera número de proceso"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{1bebce4b-2947-46b2-883e-b989c32deaa5}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Genera número de proceso"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="declare @nMaxCodProceso int&#xA;SELECT @nMaxCodProceso = MAX(proceso_key) &#xA;FROM DW_Procesos_Info&#xA;IF @nMaxCodProceso is null&#xA;SET @nMaxCodProceso = 0&#xA;DBCC CHECKIDENT ('DW_Procesos_Info', RESEED, @nMaxCodProceso)&#xA; &#xA;Insert Into DW_Procesos_Info (lote_key, &#xA; inicio_ejecucion, &#xA; fin_ejecucion, &#xA; Estado_Key)&#xA;SELECT 40001,getdate() inicio_ejecucion, getdate() fin_ejecucion, &#xA; 0 Estado_Key" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -105,8 +210,8 @@
               <connections>
                 <connection
                   refId="Package\PARPROAC\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:invalid"
-                  connectionManagerRefId="{4872443F-8F47-4522-A516-531857DA7FB7}:invalid"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -275,11 +380,12 @@
                       scale="1" />
                     <externalMetadataColumn
                       refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha_AS400]"
-                      dataType="dbDate"
+                      dataType="wstr"
+                      length="10"
                       name="fecha_AS400" />
                     <externalMetadataColumn
                       refId="Package\PARPROAC\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
-                      dataType="dbDate"
+                      dataType="dbTimeStamp"
                       name="fecha" />
                   </externalMetadataColumns>
                 </input>
@@ -379,8 +485,8 @@ FROM QS36F.PARPROAC</property>
               <connections>
                 <connection
                   refId="Package\PARPROAC\PARPROAC.Connections[ODBCConnection]"
-                  connectionManagerID="{B1C6F9CD-3D2F-4BFF-A3C8-F3E2F85B9D10}:invalid"
-                  connectionManagerRefId="{B1C6F9CD-3D2F-4BFF-A3C8-F3E2F85B9D10}:invalid"
+                  connectionManagerID="{B1C6F9CD-3D2F-4BFF-A3C8-F3E2F85B9D10}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AS400_PILAR pconnon]"
                   description="The ODBC runtime connection used to access the database."
                   name="ODBCConnection" />
               </connections>
@@ -741,8 +847,8 @@ FROM QS36F.PARPROAC</property>
               <connections>
                 <connection
                   refId="Package\PAT\OLE DB Destination 12.Connections[OleDbConnection]"
-                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:invalid"
-                  connectionManagerRefId="{4872443F-8F47-4522-A516-531857DA7FB7}:invalid"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -896,7 +1002,8 @@ FROM QS36F.PARPROAC</property>
                       name="fecha" />
                     <externalMetadataColumn
                       refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[fecha_AS400]"
-                      dataType="dbDate"
+                      dataType="wstr"
+                      length="10"
                       name="fecha_AS400" />
                     <externalMetadataColumn
                       refId="Package\PAT\OLE DB Destination 12.Inputs[OLE DB Destination Input].ExternalColumns[PHEQU]"
@@ -1002,8 +1109,8 @@ ORDER BY PAT01F.PHLEG, PAT01F.PHDIA, PAT01F.PHORD</property>
               <connections>
                 <connection
                   refId="Package\PAT\PAT.Connections[ODBCConnection]"
-                  connectionManagerID="{61AA9091-8608-4539-8D2B-DA9799E64AA5}:invalid"
-                  connectionManagerRefId="{61AA9091-8608-4539-8D2B-DA9799E64AA5}:invalid"
+                  connectionManagerID="{61AA9091-8608-4539-8D2B-DA9799E64AA5}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[AS400_AVELLANEDA pconnon]"
                   description="The ODBC runtime connection used to access the database."
                   name="ODBCConnection" />
               </connections>
@@ -1270,16 +1377,53 @@ ORDER BY PAT01F.PHLEG, PAT01F.PHDIA, PAT01F.PHORD</property>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Selecciono el número de proceso"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{de1dc185-922f-47a2-a806-948062da4b50}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Selecciono el número de proceso"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="SELECT     MAX(proceso_key) AS Proceso&#xA;FROM dbo.DW_Procesos_Info&#xA;WHERE lote_Key = 40001"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::Proceso" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Truncate"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{955917F2-9858-481C-8517-8919BB5524B1}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Truncate"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
+          SQLTask:SqlStatementSource="truncate table as400_pat;&#xA;truncate table as400_PARPROOAC;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{4DB9C5D2-32F3-440E-8976-CD85B3463B8C}"
-      DTS:From="Package\Execute SQL Task"
+      DTS:DTSID="{6175498E-FEB2-49A3-9712-B06E08FD3D11}"
+      DTS:From="Package\Selecciono el número de proceso"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\PAT" />
+      DTS:To="Package\Truncate" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
@@ -1288,6 +1432,56 @@ ORDER BY PAT01F.PHLEG, PAT01F.PHDIA, PAT01F.PHORD</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\PARPROAC" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{ECDE206F-0E5B-4917-A7F6-85EC702C3208}"
+      DTS:From="Package\Genera número de proceso"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Selecciono el número de proceso" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{CA9DA029-5AD5-4F51-B9AD-85EB409F8894}"
+      DTS:From="Package\Truncate"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Comienza Ejecución" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{BCF7EAE8-BE27-4A9A-AA9C-55EDDE928448}"
+      DTS:From="Package\Comienza Ejecución"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\PAT" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{48B2FCAB-EDEC-4C1E-A9C9-26BD08C1A004}"
+      DTS:From="Package\PAT"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Finaliza en error"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{4E1DBEEC-0931-4F80-9A33-C7862BFFE232}"
+      DTS:From="Package\PARPROAC"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Finaliza en error 1"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{4BA1EB37-2F6F-4B21-97E4-F6F31235A1F2}"
+      DTS:From="Package\PARPROAC"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\Finalizo Ok" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -1300,35 +1494,33 @@ ORDER BY PAT01F.PHLEG, PAT01F.PHDIA, PAT01F.PHORD</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="121.333333333334,42.6666666666667"
+          Id="Package\Truncate"
+          TopLeft="342.374995836988,68.3684215677741" />
+        <NodeLayout
+          Size="141.333333333334,42"
+          Id="Package\PARPROAC"
+          TopLeft="336.249998491258,315.728072789787" />
         <NodeLayout
           Size="100,42"
           Id="Package\PAT"
-          TopLeft="248.5,63.5" />
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Execute SQL Task"
-          TopLeft="63,15" />
+          TopLeft="362.249998304993,228.149125241066" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="233,36">
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="409.583331731459,270.149125241066">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="65.5,27.5"
+              EndConnector="0,45.5789475487209"
               Start="0,0"
-              End="65.5,20">
+              End="0,38.0789475487209">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="61.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="61.5,0"
-                    Point2="65.5,0"
-                    Point3="65.5,4" />
-                  <mssgle:LineSegment
-                    End="65.5,20" />
+                    End="0,38.0789475487209" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1338,23 +1530,179 @@ ORDER BY PAT01F.PHLEG, PAT01F.PHDIA, PAT01F.PHORD</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="141,42"
-          Id="Package\PARPROAC"
-          TopLeft="235,131.5" />
+          Size="164,42"
+          Id="Package\Genera número de proceso"
+          TopLeft="47.464285945786,0.377189221914911" />
+        <NodeLayout
+          Size="234.666666666667,42.6666666666667"
+          Id="Package\Selecciono el número de proceso"
+          TopLeft="11.1250007729981,74.5700450381009" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="302,105.5">
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="128.961310026059,42.3771892219149">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,26"
+              EndConnector="0,32.192855816186"
               Start="0,0"
-              End="0,18.5">
+              End="0,24.692855816186">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.5" />
+                    End="0,24.692855816186" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="245.791667439665,92.8025666362709">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96.5833283973236,0"
+              Start="0,0"
+              End="89.0833283973236,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="89.0833283973236,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="173.333333333334,42.6666666666667"
+          Id="Package\Comienza Ejecución"
+          TopLeft="323.124995185062,154.052632596354" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="406.416662177692,111.035088234441">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.0175443619133"
+              Start="0,0"
+              End="0,35.5175443619133">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,35.5175443619133" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="411.020830078361,196.719299263021">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.4298259780457"
+              Start="0,0"
+              End="0,23.9298259780457">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.9298259780457" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="156,42.6666666666667"
+          Id="Package\Finaliza en error"
+          TopLeft="121.749999124557,226.833332354562" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="362.249998304993,248.657895464481">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-84.4999991804357,0"
+              Start="0,0"
+              End="-76.9999991804357,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-76.9999991804357,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-53.7413472464679,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="165.333333333334,42.6666666666667"
+          Id="Package\Finaliza en error 1"
+          TopLeft="123.749998155981,320.000003915084" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="336.249998491258,339.030705019102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-47.1666670019429,0"
+              Start="0,0"
+              End="-39.6666670019429,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-39.6666670019429,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-35.0746811572214,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="133.333333333334,42.6666666666667"
+          Id="Package\Finalizo Ok"
+          TopLeft="343.124994887039,413.491232101167" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="408.354163355815,357.728072789787">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,55.7631593113792"
+              Start="0,0"
+              End="0,48.2631593113792">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.2631593113792" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1367,10 +1715,69 @@ ORDER BY PAT01F.PHLEG, PAT01F.PHDIA, PAT01F.PHORD</property>
     </LayoutInfo>
   </Package>
   <TaskHost
+    design-time-name="Package\PARPROAC">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="140,42.6666666666667"
+          Id="Package\PARPROAC\PARPROAC"
+          TopLeft="60,62" />
+        <NodeLayout
+          Size="177.333333333334,42"
+          Id="Package\PARPROAC\OLE DB Destination"
+          TopLeft="356,62" />
+        <EdgeLayout
+          Id="Package\PARPROAC.Paths[ODBC Source Output]"
+          TopLeft="200,83.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="156,0"
+              Start="0,0"
+              End="148.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="148.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\PARPROAC\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\PARPROAC\PARPROAC">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\PAT">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="192,42"
           Id="Package\PAT\OLE DB Destination 12"
@@ -1398,9 +1805,7 @@ ORDER BY PAT01F.PHLEG, PAT01F.PHDIA, PAT01F.PHORD</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -1424,65 +1829,6 @@ ORDER BY PAT01F.PHLEG, PAT01F.PHDIA, PAT01F.PHORD</property>
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\PARPROAC">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="141,42"
-          Id="Package\PARPROAC\PARPROAC"
-          TopLeft="60,62" />
-        <NodeLayout
-          Size="177,42"
-          Id="Package\PARPROAC\OLE DB Destination"
-          TopLeft="356,62" />
-        <EdgeLayout
-          Id="Package\PARPROAC.Paths[ODBC Source Output]"
-          TopLeft="201,83">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="155,0"
-              Start="0,0"
-              End="147.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="147.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\PARPROAC\PARPROAC">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\PARPROAC\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Ferrum DW</Name>
-    <LastWriteTime>2023-08-18T14:51:53.6029738Z</LastWriteTime>
+    <LastWriteTime>2023-08-22T18:23:42.0685493Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>facturas.dtsx</Name>
-      <LastWriteTime>2023-08-17T17:46:41.8867911Z</LastWriteTime>
+      <LastWriteTime>2023-08-22T18:23:41.8551204Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -33,12 +33,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ordenes de compra.dtsx</Name>
-      <LastWriteTime>2023-08-18T15:09:56.2232363Z</LastWriteTime>
+      <LastWriteTime>2023-08-22T17:25:03.8690438Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>stock.dtsx</Name>
-      <LastWriteTime>2023-08-17T17:46:42.3245285Z</LastWriteTime>
+      <LastWriteTime>2023-08-22T16:24:31.323977Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -48,7 +48,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>solped.dtsx</Name>
-      <LastWriteTime>2023-08-18T14:57:59.9713329Z</LastWriteTime>
+      <LastWriteTime>2023-08-22T17:06:58.2563727Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -58,7 +58,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>as400.dtsx</Name>
-      <LastWriteTime>2023-08-17T17:46:41.6677805Z</LastWriteTime>
+      <LastWriteTime>2023-08-22T17:37:35.93552Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -128,7 +128,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>as400_2.dtsx</Name>
-      <LastWriteTime>2023-08-17T17:46:41.6677805Z</LastWriteTime>
+      <LastWriteTime>2023-08-18T16:32:00.1800448Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -144,6 +144,11 @@
     <ProjectBuildItemInfo>
       <Name>cheques.dtsx</Name>
       <LastWriteTime>2023-08-18T14:51:53.389271Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Package1.dtsx</Name>
+      <LastWriteTime>2023-08-22T18:23:41.7494328Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

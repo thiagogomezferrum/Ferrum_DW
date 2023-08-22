@@ -7,15 +7,25 @@
   DTS:CreatorName="NTFERRUM\pconnon"
   DTS:DTSID="{CFE6DC08-EB00-462F-915D-B71A28BF7212}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5270.0"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
   DTS:LocaleID="11274"
   DTS:ObjectName="as400"
   DTS:PackageType="5"
-  DTS:VersionBuild="73"
-  DTS:VersionGUID="{FDE4F0A7-861A-4072-A5E5-2972DC1FAFEC}">
+  DTS:VersionBuild="78"
+  DTS:VersionGUID="{A61F1B2F-64B2-4D51-8C48-679B10204B5A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A5C99125-B5A0-481F-817B-3BAE1B536951}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Proceso">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\DWFE"
@@ -47,6 +57,45 @@
         <SQLTask:SqlTaskData
           SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
           SQLTask:SqlStatementSource="update a&#xA;set material= b.CODIGO_DE_MATERIAL&#xA;from programa_produccion a inner join materiales b on concat(a.simbol,'-',a.color) = b.MATERIAL_ANTERIOR &#xA;&#xA;exec DW_AS400;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Finalizo Ok"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{1ec616fa-9c83-4c43-abf0-7b974262cf89}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Finalizo Ok"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 2, 'Ok'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Genera número de proceso"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{3ab2d82f-1bd7-4c18-92c4-feb69c7362d1}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Genera número de proceso"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="declare @nMaxCodProceso int&#xA;SELECT @nMaxCodProceso = MAX(proceso_key) &#xA;FROM DW_Procesos_Info&#xA;IF @nMaxCodProceso is null&#xA;SET @nMaxCodProceso = 0&#xA;DBCC CHECKIDENT ('DW_Procesos_Info', RESEED, @nMaxCodProceso)&#xA; &#xA;Insert Into DW_Procesos_Info (lote_key, &#xA; inicio_ejecucion, &#xA; fin_ejecucion, &#xA; Estado_Key)&#xA;SELECT 40002,getdate() inicio_ejecucion, getdate() fin_ejecucion, &#xA; 0 Estado_Key" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -17019,6 +17068,27 @@ FROM QS36F.VALrotGC</property>
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
+      DTS:refId="Package\Selecciono el número de proceso"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{5638a3ff-d63b-420a-9bab-f20e9a2e0903}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Selecciono el número de proceso"
+      DTS:ThreadHint="2">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="SELECT     MAX(proceso_key) AS Proceso&#xA;FROM dbo.DW_Procesos_Info&#xA;WHERE lote_Key = 40002"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::Proceso" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\STA"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
@@ -17084,6 +17154,30 @@ FROM QS36F.VALrotGC</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
       DTS:To="Package\Execute SQL Task 1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{400CC8C4-3428-459C-B20C-425D7D4246D2}"
+      DTS:From="Package\Genera número de proceso"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\Selecciono el número de proceso" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{1EC435E3-EC85-4244-A61E-6174A1D5C9FB}"
+      DTS:From="Package\Selecciono el número de proceso"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\NETSERVER" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{6908C3C5-08E2-4A58-9FAF-122EDB3FA894}"
+      DTS:From="Package\Execute SQL Task 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 8"
+      DTS:To="Package\Finalizo Ok" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -17096,49 +17190,49 @@ FROM QS36F.VALrotGC</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="111,42"
+          Size="110.666666666667,42"
           Id="Package\DWFE"
-          TopLeft="45,21" />
+          TopLeft="563.749992270023,154.191035589622" />
         <NodeLayout
           Size="172,42"
           Id="Package\Execute SQL Task 1"
-          TopLeft="445,165" />
+          TopLeft="315.66666979591,519.875249309822" />
         <NodeLayout
           Size="146,42"
           Id="Package\NETSERVER"
-          TopLeft="246,26" />
+          TopLeft="335.999998658895,161.243667207205" />
         <NodeLayout
-          Size="181,42"
+          Size="181.333333333334,42"
           Id="Package\NETSERVER PILAR"
-          TopLeft="710,37" />
+          TopLeft="318.125005839392,322.208581909077" />
         <NodeLayout
-          Size="153,42"
+          Size="153.333333333334,42"
           Id="Package\NETSERVERF"
-          TopLeft="446,31" />
+          TopLeft="332.250001695007,240.82261597939" />
         <NodeLayout
-          Size="133,42"
+          Size="133.333333333334,42"
           Id="Package\ROTURAS"
-          TopLeft="775,161" />
+          TopLeft="341.12500658445,427.296299558867" />
         <NodeLayout
           Size="100,42"
           Id="Package\STA"
-          TopLeft="55,99" />
+          TopLeft="149.99999858439,154.87524466066" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="156,44.5">
+          TopLeft="563.749992270023,178.717351398414">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="90,0"
+              EndConnector="-81.7499936111273,0"
               Start="0,0"
-              End="82.5,0">
+              End="-74.2499936111273,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="82.5,0" />
+                    End="-74.2499936111273,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17149,18 +17243,18 @@ FROM QS36F.VALrotGC</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="392,49.5">
+          TopLeft="408.958333510285,203.243667207205">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="54,0"
+              EndConnector="0,37.5789487721847"
               Start="0,0"
-              End="46.5,0">
+              End="0,30.0789487721847">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="46.5,0" />
+                    End="0,30.0789487721847" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17171,18 +17265,18 @@ FROM QS36F.VALrotGC</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="599,55">
+          TopLeft="408.854170433866,282.82261597939">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="111,0"
+              EndConnector="0,39.3859659296874"
               Start="0,0"
-              End="103.5,0">
+              End="0,31.8859659296874">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="103.5,0" />
+                    End="0,31.8859659296874" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17193,30 +17287,18 @@ FROM QS36F.VALrotGC</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="105,99">
+          TopLeft="249.99999858439,179.059455933932">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="214,-31"
+              EndConnector="86.0000000745056,0"
               Start="0,0"
-              End="214,-23.5">
+              End="78.5000000745056,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-11.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-11.5"
-                    Point2="0,-15.5"
-                    Point3="4,-15.5" />
-                  <mssgle:LineSegment
-                    End="210,-15.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="210,-15.5"
-                    Point2="214,-15.5"
-                    Point3="214,-19.5" />
-                  <mssgle:LineSegment
-                    End="214,-23.5" />
+                    End="78.5000000745056,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17227,30 +17309,18 @@ FROM QS36F.VALrotGC</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="800.5,79">
+          TopLeft="408.291672878588,364.208581909077">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="41,82"
+              EndConnector="0,63.0877176497893"
               Start="0,0"
-              End="41,74.5">
+              End="0,55.5877176497893">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,37"
-                    Point2="0,41"
-                    Point3="4,41" />
-                  <mssgle:LineSegment
-                    End="37,41" />
-                  <mssgle:CubicBezierSegment
-                    Point1="37,41"
-                    Point2="41,41"
-                    Point3="41,45" />
-                  <mssgle:LineSegment
-                    End="41,74.5" />
+                    End="0,55.5877176497893" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17261,18 +17331,108 @@ FROM QS36F.VALrotGC</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="775,184">
+          TopLeft="404.729171523514,469.296299558867">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-158,0"
+              EndConnector="0,50.5789497509557"
               Start="0,0"
-              End="-150.5,0">
+              End="0,43.0789497509557">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-150.5,0" />
+                    End="0,43.0789497509557" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Genera número de proceso"
+          TopLeft="152.777776320776,2.36256713950048" />
+        <NodeLayout
+          Size="234.666666666667,42.6666666666667"
+          Id="Package\Selecciono el número de proceso"
+          TopLeft="291.666663140059,72.9863500894609" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="234.777776320776,44.3625671395005">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="174.222220152617,28.6237829499604"
+              Start="0,0"
+              End="174.222220152617,21.1237829499604">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.3118914749802" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.3118914749802"
+                    Point2="0,14.3118914749802"
+                    Point3="4,14.3118914749802" />
+                  <mssgle:LineSegment
+                    End="170.222220152617,14.3118914749802" />
+                  <mssgle:CubicBezierSegment
+                    Point1="170.222220152617,14.3118914749802"
+                    Point2="174.222220152617,14.3118914749802"
+                    Point3="174.222220152617,18.3118914749802" />
+                  <mssgle:LineSegment
+                    End="174.222220152617,21.1237829499604" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="408.999997566144,115.653016756128">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.5906504510775"
+              Start="0,0"
+              End="0,38.0906504510775">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.0906504510775" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="133.333333333334,42.6666666666667"
+          Id="Package\Finalizo Ok"
+          TopLeft="99.9999985098839,514.697863821056" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="315.66666979591,538.453223232105">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-82.3333379526928,0"
+              Start="0,0"
+              End="-74.8333379526928,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-74.8333379526928,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -17288,21 +17448,21 @@ FROM QS36F.VALrotGC</property>
     design-time-name="Package\NETSERVER">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="133,42"
+          Size="133.333333333334,42"
           Id="Package\NETSERVER\ENTXDIA1"
           TopLeft="481,95" />
         <NodeLayout
-          Size="183,42"
+          Size="182.666666666667,42"
           Id="Package\NETSERVER\programa producción"
           TopLeft="18,28" />
         <NodeLayout
-          Size="171,42"
+          Size="170.666666666667,42"
           Id="Package\NETSERVER\OLE DB Destination"
           TopLeft="220,28" />
         <NodeLayout
-          Size="127,42"
+          Size="126.666666666667,42"
           Id="Package\NETSERVER\ENTXDIA"
           TopLeft="486,24" />
         <NodeLayout
@@ -17340,9 +17500,7 @@ FROM QS36F.VALrotGC</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17364,9 +17522,7 @@ FROM QS36F.VALrotGC</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17388,9 +17544,7 @@ FROM QS36F.VALrotGC</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -17424,9 +17578,7 @@ FROM QS36F.VALrotGC</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

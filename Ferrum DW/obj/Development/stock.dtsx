@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="stock"
   DTS:PackageType="5"
-  DTS:VersionBuild="39"
-  DTS:VersionGUID="{0EBCCCBF-F2EE-4E0D-9CE0-3C264CA40107}">
+  DTS:VersionBuild="43"
+  DTS:VersionGUID="{2316598B-453D-4F73-AFED-685DC4495201}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -100,380 +100,461 @@
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA_CREACION"
-              DTS:DTSID="{20E937EF-F9A9-4FE6-B742-44D12EF17CEC}"
+              DTS:DTSID="{82F33714-B1E0-4AF2-AD22-E4C239B6C852}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA_MODIF"
-              DTS:DTSID="{C58D2AFE-77F7-44F1-991C-A1595583829F}"
+              DTS:DTSID="{61895172-4B47-425A-8FD0-C04FBD810D74}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NUN_DOC_MT"
-              DTS:DTSID="{0589047C-8C07-4377-80F1-DD193B1FE4A4}"
+              DTS:DTSID="{C3CE43CB-F016-4FA6-A988-EC7BE34E320A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="POS_DOC_MT"
-              DTS:DTSID="{5EDE7431-5FCB-4B93-A9F8-991BA092058D}"
+              DTS:DTSID="{A472B86D-5948-4AB7-B80B-F51938CFC4DA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="SOCIEDAD"
-              DTS:DTSID="{0D631654-67B7-4F3C-8F16-474F0431A0D2}"
+              DTS:DTSID="{666E6D34-4DEF-4AC9-ACFD-84DD767D5BB7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CLASE_MOV"
-              DTS:DTSID="{A9D03BF7-2AC3-422B-99BA-FDC2C03E98E7}"
+              DTS:DTSID="{1AC12F11-7DC3-497B-9D74-0A53FC6A49F7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DEN_MOV"
-              DTS:DTSID="{EEDD8E66-138E-42FE-B059-16C925502E9C}"
+              DTS:DTSID="{CC84B8AD-9849-46DD-BD21-6F9AE8DFCB37}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO"
-              DTS:DTSID="{D73AF0C7-067B-4726-A677-42DC590E6008}"
+              DTS:DTSID="{47E66BB0-F819-4981-B3CD-F594559E01C7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO_REC"
-              DTS:DTSID="{8BA8D54B-0636-42AB-9C08-0719C63B182C}"
+              DTS:DTSID="{9BEF6181-ED0D-4B8D-9B7F-472BB1AEE835}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ALMACEN"
-              DTS:DTSID="{3A85F967-8ECB-40AB-8472-E3741F8D5E17}"
+              DTS:DTSID="{A3109ED2-9CF0-4AE1-923C-2560BB314D61}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ALMACEN_REC"
-              DTS:DTSID="{808C5675-9434-4FB7-A682-2110E0AD0FE6}"
+              DTS:DTSID="{FDDDE8CA-F587-4A9C-8065-BD2EF24A7E97}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MATERIAL"
-              DTS:DTSID="{02E1CB7C-49A8-4C90-BD30-9EF92796B575}"
+              DTS:DTSID="{925FE6AE-40A2-4A1D-94BD-A60F0EE56E00}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TEXTO_POS"
-              DTS:DTSID="{2710A1D4-1AB4-4E3F-AAC5-92D6C86AB87D}"
+              DTS:DTSID="{656BD6FB-9396-4338-90E7-09FB4802A5D4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANTIDAD"
-              DTS:DTSID="{2054A7B7-FCA3-4A33-913C-184E73648625}"
+              DTS:DTSID="{A047A6C0-3A6D-4B6D-923D-9426D85DB7D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="UM_DOC"
-              DTS:DTSID="{31ACA122-AF51-4542-BDC8-57855C2F3CE6}"
+              DTS:DTSID="{A394D2C4-6D64-415D-8621-ACD556BE1A4E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VALOR_DOC"
-              DTS:DTSID="{2738466E-611F-4043-B5B1-E93FFC2BF8D9}"
+              DTS:DTSID="{5554D035-DA23-4A53-B1F8-054BAD2694A0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MONEDA"
-              DTS:DTSID="{5F954FF8-9621-4FFA-8EB4-2D1262998EB8}"
+              DTS:DTSID="{1900D340-CFA2-4D7E-AE40-1925FA3A6EE1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VALOR_COS_IND"
-              DTS:DTSID="{A96C14D1-15B4-4BB6-A01E-E77C31658717}"
+              DTS:DTSID="{472E0341-23CE-4E6F-8461-357FB8EF8145}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DOC_REF"
-              DTS:DTSID="{60B9C3CF-7904-46F6-93E0-74E067E9CBD8}"
+              DTS:DTSID="{CD217ECE-7362-4AC4-B0C0-5289094AF72D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="POS_DOC_REF"
-              DTS:DTSID="{0279480E-7334-4940-8AEA-02D63C70B06D}"
+              DTS:DTSID="{0B1FE8E7-C4C6-4659-9706-DF1AD0380CE7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PEDIDO"
-              DTS:DTSID="{46B26315-9E12-45E2-B644-C64BCE7FBC04}"
+              DTS:DTSID="{40E70C93-C030-4B15-9925-8248794C4610}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="POS_PEDIDO"
-              DTS:DTSID="{902DBC24-8A0B-455C-9DAB-DEEFB13D6B43}"
+              DTS:DTSID="{1BB71D25-AD15-4482-AC0B-54A6EBC6C621}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="REFERENCIA_CAB"
-              DTS:DTSID="{82AB7C57-7102-40D9-82FE-59B18E93A1DA}"
+              DTS:DTSID="{9AD4B322-75F6-4E6D-AC42-91947F2FE307}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ENTREGA"
-              DTS:DTSID="{95A1BD32-2AB1-4955-85CA-2AEE092C843D}"
+              DTS:DTSID="{37D2C855-A1F6-41E1-8962-E40B58C4BBF5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ENTREGA_POS"
-              DTS:DTSID="{40BF2574-C7B6-4958-B072-E0F18C243CAA}"
+              DTS:DTSID="{D549301C-21FA-46EC-A681-34FB46D0F539}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PROVEEDOR"
-              DTS:DTSID="{88A15585-90D3-4E34-A0B8-CEC7EF20350C}"
+              DTS:DTSID="{8E828C9E-6A45-4053-814C-5F83B4A7C47E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CLIENTE"
-              DTS:DTSID="{866818A3-EBEA-424C-AB30-457E291320AF}"
+              DTS:DTSID="{63B7BE2F-3EAC-41D0-A87E-853B8AD4FAD9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PROV_STOCK_ESP"
-              DTS:DTSID="{9555123B-CC6D-4EB2-BE0A-4AA47C1C3E83}"
+              DTS:DTSID="{72B08A1E-9F38-4FE4-8DCE-77D61DA9306F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TIPO_STOCK_ESP"
-              DTS:DTSID="{3EF60CF5-92BE-4FF4-96AB-E82F45832B83}"
+              DTS:DTSID="{AAAC4CE7-5AB7-4645-8747-F608EF96CE58}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CLIENT_S_ESP"
-              DTS:DTSID="{71424EC7-3DE2-4619-9F9F-164C41D9CF4A}"
+              DTS:DTSID="{50B3D230-5C01-4FBA-8242-54221004B4EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="IND_D_H"
-              DTS:DTSID="{C923A07C-925C-4C11-9081-E2B31C23B89A}"
+              DTS:DTSID="{4FF54F0E-7009-4734-9C34-E9F558E94904}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="IND_ENT_FINAL"
-              DTS:DTSID="{1F16AFD3-E04A-49DD-BF39-46ACB27C4D73}"
+              DTS:DTSID="{BBD7A364-2F76-4EBB-AB10-169CE10B386C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ORDEN"
-              DTS:DTSID="{FDF85539-273D-441D-901A-6657D197A74F}"
+              DTS:DTSID="{3085343F-D5B8-42B0-A97A-49026E36C9A7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ACT_FIJO"
-              DTS:DTSID="{47E9E891-2348-4DC0-A835-BBBE5E3A5E79}"
+              DTS:DTSID="{34B11492-7AC6-4424-8CCC-3F83E9C51DEA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CECO"
-              DTS:DTSID="{3FBE3107-1D81-47A8-BBE0-26DB33BF0D4F}"
+              DTS:DTSID="{D144BD6D-F182-444C-96F9-DD90C80074EC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="PEDIDO_CLIENTE 1"
-              DTS:DTSID="{84FCFB15-6BFF-4812-895E-A8487128D395}"
+              DTS:ObjectName="CUENTA_MAYOR"
+              DTS:DTSID="{84A48DD4-E552-4553-80A5-E39D18F3E167}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="PEDIDO_CLIENTE 2"
-              DTS:DTSID="{352D06F3-69F6-41F9-90D9-AFF6AF8E6963}"
+              DTS:ObjectName="PEDIDO_CLIENTE"
+              DTS:DTSID="{61E2A4C1-6893-47A7-9C22-C3AD1789E17C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="POS_PED_CLIENTE"
-              DTS:DTSID="{341B8BFE-36C5-40B9-A116-D5D68AB3FDFE}"
+              DTS:DTSID="{AC443BA1-7737-4A80-9818-DC7D398A31B9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="20"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TIPO_CAMBIO"
-              DTS:DTSID="{359B6748-A4A4-4CED-9CC5-FA002AEC9771}"
+              DTS:DTSID="{5F516BCE-4DFC-48BB-BE87-339DD4D671EE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="20"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VALOR_DOC_ML3"
-              DTS:DTSID="{FFDE22CD-7C99-413D-A3DB-2C866836E5DC}"
+              DTS:DTSID="{8166C011-DC09-4CFA-9670-878CEF17ED5C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="10"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MOT_MOVIMIENTO"
-              DTS:DTSID="{F1BF7EC9-CB3C-4D10-BF87-B09F6ECD98B6}"
+              DTS:DTSID="{73C5C921-BD7A-4BD3-A7D2-6D3C85944D62}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MOT_MOV_MERCANCIA"
+              DTS:DTSID="{CC7E7931-C77C-4C89-A2A3-0C0D2A0AF18D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IND STOCK ESPECIAL"
+              DTS:DTSID="{EF094DA3-6F87-46BE-B8DF-FBF76FCB3C4E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CONTAB CONSUMO"
+              DTS:DTSID="{3A62C449-A414-4FD6-8440-888D90BB25F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA DE CONTABILIZACION"
+              DTS:DTSID="{CB0D17B6-4B94-4754-9B48-EA683290F301}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TEXTO DE CABECERA"
+              DTS:DTSID="{36D57821-9991-47BC-9F85-78CFA7391114}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA DE DOCUMENTO"
+              DTS:DTSID="{1D6F1283-28BA-42D1-8307-3754BF552962}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PUESTO DE CARGA"
+              DTS:DTSID="{506A580E-B752-40EB-9ED0-82C9E1AFF92E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NRO RESERVA"
+              DTS:DTSID="{60F9C68A-9047-4D6A-A763-0DFDB081ECB0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="POS RESERVA"
+              DTS:DTSID="{36BD5F3B-794C-4ABB-910B-364046470DB8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000A_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="MOT_MOV_MERCANCIA"
-              DTS:DTSID="{3A5917EA-1E5F-49A7-B99C-E1642F443910}"
+              DTS:ObjectName="USUARIO"
+              DTS:DTSID="{1BCEB86C-15EC-4141-A3B2-0EDF9D12C0DB}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -635,146 +716,164 @@
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="COD_MATERIAL"
-              DTS:DTSID="{BF5C6C00-7F05-449A-AC84-3939D06EEB3E}"
+              DTS:DTSID="{74B73078-980A-410C-A7CF-83DBDF1924DD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO"
-              DTS:DTSID="{59563584-8E46-4EF6-AE66-7581891D4DFD}"
+              DTS:DTSID="{E9EBF372-02D9-4C74-B0CC-5DEA8B0E1458}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ALMACEN"
-              DTS:DTSID="{8134FFE3-D6E3-4452-9502-2A7298A064EC}"
+              DTS:DTSID="{13675979-CECF-4827-9517-917651373CFF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PB_ALMACEN"
-              DTS:DTSID="{6C7D752C-8636-4F89-AFD9-12E03061006E}"
+              DTS:DTSID="{677D3552-5373-42E2-9B1C-7D326DEF48B6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_L_UTIL"
-              DTS:DTSID="{949F1958-518F-4D41-AB69-68D7E2E9F767}"
+              DTS:DTSID="{F518456E-D6A3-440B-8EA1-45847D36F04E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_TRAS"
-              DTS:DTSID="{8A2F6C02-79C8-4557-B4D7-52BE8346C265}"
+              DTS:DTSID="{D92B109B-A864-4409-842F-80FDAF4B9B0D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_CAL"
-              DTS:DTSID="{C51D7F82-1FF5-477B-9E2F-93FC718B0315}"
+              DTS:DTSID="{7812843E-0701-48F3-8EC3-54072C7EFBAC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_N_LIB"
-              DTS:DTSID="{F0CE6C13-4AFA-4DC7-B6A9-BD8173A90B23}"
+              DTS:DTSID="{840ABA1B-0427-4CC2-A81D-349A131DBAF0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_BLOQ"
-              DTS:DTSID="{99E08FD3-DFA8-4B25-B7E6-3D8287C99764}"
+              DTS:DTSID="{4C3E82D0-3351-49C2-94C0-A705EDE03786}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_DEVO"
-              DTS:DTSID="{87F65A82-0B49-494B-AD9F-E20A4618263A}"
+              DTS:DTSID="{8C2736AC-DCE2-4E1A-B75F-237D6D92331B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PRECIO_STD"
-              DTS:DTSID="{CA3D36D1-EF6E-4672-B57E-B443E10A0BE5}"
+              DTS:DTSID="{2E9CB048-03F2-443C-84E8-F839764EC85D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PRECIO_VAR"
-              DTS:DTSID="{30B77863-A9B0-4D9E-BD97-21F0FC01A1E7}"
+              DTS:DTSID="{DE2DCB81-D1B3-4704-92A4-13E4417F1B81}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PRECIO_STD_ARF"
-              DTS:DTSID="{3ABF8AAC-9CB6-4AFF-AEFB-4834D834F9C3}"
+              DTS:DTSID="{5FCE7BF5-AAAF-4CBB-83E4-B554DF435098}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PRECIO_VAR_ARF"
-              DTS:DTSID="{FD20141C-A4E1-4FBD-ABC7-382CA27C0613}"
+              DTS:DTSID="{1CBD9EB9-79C2-4ECD-88FC-00C6ABA8E57A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANT_BASE"
-              DTS:DTSID="{D3E15169-E08C-47D1-8C2E-153BF690FDCC}"
+              DTS:DTSID="{CF9EC8E1-4C55-410B-AAB9-4C8843073113}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CONT_PRECIO"
+              DTS:DTSID="{C285EED0-1AA1-4E4A-8968-2FDE18064B59}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPO_STOCK_ESP"
+              DTS:DTSID="{1C0484C0-ACE1-4E4C-A7D3-1CADC1B478D2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000A_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="CONT_PRECIO"
-              DTS:DTSID="{7FAD2EB8-8318-42FB-BD46-4B41BCA001B5}"
+              DTS:ObjectName="STOCK_L_UTIL_2"
+              DTS:DTSID="{1A7AFD44-14EF-49D6-8294-9A62651D5134}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -825,7 +924,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="COPIA A DWFE"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -841,7 +940,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="COPIA A DWPG"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -858,7 +957,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error  COPIA A DWPG"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -883,7 +982,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error 3"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -2201,48 +2300,6 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PEDIDO_CLIENTE 1]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PEDIDO_CLIENTE 1]"
-                      length="50"
-                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PEDIDO_CLIENTE 1]"
-                      name="PEDIDO_CLIENTE 1"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PEDIDO_CLIENTE 2]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PEDIDO_CLIENTE 2]"
-                      length="50"
-                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PEDIDO_CLIENTE 2]"
-                      name="PEDIDO_CLIENTE 2"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[POS_PED_CLIENTE]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
@@ -2347,219 +2404,495 @@
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CUENTA_MAYOR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CUENTA_MAYOR]"
+                      length="100"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CUENTA_MAYOR]"
+                      name="CUENTA_MAYOR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PEDIDO_CLIENTE]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PEDIDO_CLIENTE]"
+                      length="100"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PEDIDO_CLIENTE]"
+                      name="PEDIDO_CLIENTE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[IND STOCK ESPECIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IND STOCK ESPECIAL]"
+                      length="100"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[IND STOCK ESPECIAL]"
+                      name="IND STOCK ESPECIAL"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CONTAB CONSUMO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CONTAB CONSUMO]"
+                      length="100"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CONTAB CONSUMO]"
+                      name="CONTAB CONSUMO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA DE CONTABILIZACION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA DE CONTABILIZACION]"
+                      length="100"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA DE CONTABILIZACION]"
+                      name="FECHA DE CONTABILIZACION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[TEXTO DE CABECERA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TEXTO DE CABECERA]"
+                      length="100"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[TEXTO DE CABECERA]"
+                      name="TEXTO DE CABECERA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA DE DOCUMENTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA DE DOCUMENTO]"
+                      length="100"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA DE DOCUMENTO]"
+                      name="FECHA DE DOCUMENTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PUESTO DE CARGA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PUESTO DE CARGA]"
+                      length="100"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PUESTO DE CARGA]"
+                      name="PUESTO DE CARGA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[NRO RESERVA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NRO RESERVA]"
+                      length="100"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[NRO RESERVA]"
+                      name="NRO RESERVA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[POS RESERVA]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POS RESERVA]"
+                      length="100"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[POS RESERVA]"
+                      name="POS RESERVA"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[USUARIO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USUARIO]"
+                      length="100"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[USUARIO]"
+                      name="USUARIO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA_CREACION]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="FECHA_CREACION" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA_MODIF]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="FECHA_MODIF" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUN_DOC_MT]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="NUN_DOC_MT" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POS_DOC_MT]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="POS_DOC_MT" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="SOCIEDAD" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLASE_MOV]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="CLASE_MOV" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEN_MOV]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="DEN_MOV" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="CENTRO" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO_REC]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="CENTRO_REC" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ALMACEN]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="ALMACEN" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ALMACEN_REC]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="ALMACEN_REC" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MATERIAL]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="MATERIAL" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TEXTO_POS]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="TEXTO_POS" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="CANTIDAD" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UM_DOC]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="UM_DOC" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VALOR_DOC]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="VALOR_DOC" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MONEDA]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="MONEDA" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VALOR_COS_IND]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="VALOR_COS_IND" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DOC_REF]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="DOC_REF" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POS_DOC_REF]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="POS_DOC_REF" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PEDIDO]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="PEDIDO" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POS_PEDIDO]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="POS_PEDIDO" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REFERENCIA_CAB]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="REFERENCIA_CAB" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ENTREGA]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="ENTREGA" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ENTREGA_POS]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="ENTREGA_POS" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PROVEEDOR]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="PROVEEDOR" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLIENTE]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="CLIENTE" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PROV_STOCK_ESP]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="PROV_STOCK_ESP" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO_STOCK_ESP]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="TIPO_STOCK_ESP" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CLIENT_S_ESP]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="CLIENT_S_ESP" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IND_D_H]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="IND_D_H" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IND_ENT_FINAL]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="IND_ENT_FINAL" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ORDEN]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="ORDEN" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ACT_FIJO]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="ACT_FIJO" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CECO]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="CECO" />
-                    <externalMetadataColumn
-                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PEDIDO_CLIENTE 1]"
-                      dataType="wstr"
-                      length="50"
-                      name="PEDIDO_CLIENTE 1" />
-                    <externalMetadataColumn
-                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PEDIDO_CLIENTE 2]"
-                      dataType="wstr"
-                      length="50"
-                      name="PEDIDO_CLIENTE 2" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POS_PED_CLIENTE]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="POS_PED_CLIENTE" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO_CAMBIO]"
                       dataType="wstr"
-                      length="20"
+                      length="100"
                       name="TIPO_CAMBIO" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VALOR_DOC_ML3]"
                       dataType="wstr"
-                      length="20"
+                      length="100"
                       name="VALOR_DOC_ML3" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MOT_MOVIMIENTO]"
                       dataType="wstr"
-                      length="10"
+                      length="100"
                       name="MOT_MOVIMIENTO" />
                     <externalMetadataColumn
                       refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MOT_MOV_MERCANCIA]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="MOT_MOV_MERCANCIA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CUENTA_MAYOR]"
+                      dataType="wstr"
+                      length="100"
+                      name="CUENTA_MAYOR" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PEDIDO_CLIENTE]"
+                      dataType="wstr"
+                      length="100"
+                      name="PEDIDO_CLIENTE" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[IND STOCK ESPECIAL]"
+                      dataType="wstr"
+                      length="100"
+                      name="IND STOCK ESPECIAL" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CONTAB CONSUMO]"
+                      dataType="wstr"
+                      length="100"
+                      name="CONTAB CONSUMO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA DE CONTABILIZACION]"
+                      dataType="wstr"
+                      length="100"
+                      name="FECHA DE CONTABILIZACION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TEXTO DE CABECERA]"
+                      dataType="wstr"
+                      length="100"
+                      name="TEXTO DE CABECERA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA DE DOCUMENTO]"
+                      dataType="wstr"
+                      length="100"
+                      name="FECHA DE DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PUESTO DE CARGA]"
+                      dataType="wstr"
+                      length="100"
+                      name="PUESTO DE CARGA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NRO RESERVA]"
+                      dataType="wstr"
+                      length="100"
+                      name="NRO RESERVA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POS RESERVA]"
+                      dataType="wstr"
+                      length="100"
+                      name="POS RESERVA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USUARIO]"
+                      dataType="wstr"
+                      length="100"
+                      name="USUARIO" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -2592,11 +2925,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\mm_mat_doc\OLE DB Destination"
+              refId="Package\mm_mat_doc\OLE DB Destination 1"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination"
+              name="OLE DB Destination 1"
               usesDispositions="true"
               version="4">
               <properties>
@@ -2649,7 +2982,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\mm_mat_doc\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\mm_mat_doc\OLE DB Destination 1.Connections[OleDbConnection]"
                   connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
                   connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
                   description="The OLE DB runtime connection used to access the database."
@@ -2657,536 +2990,645 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_CREACION]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FECHA_CREACION]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="FECHA_CREACION"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CREACION]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CREACION]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA_CREACION]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_MODIF]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FECHA_MODIF]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="FECHA_MODIF"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_MODIF]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_MODIF]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA_MODIF]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NUN_DOC_MT]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[NUN_DOC_MT]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="NUN_DOC_MT"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUN_DOC_MT]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NUN_DOC_MT]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[NUN_DOC_MT]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POS_DOC_MT]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[POS_DOC_MT]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="POS_DOC_MT"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POS_DOC_MT]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[POS_DOC_MT]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[POS_DOC_MT]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SOCIEDAD]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[SOCIEDAD]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="SOCIEDAD"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CLASE_MOV]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CLASE_MOV]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CLASE_MOV"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLASE_MOV]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CLASE_MOV]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CLASE_MOV]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEN_MOV]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DEN_MOV]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="DEN_MOV"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEN_MOV]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DEN_MOV]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[DEN_MOV]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CENTRO]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CENTRO"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO_REC]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CENTRO_REC]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CENTRO_REC"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_REC]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_REC]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO_REC]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ALMACEN]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ALMACEN]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ALMACEN"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALMACEN]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ALMACEN]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[ALMACEN]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ALMACEN_REC]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ALMACEN_REC]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ALMACEN_REC"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALMACEN_REC]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ALMACEN_REC]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[ALMACEN_REC]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MATERIAL]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MATERIAL]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="MATERIAL"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[MATERIAL]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TEXTO_POS]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TEXTO_POS]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="TEXTO_POS"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TEXTO_POS]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TEXTO_POS]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[TEXTO_POS]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CANTIDAD]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CANTIDAD"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UM_DOC]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[UM_DOC]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="UM_DOC"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UM_DOC]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UM_DOC]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[UM_DOC]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VALOR_DOC]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[VALOR_DOC]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="VALOR_DOC"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_DOC]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_DOC]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[VALOR_DOC]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MONEDA]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MONEDA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="MONEDA"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[MONEDA]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VALOR_COS_IND]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[VALOR_COS_IND]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="VALOR_COS_IND"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_COS_IND]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_COS_IND]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[VALOR_COS_IND]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DOC_REF]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DOC_REF]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="DOC_REF"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DOC_REF]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DOC_REF]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[DOC_REF]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POS_DOC_REF]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[POS_DOC_REF]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="POS_DOC_REF"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POS_DOC_REF]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[POS_DOC_REF]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[POS_DOC_REF]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PEDIDO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PEDIDO]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="PEDIDO"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PEDIDO]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PEDIDO]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PEDIDO]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POS_PEDIDO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[POS_PEDIDO]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="POS_PEDIDO"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POS_PEDIDO]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[POS_PEDIDO]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[POS_PEDIDO]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[REFERENCIA_CAB]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[REFERENCIA_CAB]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="REFERENCIA_CAB"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REFERENCIA_CAB]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[REFERENCIA_CAB]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[REFERENCIA_CAB]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ENTREGA]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ENTREGA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ENTREGA"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ENTREGA]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ENTREGA]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[ENTREGA]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ENTREGA_POS]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ENTREGA_POS]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ENTREGA_POS"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ENTREGA_POS]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ENTREGA_POS]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[ENTREGA_POS]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PROVEEDOR]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PROVEEDOR]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="PROVEEDOR"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROVEEDOR]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PROVEEDOR]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PROVEEDOR]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CLIENTE]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CLIENTE]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CLIENTE"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLIENTE]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CLIENTE]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CLIENTE]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PROV_STOCK_ESP]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PROV_STOCK_ESP]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="PROV_STOCK_ESP"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROV_STOCK_ESP]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PROV_STOCK_ESP]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PROV_STOCK_ESP]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO_STOCK_ESP]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TIPO_STOCK_ESP]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="TIPO_STOCK_ESP"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_STOCK_ESP]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_STOCK_ESP]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_STOCK_ESP]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CLIENT_S_ESP]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CLIENT_S_ESP]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CLIENT_S_ESP"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLIENT_S_ESP]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CLIENT_S_ESP]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CLIENT_S_ESP]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IND_D_H]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[IND_D_H]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="IND_D_H"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IND_D_H]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IND_D_H]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[IND_D_H]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[IND_ENT_FINAL]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[IND_ENT_FINAL]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="IND_ENT_FINAL"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IND_ENT_FINAL]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IND_ENT_FINAL]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[IND_ENT_FINAL]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ORDEN]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ORDEN]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ORDEN"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ORDEN]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ORDEN]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[ORDEN]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ACT_FIJO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ACT_FIJO]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="ACT_FIJO"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ACT_FIJO]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ACT_FIJO]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[ACT_FIJO]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CECO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CECO]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="CECO"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CECO]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CECO]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CECO]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POS_PED_CLIENTE]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[POS_PED_CLIENTE]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="POS_PED_CLIENTE"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POS_PED_CLIENTE]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[POS_PED_CLIENTE]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[POS_PED_CLIENTE]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PEDIDO_CLIENTE 1]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="PEDIDO_CLIENTE 1"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PEDIDO_CLIENTE1]"
-                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PEDIDO_CLIENTE 1]" />
-                    <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PEDIDO_CLIENTE 2]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="PEDIDO_CLIENTE 2"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PEDIDO_CLIENTE2]"
-                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PEDIDO_CLIENTE 2]" />
-                    <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO_CAMBIO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TIPO_CAMBIO]"
                       cachedDataType="wstr"
                       cachedLength="20"
                       cachedName="TIPO_CAMBIO"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_CAMBIO]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_CAMBIO]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_CAMBIO]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VALOR_DOC_ML3]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[VALOR_DOC_ML3]"
                       cachedDataType="wstr"
                       cachedLength="20"
                       cachedName="VALOR_DOC_ML3"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_DOC_ML3]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_DOC_ML3]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[VALOR_DOC_ML3]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MOT_MOVIMIENTO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MOT_MOVIMIENTO]"
                       cachedDataType="wstr"
                       cachedLength="10"
                       cachedName="MOT_MOVIMIENTO"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MOT_MOVIMIENTO]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MOT_MOVIMIENTO]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[MOT_MOVIMIENTO]" />
                     <inputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MOT_MOV_MERCANCIA]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MOT_MOV_MERCANCIA]"
                       cachedDataType="wstr"
                       cachedLength="50"
                       cachedName="MOT_MOV_MERCANCIA"
-                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MOT_MOV_MERCANCIA]"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MOT_MOV_MERCANCIA]"
                       lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[MOT_MOV_MERCANCIA]" />
+                    <inputColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[USUARIO]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="USUARIO"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO]"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[USUARIO]" />
+                    <inputColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[POS RESERVA]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="POS RESERVA"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[POS_RESERVA]"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[POS RESERVA]" />
+                    <inputColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[NRO RESERVA]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="NRO RESERVA"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NRO_RESERVA]"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[NRO RESERVA]" />
+                    <inputColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PUESTO DE CARGA]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="PUESTO DE CARGA"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PUESTO_DE_CARGA]"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PUESTO DE CARGA]" />
+                    <inputColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FECHA DE DOCUMENTO]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="FECHA DE DOCUMENTO"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA DE DOCUMENTO]" />
+                    <inputColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TEXTO DE CABECERA]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="TEXTO DE CABECERA"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TEXTO_DE_CABECERA]"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[TEXTO DE CABECERA]" />
+                    <inputColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[FECHA DE CONTABILIZACION]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="FECHA DE CONTABILIZACION"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_CONTABILIZACION]"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA DE CONTABILIZACION]" />
+                    <inputColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CONTAB CONSUMO]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="CONTAB CONSUMO"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CONTAB_CONSUMO]"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CONTAB CONSUMO]" />
+                    <inputColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[IND STOCK ESPECIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="IND STOCK ESPECIAL"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IND_STOCK_ESPECIAL]"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[IND STOCK ESPECIAL]" />
+                    <inputColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CUENTA_MAYOR]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="CUENTA_MAYOR"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PEDIDO_CLIENTE1]"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[CUENTA_MAYOR]" />
+                    <inputColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PEDIDO_CLIENTE]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="PEDIDO_CLIENTE"
+                      externalMetadataColumnId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PEDIDO_CLIENTE2]"
+                      lineageId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output].Columns[PEDIDO_CLIENTE]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CREACION]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CREACION]"
                       dataType="wstr"
                       length="50"
                       name="FECHA_CREACION" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_MODIF]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_MODIF]"
                       dataType="wstr"
                       length="50"
                       name="FECHA_MODIF" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUN_DOC_MT]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NUN_DOC_MT]"
                       dataType="i8"
                       name="NUN_DOC_MT" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POS_DOC_MT]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[POS_DOC_MT]"
                       dataType="i8"
                       name="POS_DOC_MT" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
                       dataType="i2"
                       name="SOCIEDAD" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLASE_MOV]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CLASE_MOV]"
                       dataType="wstr"
                       length="20"
                       name="CLASE_MOV" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEN_MOV]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DEN_MOV]"
                       dataType="wstr"
                       length="50"
                       name="DEN_MOV" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
                       dataType="wstr"
                       length="20"
                       name="CENTRO" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_REC]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_REC]"
                       dataType="wstr"
                       length="10"
                       name="CENTRO_REC" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALMACEN]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ALMACEN]"
                       dataType="wstr"
                       length="20"
                       name="ALMACEN" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALMACEN_REC]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ALMACEN_REC]"
                       dataType="wstr"
                       length="20"
                       name="ALMACEN_REC" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL]"
                       dataType="wstr"
                       length="20"
                       name="MATERIAL" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TEXTO_POS]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TEXTO_POS]"
                       dataType="wstr"
                       length="50"
                       name="TEXTO_POS" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD]"
                       dataType="wstr"
                       length="20"
                       name="CANTIDAD" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UM_DOC]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[UM_DOC]"
                       dataType="wstr"
                       length="5"
                       name="UM_DOC" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_DOC]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_DOC]"
                       dataType="wstr"
                       length="20"
                       name="VALOR_DOC" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MONEDA]"
                       dataType="wstr"
                       length="3"
                       name="MONEDA" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_COS_IND]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_COS_IND]"
                       dataType="wstr"
                       length="20"
                       name="VALOR_COS_IND" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DOC_REF]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DOC_REF]"
                       dataType="i8"
                       name="DOC_REF" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POS_DOC_REF]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[POS_DOC_REF]"
                       dataType="i2"
                       name="POS_DOC_REF" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PEDIDO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PEDIDO]"
                       dataType="wstr"
                       length="20"
                       name="PEDIDO" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POS_PEDIDO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[POS_PEDIDO]"
                       dataType="wstr"
                       length="20"
                       name="POS_PEDIDO" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REFERENCIA_CAB]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[REFERENCIA_CAB]"
                       dataType="wstr"
                       length="20"
                       name="REFERENCIA_CAB" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ENTREGA]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ENTREGA]"
                       dataType="wstr"
                       length="20"
                       name="ENTREGA" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ENTREGA_POS]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ENTREGA_POS]"
                       dataType="i2"
                       name="ENTREGA_POS" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROVEEDOR]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PROVEEDOR]"
                       dataType="wstr"
                       length="10"
                       name="PROVEEDOR" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLIENTE]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CLIENTE]"
                       dataType="wstr"
                       length="10"
                       name="CLIENTE" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROV_STOCK_ESP]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PROV_STOCK_ESP]"
                       dataType="wstr"
                       length="10"
                       name="PROV_STOCK_ESP" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_STOCK_ESP]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_STOCK_ESP]"
                       dataType="wstr"
                       length="10"
                       name="TIPO_STOCK_ESP" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLIENT_S_ESP]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CLIENT_S_ESP]"
                       dataType="wstr"
                       length="10"
                       name="CLIENT_S_ESP" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IND_D_H]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IND_D_H]"
                       dataType="wstr"
                       length="1"
                       name="IND_D_H" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[IND_ENT_FINAL]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IND_ENT_FINAL]"
                       dataType="wstr"
                       length="1"
                       name="IND_ENT_FINAL" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ORDEN]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ORDEN]"
                       dataType="wstr"
                       length="10"
                       name="ORDEN" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ACT_FIJO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ACT_FIJO]"
                       dataType="wstr"
                       length="10"
                       name="ACT_FIJO" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CECO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CECO]"
                       dataType="wstr"
                       length="20"
                       name="CECO" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PEDIDO_CLIENTE1]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PEDIDO_CLIENTE1]"
                       dataType="i8"
                       name="PEDIDO_CLIENTE1" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PEDIDO_CLIENTE2]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PEDIDO_CLIENTE2]"
                       dataType="i8"
                       name="PEDIDO_CLIENTE2" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POS_PED_CLIENTE]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[POS_PED_CLIENTE]"
                       dataType="wstr"
                       length="10"
                       name="POS_PED_CLIENTE" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
-                      dataType="dbDate"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="wstr"
+                      length="10"
                       name="fecha" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_CAMBIO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_CAMBIO]"
                       dataType="wstr"
                       length="20"
                       name="TIPO_CAMBIO" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_DOC_ML3]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_DOC_ML3]"
                       dataType="wstr"
                       length="20"
                       name="VALOR_DOC_ML3" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MOT_MOVIMIENTO]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MOT_MOVIMIENTO]"
                       dataType="wstr"
                       length="10"
                       name="MOT_MOVIMIENTO" />
                     <externalMetadataColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MOT_MOV_MERCANCIA]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MOT_MOV_MERCANCIA]"
                       dataType="wstr"
                       length="50"
                       name="MOT_MOV_MERCANCIA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[IND_STOCK_ESPECIAL]"
+                      dataType="wstr"
+                      length="50"
+                      name="IND_STOCK_ESPECIAL" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CONTAB_CONSUMO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CONTAB_CONSUMO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_CONTABILIZACION]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DE_CONTABILIZACION" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TEXTO_DE_CABECERA]"
+                      dataType="wstr"
+                      length="50"
+                      name="TEXTO_DE_CABECERA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_DE_DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_DE_DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PUESTO_DE_CARGA]"
+                      dataType="wstr"
+                      length="50"
+                      name="PUESTO_DE_CARGA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[NRO_RESERVA]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO_RESERVA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[POS_RESERVA]"
+                      dataType="wstr"
+                      length="10"
+                      name="POS_RESERVA" />
+                    <externalMetadataColumn
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO]"
+                      dataType="wstr"
+                      length="12"
+                      name="USUARIO" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\mm_mat_doc\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\mm_mat_doc\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\mm_mat_doc\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\mm_mat_doc\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\mm_mat_doc\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\mm_mat_doc\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\mm_mat_doc\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\mm_mat_doc\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -3198,7 +3640,7 @@
           <paths>
             <path
               refId="Package\mm_mat_doc.Paths[Flat File Source Output]"
-              endId="Package\mm_mat_doc\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\mm_mat_doc\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
               startId="Package\mm_mat_doc\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
@@ -3940,7 +4382,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COD_MATERIAL]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[COD_MATERIAL]"
                       name="COD_MATERIAL"
                       truncationRowDisposition="FailComponent">
@@ -3961,7 +4403,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]"
                       name="CENTRO"
                       truncationRowDisposition="FailComponent">
@@ -3982,7 +4424,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ALMACEN]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[ALMACEN]"
                       name="ALMACEN"
                       truncationRowDisposition="FailComponent">
@@ -4003,7 +4445,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PB_ALMACEN]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[PB_ALMACEN]"
                       name="PB_ALMACEN"
                       truncationRowDisposition="FailComponent">
@@ -4024,7 +4466,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_L_UTIL]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_L_UTIL]"
                       name="STOCK_L_UTIL"
                       truncationRowDisposition="FailComponent">
@@ -4045,7 +4487,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_TRAS]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_TRAS]"
                       name="STOCK_TRAS"
                       truncationRowDisposition="FailComponent">
@@ -4066,7 +4508,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_CAL]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_CAL]"
                       name="STOCK_CAL"
                       truncationRowDisposition="FailComponent">
@@ -4087,7 +4529,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_N_LIB]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_N_LIB]"
                       name="STOCK_N_LIB"
                       truncationRowDisposition="FailComponent">
@@ -4108,7 +4550,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_BLOQ]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_BLOQ]"
                       name="STOCK_BLOQ"
                       truncationRowDisposition="FailComponent">
@@ -4129,7 +4571,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_DEVO]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_DEVO]"
                       name="STOCK_DEVO"
                       truncationRowDisposition="FailComponent">
@@ -4150,7 +4592,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANT_BASE]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[CANT_BASE]"
                       name="CANT_BASE"
                       truncationRowDisposition="FailComponent">
@@ -4171,7 +4613,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CONT_PRECIO]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[CONT_PRECIO]"
                       name="CONT_PRECIO"
                       truncationRowDisposition="FailComponent">
@@ -4192,7 +4634,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRECIO_STD]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[PRECIO_STD]"
                       name="PRECIO_STD"
                       truncationRowDisposition="FailComponent">
@@ -4213,7 +4655,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRECIO_VAR]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[PRECIO_VAR]"
                       name="PRECIO_VAR"
                       truncationRowDisposition="FailComponent">
@@ -4234,7 +4676,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRECIO_STD_ARF]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[PRECIO_STD_ARF]"
                       name="PRECIO_STD_ARF"
                       truncationRowDisposition="FailComponent">
@@ -4255,9 +4697,51 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRECIO_VAR_ARF]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[PRECIO_VAR_ARF]"
                       name="PRECIO_VAR_ARF"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_STOCK_ESP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO_STOCK_ESP]"
+                      length="100"
+                      lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_STOCK_ESP]"
+                      name="TIPO_STOCK_ESP"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_L_UTIL_2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_L_UTIL_2]"
+                      length="100"
+                      lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_L_UTIL_2]"
+                      name="STOCK_L_UTIL_2"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -4276,83 +4760,93 @@
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[COD_MATERIAL]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="COD_MATERIAL" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="CENTRO" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ALMACEN]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="ALMACEN" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PB_ALMACEN]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="PB_ALMACEN" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_L_UTIL]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="STOCK_L_UTIL" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_TRAS]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="STOCK_TRAS" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_CAL]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="STOCK_CAL" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_N_LIB]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="STOCK_N_LIB" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_BLOQ]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="STOCK_BLOQ" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_DEVO]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="STOCK_DEVO" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANT_BASE]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="CANT_BASE" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CONT_PRECIO]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="CONT_PRECIO" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRECIO_STD]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="PRECIO_STD" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRECIO_VAR]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="PRECIO_VAR" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRECIO_STD_ARF]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="PRECIO_STD_ARF" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PRECIO_VAR_ARF]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="PRECIO_VAR_ARF" />
+                    <externalMetadataColumn
+                      refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO_STOCK_ESP]"
+                      dataType="wstr"
+                      length="100"
+                      name="TIPO_STOCK_ESP" />
+                    <externalMetadataColumn
+                      refId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STOCK_L_UTIL_2]"
+                      dataType="wstr"
+                      length="100"
+                      name="STOCK_L_UTIL_2" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -4459,115 +4953,129 @@
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[COD_MATERIAL]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="COD_MATERIAL"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COD_MATERIAL]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[COD_MATERIAL]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="CENTRO"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ALMACEN]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="ALMACEN"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ALMACEN]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[ALMACEN]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PB_ALMACEN]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="PB_ALMACEN"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PB_ALMACEN]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[PB_ALMACEN]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[STOCK_L_UTIL]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="STOCK_L_UTIL"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[STOCK_L_UTIL]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_L_UTIL]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[STOCK_TRAS]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="STOCK_TRAS"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[STOCK_TRAS]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_TRAS]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[STOCK_CAL]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="STOCK_CAL"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[STOCK_CAL]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_CAL]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[STOCK_N_LIB]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="STOCK_N_LIB"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[STOCK_N_LIB]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_N_LIB]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[STOCK_BLOQ]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="STOCK_BLOQ"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[STOCK_BLOQ]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_BLOQ]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[STOCK_DEVO]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="STOCK_DEVO"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[STOCK_DEVO]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_DEVO]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANT_BASE]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="CANT_BASE"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANT_BASE]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[CANT_BASE]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CONT_PRECIO]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="CONT_PRECIO"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CONT_PRECIO]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[CONT_PRECIO]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRECIO_STD]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="PRECIO_STD"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRECIO_STD]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[PRECIO_STD]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRECIO_VAR]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="PRECIO_VAR"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRECIO_VAR]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[PRECIO_VAR]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRECIO_STD_ARF]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="PRECIO_STD_ARF"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRECIO_STD_ARF]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[PRECIO_STD_ARF]" />
                     <inputColumn
                       refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PRECIO_VAR_ARF]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="PRECIO_VAR_ARF"
                       externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PRECIO_VAR_ARF]"
                       lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[PRECIO_VAR_ARF]" />
+                    <inputColumn
+                      refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO_STOCK_ESP]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="TIPO_STOCK_ESP"
+                      externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_STOCK_ESP]"
+                      lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO_STOCK_ESP]" />
+                    <inputColumn
+                      refId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[STOCK_L_UTIL_2]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="STOCK_L_UTIL_2"
+                      externalMetadataColumnId="Package\mm_stock_mat\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[STOCK_L_UTIL_2]"
+                      lineageId="Package\mm_stock_mat\Flat File Source.Outputs[Flat File Source Output].Columns[STOCK_L_UTIL_2]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4903,17 +5411,13 @@
           Id="Package\COPIA A DWPG"
           TopLeft="106.791676504537,708.764807573744" />
         <NodeLayout
-          Size="230.666666666667,42.6666666666667"
-          Id="Package\Finaliza en error mm_stock_mat"
-          TopLeft="381.249994318932,257.833328722914" />
-        <NodeLayout
           Size="236,42.6666666666667"
           Id="Package\Finaliza en error  COPIA A DWPG"
           TopLeft="335.29166447185,711.820364898564" />
         <NodeLayout
-          Size="238.666666666667,42.6666666666667"
-          Id="Package\Finaliza en error mm_stock_diario"
-          TopLeft="384.597219292695,359.375926756317" />
+          Size="165.333333333334,42.6666666666667"
+          Id="Package\Finaliza en error 3"
+          TopLeft="385.291663726792,544.987034548443" />
         <NodeLayout
           Size="230.666666666667,42.6666666666667"
           Id="Package\Finaliza en error COPIA A DWFE"
@@ -4923,9 +5427,13 @@
           Id="Package\Finaliza en error mm_mat_doc"
           TopLeft="390.152774765467,460.487036059421" />
         <NodeLayout
-          Size="165.333333333334,42.6666666666667"
-          Id="Package\Finaliza en error 3"
-          TopLeft="385.291663726792,544.987034548443" />
+          Size="238.666666666667,42.6666666666667"
+          Id="Package\Finaliza en error mm_stock_diario"
+          TopLeft="384.597219292695,359.375926756317" />
+        <NodeLayout
+          Size="230.666666666667,42.6666666666667"
+          Id="Package\Finaliza en error mm_stock_mat"
+          TopLeft="381.249994318932,257.833328722914" />
         <NodeLayout
           Size="131.333333333334,42.6666666666667"
           Id="Package\Finalizo Ok"
@@ -5329,7 +5837,7 @@
     design-time-name="Package\foto_stock cierre mes">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="170.666666666667,42"
           Id="Package\foto_stock cierre mes\OLE DB Destination"
@@ -5369,7 +5877,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5392,78 +5902,63 @@
     design-time-name="Package\mm_mat_doc">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="177,42"
-          Id="Package\mm_mat_doc\OLE DB Destination"
-          TopLeft="707,108" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="156,42"
           Id="Package\mm_mat_doc\Flat File Source"
-          TopLeft="432,37" />
+          TopLeft="327.000001564622,80.1052639692444" />
+        <NodeLayout
+          Size="184,42.6666666666667"
+          Id="Package\mm_mat_doc\OLE DB Destination 1"
+          TopLeft="511.416662214945,149.157897544369" />
         <EdgeLayout
           Id="Package\mm_mat_doc.Paths[Flat File Source Output]"
-          TopLeft="510,79">
+          TopLeft="405.000001564622,122.105263969244">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="285.5,29"
+              EndConnector="198.416660650323,27.0526335751251"
               Start="0,0"
-              End="285.5,21.5">
+              End="198.416660650323,19.5526335751251">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,10.5" />
+                    End="0,9.52631678756254" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,10.5"
-                    Point2="0,14.5"
-                    Point3="4,14.5" />
+                    Point1="0,9.52631678756254"
+                    Point2="0,13.5263167875625"
+                    Point3="4,13.5263167875625" />
                   <mssgle:LineSegment
-                    End="281.5,14.5" />
+                    End="194.416660650323,13.5263167875625" />
                   <mssgle:CubicBezierSegment
-                    Point1="281.5,14.5"
-                    Point2="285.5,14.5"
-                    Point3="285.5,18.5" />
+                    Point1="194.416660650323,13.5263167875625"
+                    Point2="198.416660650323,13.5263167875625"
+                    Point3="198.416660650323,17.5263167875625" />
                   <mssgle:LineSegment
-                    End="285.5,21.5" />
+                    End="198.416660650323,19.5526335751251" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\mm_mat_doc\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\mm_stock_diario">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="151,42"
+          Size="150.666666666667,42"
           Id="Package\mm_stock_diario\Flat File Source"
           TopLeft="332,55" />
         <NodeLayout
-          Size="171,42"
+          Size="170.666666666667,42"
           Id="Package\mm_stock_diario\OLE DB Destination"
           TopLeft="567,102" />
         <EdgeLayout
@@ -5497,9 +5992,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5524,39 +6017,39 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="171,42"
+          Size="170.666666666667,42"
           Id="Package\mm_stock_mat\OLE DB Destination"
-          TopLeft="572,64" />
+          TopLeft="534,90" />
         <NodeLayout
-          Size="151,42"
+          Size="150.666666666667,42"
           Id="Package\mm_stock_mat\Flat File Source"
-          TopLeft="206,30" />
+          TopLeft="226,80" />
         <EdgeLayout
           Id="Package\mm_stock_mat.Paths[Flat File Source Output]"
-          TopLeft="357,51">
+          TopLeft="376.666666666667,101">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="215,34"
+              EndConnector="157.333333333333,10"
               Start="0,0"
-              End="207.5,34">
+              End="149.833333333333,10">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="103.5,0" />
+                    End="74.6666666666667,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="103.5,0"
-                    Point2="107.5,0"
-                    Point3="107.5,4" />
+                    Point1="74.6666666666667,0"
+                    Point2="78.6666666666667,0"
+                    Point3="78.6666666666667,4" />
                   <mssgle:LineSegment
-                    End="107.5,30" />
+                    End="78.6666666666667,6" />
                   <mssgle:CubicBezierSegment
-                    Point1="107.5,30"
-                    Point2="107.5,34"
-                    Point3="111.5,34" />
+                    Point1="78.6666666666667,6"
+                    Point2="78.6666666666667,10"
+                    Point3="82.6666666666667,10" />
                   <mssgle:LineSegment
-                    End="207.5,34" />
+                    End="149.833333333333,10" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5570,6 +6063,19 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\mm_stock_mat\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\mm_mat_doc\OLE DB Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
