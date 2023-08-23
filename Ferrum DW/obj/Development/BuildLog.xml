@@ -2,18 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Ferrum DW</Name>
-    <LastWriteTime>2023-08-22T18:23:42.0685493Z</LastWriteTime>
+    <LastWriteTime>2023-08-22T18:27:40.5521673Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>00_GLOBAL.dtsx</Name>
       <LastWriteTime>2023-08-17T17:46:41.495947Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>facturas.dtsx</Name>
-      <LastWriteTime>2023-08-22T18:23:41.8551204Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -113,7 +108,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>varios fi.dtsx</Name>
-      <LastWriteTime>2023-08-17T17:46:42.355775Z</LastWriteTime>
+      <LastWriteTime>2023-08-23T12:19:11.7823884Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -147,8 +142,13 @@
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Package1.dtsx</Name>
-      <LastWriteTime>2023-08-22T18:23:41.7494328Z</LastWriteTime>
+      <Name>facturas_copia.dtsx</Name>
+      <LastWriteTime>2023-08-22T18:23:41.8551204Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>facturas.dtsx</Name>
+      <LastWriteTime>2023-08-22T18:23:41.8551204Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
