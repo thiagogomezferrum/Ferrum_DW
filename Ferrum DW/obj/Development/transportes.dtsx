@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="transportes"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{6146C4CB-4B8E-4CC9-8BD4-7E1E9CF5BD05}">
+  DTS:VersionBuild="29"
+  DTS:VersionGUID="{C10A41CB-EDF6-41F7-849F-BD0AABE5F61F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="\\linuxfil\DW\PRD\APROCESAR\sd_transportes.txt">
+          DTS:ConnectionString="\\sapfs\FERRUM-DW\PRD\APROCESAR\sd_transportes.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NRO  TRANSPORTE"
-              DTS:DTSID="{7F9A95A8-00AA-41FA-8D0B-85F320649263}"
+              DTS:DTSID="{932FAB41-7178-4C18-94F6-31FF6CAC5A5D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA TRANSPORTE"
-              DTS:DTSID="{EDC5BC22-29FA-4195-95FD-E6DC61744CDC}"
+              DTS:DTSID="{602759C3-6304-4A73-847A-E904D124C38C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TRANSPORTISTA"
-              DTS:DTSID="{002E2BC8-0473-4D55-8E47-F8EBEBCCBC7D}"
+              DTS:DTSID="{D1A8D08E-4C7C-4579-AF4A-4843D1410446}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CHOFER"
-              DTS:DTSID="{102A145D-A2F5-4711-B0B9-95A1A41F7780}"
+              DTS:DTSID="{43F6EAE7-7579-4513-B836-07FEA8EA106C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PATENTE"
-              DTS:DTSID="{4F0E5FD2-A9DE-444F-BA67-42CFAB797794}"
+              DTS:DTSID="{ED236C7A-99FC-4141-8286-38F150072797}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="RUTA"
-              DTS:DTSID="{83F6FCD5-FCF7-4762-BAED-63B1EC29E51C}"
+              DTS:DTSID="{390FC411-E169-40F8-9869-D5374E2B4C59}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="KM RECORRIDOS"
-              DTS:DTSID="{967B318C-9DB6-4968-87E2-23561B1D86C1}"
+              DTS:DTSID="{9080FA01-0B9B-4A5F-8D05-FCE6D51BBB68}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="R S TRANSPORTISTA"
-              DTS:DTSID="{37D06BB8-86D5-4F99-8CE1-571629517430}"
+              DTS:DTSID="{8AAEDB55-9B32-4A84-A7D6-AA7B33FB1263}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +111,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA_PLANIFICACION"
-              DTS:DTSID="{FFF22AB8-8ECF-407F-9577-2F5DC84D91E9}"
+              DTS:DTSID="{16DBDC58-CF67-4953-A68E-E324855DDFBA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +120,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PTO.PLANIF"
-              DTS:DTSID="{68D03D66-41FE-41B3-BD64-25544B978E7A}"
+              DTS:DTSID="{4D6EC284-938B-4D63-AA93-5B6CE1068FE6}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -140,7 +140,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="\\linuxfil\DW\PRD\APROCESAR\sd_transportes_costo.txt">
+          DTS:ConnectionString="\\sapfs\FERRUM-DW\PRD\APROCESAR\sd_transportes_costo.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -149,7 +149,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NRO  TRANSPORTE"
-              DTS:DTSID="{DAEEB74C-97A1-457F-BB39-BB9E8D17094D}"
+              DTS:DTSID="{BC9EE325-F821-48A2-B018-52BC77D68AA3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -158,7 +158,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NRO  GASTO"
-              DTS:DTSID="{F8552CDD-035E-40D1-BB5A-B1744D0518F6}"
+              DTS:DTSID="{658E7D8D-801E-4A02-BCB9-A8DFB3CE6827}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -167,7 +167,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NRO  POSICIÓN"
-              DTS:DTSID="{2B56FA7E-94AD-4A18-9051-1F11D02D8CBD}"
+              DTS:DTSID="{D82BA59C-405A-4755-BA9A-C4F3E2448612}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -176,7 +176,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="COSTO POSICIÓN"
-              DTS:DTSID="{0C7CF56A-716D-4135-A037-BA924AA1B92E}"
+              DTS:DTSID="{CE8275CB-65A1-4DA5-B0A5-95D2D2DE3568}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -185,7 +185,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MONEDA"
-              DTS:DTSID="{D898EFC0-670E-4D90-8259-99D4BE94999D}"
+              DTS:DTSID="{DACE462C-08D0-499B-BF3D-62084360877F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -194,7 +194,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ESTATUS CÁLCULO POS "
-              DTS:DTSID="{8B173617-EFFA-4B9C-9084-D95099881598}"
+              DTS:DTSID="{96B83577-1E98-4275-A1BF-FB7BED43E562}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -203,7 +203,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ESTATUS IMPUTACIÓN POS "
-              DTS:DTSID="{8CC81592-84C0-4D68-9F7D-6C4C392DABD7}"
+              DTS:DTSID="{CF01EA06-9496-43A6-B298-1317BF97B6C0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -212,7 +212,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ESTATUS TRANSFERENCIA POS "
-              DTS:DTSID="{28F63520-FDBB-4FE6-B057-9890FCFAE5D5}"
+              DTS:DTSID="{EE7112FF-D0AF-4E96-B8DA-BD2F88F9DF11}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1603,6 +1603,10 @@
           Id="Package\COPIA A DWFE"
           TopLeft="77.2500091455875,381.149994525611" />
         <NodeLayout
+          Size="182.666666666667,42.6666666666667"
+          Id="Package\Finaliza en error COPIA A DWFE"
+          TopLeft="307.875001424923,385.649996269047" />
+        <NodeLayout
           Size="228,42.6666666666667"
           Id="Package\Finaliza en error sd_transportes"
           TopLeft="334.374995017424,220.349996059835" />
@@ -1610,10 +1614,6 @@
           Size="156,42.6666666666667"
           Id="Package\Finaliza en error sd_transportes_costo"
           TopLeft="324.750001173466,293.3499979195" />
-        <NodeLayout
-          Size="182.666666666667,42.6666666666667"
-          Id="Package\Finaliza en error COPIA A DWFE"
-          TopLeft="307.875001424923,385.649996269047" />
         <NodeLayout
           Size="131.333333333334,42.6666666666667"
           Id="Package\Finalizo Ok"

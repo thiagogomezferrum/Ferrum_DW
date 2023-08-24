@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="stock"
   DTS:PackageType="5"
-  DTS:VersionBuild="43"
-  DTS:VersionGUID="{2316598B-453D-4F73-AFED-685DC4495201}">
+  DTS:VersionBuild="47"
+  DTS:VersionGUID="{E2C767E5-BE7F-4599-821C-D252341EC877}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="\\linuxfil\dw\PRD\APROCESAR\foto_stock.txt">
+          DTS:ConnectionString="\\sapfs\FERRUM-DW\PRD\APROCESAR\foto_stock.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Centro"
-              DTS:DTSID="{3B61A6DA-CED0-4321-BE25-41CB1312A2C4}"
+              DTS:DTSID="{D4FB2AB9-5FD4-48AE-B2DB-BB389AE951A5}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Material"
-              DTS:DTSID="{7EBD21CF-1887-4B84-BF35-835C878E5C7D}"
+              DTS:DTSID="{08C24A58-287D-435D-891A-E8317EAB6098}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Stock de cierre 01 2021"
-              DTS:DTSID="{3DA0942E-4547-4266-A854-2C2F553CA872}"
+              DTS:DTSID="{1926319D-55E8-49BD-BCD8-47DDB405A274}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Importe stock 01 2021"
-              DTS:DTSID="{37002FA2-D2F9-4B45-8E0F-95B0AED42BC6}"
+              DTS:DTSID="{0685D500-84FF-4AEB-B4B2-BBA6710B7F96}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="Fecha de ejecución"
-              DTS:DTSID="{1766507A-BE08-4A86-A8A1-5C3F74384751}"
+              DTS:DTSID="{2B22CF34-9BBD-4DD1-B15B-6115B6CD28D9}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -95,7 +95,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="\\linuxfil\dw\PRD\APROCESAR\mm_mat_doc.txt">
+          DTS:ConnectionString="\\sapfs\FERRUM-DW\PRD\APROCESAR\mm_mat_doc.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -104,7 +104,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA_CREACION"
-              DTS:DTSID="{82F33714-B1E0-4AF2-AD22-E4C239B6C852}"
+              DTS:DTSID="{17B84AE2-4FC9-4F81-A68A-C61F8163D8B1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -113,7 +113,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA_MODIF"
-              DTS:DTSID="{61895172-4B47-425A-8FD0-C04FBD810D74}"
+              DTS:DTSID="{A1C77B79-7A96-45D3-95CF-27C0AD5FF942}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -122,7 +122,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NUN_DOC_MT"
-              DTS:DTSID="{C3CE43CB-F016-4FA6-A988-EC7BE34E320A}"
+              DTS:DTSID="{C3FD1EC6-552E-4623-9EF9-D3FEFB56FD5E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -131,7 +131,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="POS_DOC_MT"
-              DTS:DTSID="{A472B86D-5948-4AB7-B80B-F51938CFC4DA}"
+              DTS:DTSID="{04F2D2E1-94C1-4BD9-AFEC-7F8B66A0519C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -140,7 +140,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="SOCIEDAD"
-              DTS:DTSID="{666E6D34-4DEF-4AC9-ACFD-84DD767D5BB7}"
+              DTS:DTSID="{0227BA94-190D-4157-BCAB-29A77626777C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -149,7 +149,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CLASE_MOV"
-              DTS:DTSID="{1AC12F11-7DC3-497B-9D74-0A53FC6A49F7}"
+              DTS:DTSID="{A7A91794-2B0B-460D-B1F4-735EE6F265B3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -158,7 +158,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DEN_MOV"
-              DTS:DTSID="{CC84B8AD-9849-46DD-BD21-6F9AE8DFCB37}"
+              DTS:DTSID="{4E1ADF5E-5653-4E55-82B8-650A47831E6B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -167,7 +167,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO"
-              DTS:DTSID="{47E66BB0-F819-4981-B3CD-F594559E01C7}"
+              DTS:DTSID="{2D84752D-1AFF-4045-9439-F60DAD6D4319}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -176,7 +176,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO_REC"
-              DTS:DTSID="{9BEF6181-ED0D-4B8D-9B7F-472BB1AEE835}"
+              DTS:DTSID="{297C2B1C-76FE-406A-B366-51D81C9FB49F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -185,7 +185,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ALMACEN"
-              DTS:DTSID="{A3109ED2-9CF0-4AE1-923C-2560BB314D61}"
+              DTS:DTSID="{59199D59-0F90-4C1C-978B-8B6DC53C2A06}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -194,7 +194,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ALMACEN_REC"
-              DTS:DTSID="{FDDDE8CA-F587-4A9C-8065-BD2EF24A7E97}"
+              DTS:DTSID="{0A471441-6E4D-4FB7-9EE8-A756F16C0F5A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -203,7 +203,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MATERIAL"
-              DTS:DTSID="{925FE6AE-40A2-4A1D-94BD-A60F0EE56E00}"
+              DTS:DTSID="{EB49C292-5182-4FC4-97CF-49079146B833}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -212,7 +212,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TEXTO_POS"
-              DTS:DTSID="{656BD6FB-9396-4338-90E7-09FB4802A5D4}"
+              DTS:DTSID="{6001C66F-6A42-4392-9EF0-E7480336A599}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -221,7 +221,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANTIDAD"
-              DTS:DTSID="{A047A6C0-3A6D-4B6D-923D-9426D85DB7D3}"
+              DTS:DTSID="{13762C6E-8028-46A1-A2D3-FE557214EAC3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -230,7 +230,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="UM_DOC"
-              DTS:DTSID="{A394D2C4-6D64-415D-8621-ACD556BE1A4E}"
+              DTS:DTSID="{ECA6B6EC-EF5D-4D1A-989B-87C4D65AFCD7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -239,7 +239,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VALOR_DOC"
-              DTS:DTSID="{5554D035-DA23-4A53-B1F8-054BAD2694A0}"
+              DTS:DTSID="{365705B9-CD1E-4CFD-9CDE-ED13726289CF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -248,7 +248,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MONEDA"
-              DTS:DTSID="{1900D340-CFA2-4D7E-AE40-1925FA3A6EE1}"
+              DTS:DTSID="{0903B323-EE56-4671-B46E-DC4220916413}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -257,7 +257,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VALOR_COS_IND"
-              DTS:DTSID="{472E0341-23CE-4E6F-8461-357FB8EF8145}"
+              DTS:DTSID="{3D920526-0FCE-4DCE-8AD4-43D51F68CA02}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -266,7 +266,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DOC_REF"
-              DTS:DTSID="{CD217ECE-7362-4AC4-B0C0-5289094AF72D}"
+              DTS:DTSID="{926BB350-9122-41CB-A5B2-C927E135AB22}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -275,7 +275,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="POS_DOC_REF"
-              DTS:DTSID="{0B1FE8E7-C4C6-4659-9706-DF1AD0380CE7}"
+              DTS:DTSID="{8231AFF2-27E6-4373-ADB2-D2EBD57B2670}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -284,7 +284,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PEDIDO"
-              DTS:DTSID="{40E70C93-C030-4B15-9925-8248794C4610}"
+              DTS:DTSID="{CE24A5AB-6F00-4FCE-9BEB-1FDED6468E65}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -293,7 +293,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="POS_PEDIDO"
-              DTS:DTSID="{1BB71D25-AD15-4482-AC0B-54A6EBC6C621}"
+              DTS:DTSID="{9752C155-205B-4346-BB4F-FB50C299191A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -302,7 +302,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="REFERENCIA_CAB"
-              DTS:DTSID="{9AD4B322-75F6-4E6D-AC42-91947F2FE307}"
+              DTS:DTSID="{AAF0C123-BBC7-4612-B668-781965A30471}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -311,7 +311,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ENTREGA"
-              DTS:DTSID="{37D2C855-A1F6-41E1-8962-E40B58C4BBF5}"
+              DTS:DTSID="{24973E52-4A2F-485F-8658-8F5BCC1079BE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -320,7 +320,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ENTREGA_POS"
-              DTS:DTSID="{D549301C-21FA-46EC-A681-34FB46D0F539}"
+              DTS:DTSID="{5FB7FF28-3214-4715-8788-0DE437DC6971}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -329,7 +329,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PROVEEDOR"
-              DTS:DTSID="{8E828C9E-6A45-4053-814C-5F83B4A7C47E}"
+              DTS:DTSID="{030227B3-DB4F-4DEB-90DA-777EF9541BA1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -338,7 +338,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CLIENTE"
-              DTS:DTSID="{63B7BE2F-3EAC-41D0-A87E-853B8AD4FAD9}"
+              DTS:DTSID="{5E6F3FCE-048D-4A50-A4C3-15FE1EA7884D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -347,7 +347,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PROV_STOCK_ESP"
-              DTS:DTSID="{72B08A1E-9F38-4FE4-8DCE-77D61DA9306F}"
+              DTS:DTSID="{636964B9-E33D-499B-8B5E-D65B01C57CB6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -356,7 +356,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TIPO_STOCK_ESP"
-              DTS:DTSID="{AAAC4CE7-5AB7-4645-8747-F608EF96CE58}"
+              DTS:DTSID="{FED10090-F898-450F-9A45-D4E9D2072562}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -365,7 +365,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CLIENT_S_ESP"
-              DTS:DTSID="{50B3D230-5C01-4FBA-8242-54221004B4EA}"
+              DTS:DTSID="{42864C23-0865-4857-9D07-619365F187E9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -374,7 +374,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="IND_D_H"
-              DTS:DTSID="{4FF54F0E-7009-4734-9C34-E9F558E94904}"
+              DTS:DTSID="{9242810C-52AE-420F-843D-91C69BDCAC55}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -383,7 +383,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="IND_ENT_FINAL"
-              DTS:DTSID="{BBD7A364-2F76-4EBB-AB10-169CE10B386C}"
+              DTS:DTSID="{BAB63F0F-15D6-4B49-A22D-A99587CD9AA1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -392,7 +392,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ORDEN"
-              DTS:DTSID="{3085343F-D5B8-42B0-A97A-49026E36C9A7}"
+              DTS:DTSID="{FCC3CB84-810C-4A12-A72D-248DA5ED0530}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -401,7 +401,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ACT_FIJO"
-              DTS:DTSID="{34B11492-7AC6-4424-8CCC-3F83E9C51DEA}"
+              DTS:DTSID="{08C91C69-73C4-4081-900B-F0F2FEEBD21E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -410,7 +410,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CECO"
-              DTS:DTSID="{D144BD6D-F182-444C-96F9-DD90C80074EC}"
+              DTS:DTSID="{675BE310-068A-4096-AAB3-5ECD9CDBA10C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -419,7 +419,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CUENTA_MAYOR"
-              DTS:DTSID="{84A48DD4-E552-4553-80A5-E39D18F3E167}"
+              DTS:DTSID="{90D7E157-D8F3-417A-AEF1-0839118F6175}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -428,7 +428,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PEDIDO_CLIENTE"
-              DTS:DTSID="{61E2A4C1-6893-47A7-9C22-C3AD1789E17C}"
+              DTS:DTSID="{E997AB74-8C36-4CEA-9F62-8C5061AE6762}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -437,7 +437,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="POS_PED_CLIENTE"
-              DTS:DTSID="{AC443BA1-7737-4A80-9818-DC7D398A31B9}"
+              DTS:DTSID="{1615657C-F4CF-4407-991A-DBFCC1963BDC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -446,7 +446,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TIPO_CAMBIO"
-              DTS:DTSID="{5F516BCE-4DFC-48BB-BE87-339DD4D671EE}"
+              DTS:DTSID="{01E9DE47-82C7-48EA-9558-2B60D56F6FE2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -455,7 +455,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VALOR_DOC_ML3"
-              DTS:DTSID="{8166C011-DC09-4CFA-9670-878CEF17ED5C}"
+              DTS:DTSID="{3837C1CF-8CCF-4D26-BC7D-FBDD70FBFC36}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -464,7 +464,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MOT_MOVIMIENTO"
-              DTS:DTSID="{73C5C921-BD7A-4BD3-A7D2-6D3C85944D62}"
+              DTS:DTSID="{E931FC63-CE00-4CB6-87D8-67628C4AFC07}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -473,7 +473,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MOT_MOV_MERCANCIA"
-              DTS:DTSID="{CC7E7931-C77C-4C89-A2A3-0C0D2A0AF18D}"
+              DTS:DTSID="{F29557B2-EA75-472E-A189-7AA66810B011}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -482,7 +482,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="IND STOCK ESPECIAL"
-              DTS:DTSID="{EF094DA3-6F87-46BE-B8DF-FBF76FCB3C4E}"
+              DTS:DTSID="{10FE8855-46DC-4634-92E8-01A92871A9EE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -491,7 +491,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CONTAB CONSUMO"
-              DTS:DTSID="{3A62C449-A414-4FD6-8440-888D90BB25F8}"
+              DTS:DTSID="{90220F7F-8F20-4554-9F7B-331A5A177BF4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -500,7 +500,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA DE CONTABILIZACION"
-              DTS:DTSID="{CB0D17B6-4B94-4754-9B48-EA683290F301}"
+              DTS:DTSID="{671B5754-AEE1-40B7-A538-095A29820EC0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -509,7 +509,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TEXTO DE CABECERA"
-              DTS:DTSID="{36D57821-9991-47BC-9F85-78CFA7391114}"
+              DTS:DTSID="{D6CB7243-FC70-4D53-9171-4CE659423138}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -518,7 +518,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA DE DOCUMENTO"
-              DTS:DTSID="{1D6F1283-28BA-42D1-8307-3754BF552962}"
+              DTS:DTSID="{A9B86423-A346-4EF2-BCF4-F7765C21F38F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -527,7 +527,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PUESTO DE CARGA"
-              DTS:DTSID="{506A580E-B752-40EB-9ED0-82C9E1AFF92E}"
+              DTS:DTSID="{69A313A4-D7B2-4676-857B-F6A16067D971}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -536,7 +536,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NRO RESERVA"
-              DTS:DTSID="{60F9C68A-9047-4D6A-A763-0DFDB081ECB0}"
+              DTS:DTSID="{3F078AB8-DBC7-4C37-890B-0D269919E473}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -545,7 +545,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="POS RESERVA"
-              DTS:DTSID="{36BD5F3B-794C-4ABB-910B-364046470DB8}"
+              DTS:DTSID="{C348064D-6D81-4017-92A5-052F951EA61C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -554,7 +554,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="USUARIO"
-              DTS:DTSID="{1BCEB86C-15EC-4141-A3B2-0EDF9D12C0DB}"
+              DTS:DTSID="{F31319C7-B4CB-46FD-834A-413AD20821C6}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -574,124 +574,133 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="\\linuxfil\DW\PRD\APROCESAR\mm_stock_diario.txt">
+          DTS:ConnectionString="\\sapfs\FERRUM-DW\PRD\APROCESAR\mm_stock_diario.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="JERARQUÃA DE PRODUCTOS"
-              DTS:DTSID="{F7FC7C36-615F-4B03-B91F-AEB5366B5BFA}"
+              DTS:ObjectName="SOCIEDAD"
+              DTS:DTSID="{27312175-B03D-43E3-8CCA-E50BEE24729B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="JERARQUÍA DE PRODUCTOS"
+              DTS:DTSID="{6E4A37A3-FFEF-44A3-8091-A8DAED5CFF62}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DESC JER "
-              DTS:DTSID="{B31806DC-54A2-4072-BD5A-3011FB79654F}"
+              DTS:DTSID="{73A6B134-BF8A-45BE-BF8B-F5CA925E40ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LINEA"
-              DTS:DTSID="{B0D3E2C9-1094-477B-BA91-825D4AE23704}"
+              DTS:DTSID="{AAA4C902-465A-410D-BD40-18AB11724B9A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MATERIAL"
-              DTS:DTSID="{91EA1E9D-39EA-498C-9DDA-AF828B0973FD}"
+              DTS:DTSID="{87339362-0FEF-4194-A4AB-A22E27E643A6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DESCRIPCION"
-              DTS:DTSID="{2B97E1A9-C9F1-45AC-8BD7-6DB7803C2231}"
+              DTS:DTSID="{024DEEA1-1FA1-454D-AEC1-94615F2131ED}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="NÂ°MATERIAL"
-              DTS:DTSID="{94B47A8B-801E-4E7C-A8D9-20C442285A1F}"
+              DTS:ObjectName="N°MATERIAL"
+              DTS:DTSID="{756C7B88-3649-427B-9861-C85FC485C75D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EST MAT "
-              DTS:DTSID="{B5AFCA23-CC30-4FB1-851F-EF764481AF2B}"
+              DTS:DTSID="{13F655BF-1244-4FAA-A16C-140A94888F31}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STK LI UT "
-              DTS:DTSID="{8EDB178C-2945-487E-8D21-C59501934F6E}"
+              DTS:DTSID="{70C9E983-708A-43EA-A54C-C27C4237703C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="APROB CAL "
-              DTS:DTSID="{C92BE5DC-43B1-41F9-8C12-0878135A464A}"
+              DTS:DTSID="{4984817A-26A6-49BB-8718-CFB92D8B443C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CONTR CAL "
-              DTS:DTSID="{D9F92A2C-722C-40B6-823F-B1876FBE58E1}"
+              DTS:DTSID="{F2BEBBC3-8A78-42FF-9FA6-D0D711CF6D1F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PED PEND "
-              DTS:DTSID="{3EAD0357-D693-495F-B2A1-243EA92BD059}"
+              DTS:DTSID="{76F7291A-032A-4A51-8910-BFE224E86273}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ENT PEND "
-              DTS:DTSID="{3A07A5D6-8A15-45DA-A2C5-6B270C63C706}"
+              DTS:DTSID="{323A2834-7BA3-4EAD-948C-B5860E9775F3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000A_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DEUDA TOT "
-              DTS:DTSID="{C5BBD4C2-1F44-43D8-9636-43F191AEC44D}"
+              DTS:DTSID="{EA21C81D-5FE7-4A3C-98F5-3D4D7E605300}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -711,7 +720,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="\\linuxfil\dw\PRD\APROCESAR\mm_stock_mat.txt">
+          DTS:ConnectionString="\\sapfs\FERRUM-DW\PRD\APROCESAR\mm_stock_mat.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -720,7 +729,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="COD_MATERIAL"
-              DTS:DTSID="{74B73078-980A-410C-A7CF-83DBDF1924DD}"
+              DTS:DTSID="{AD9EA3BB-55EE-499A-9976-B7A1E548E541}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -729,7 +738,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO"
-              DTS:DTSID="{E9EBF372-02D9-4C74-B0CC-5DEA8B0E1458}"
+              DTS:DTSID="{93FB1BFF-DD43-4166-A8B1-30163CAF4F36}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -738,7 +747,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ALMACEN"
-              DTS:DTSID="{13675979-CECF-4827-9517-917651373CFF}"
+              DTS:DTSID="{D799E5F1-F54C-45F6-8E77-BC28B0B5C3F7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -747,7 +756,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PB_ALMACEN"
-              DTS:DTSID="{677D3552-5373-42E2-9B1C-7D326DEF48B6}"
+              DTS:DTSID="{23665D8C-E3F4-47F4-8D4D-FFC7D28B329F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -756,7 +765,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_L_UTIL"
-              DTS:DTSID="{F518456E-D6A3-440B-8EA1-45847D36F04E}"
+              DTS:DTSID="{F3324B4B-4213-4EE6-9873-E12F24C77F4E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -765,7 +774,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_TRAS"
-              DTS:DTSID="{D92B109B-A864-4409-842F-80FDAF4B9B0D}"
+              DTS:DTSID="{2386727E-9690-4D3E-930E-74D6D91B36CC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -774,7 +783,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_CAL"
-              DTS:DTSID="{7812843E-0701-48F3-8EC3-54072C7EFBAC}"
+              DTS:DTSID="{A7CF4AB7-B221-4152-9D65-FCAF5720C101}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -783,7 +792,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_N_LIB"
-              DTS:DTSID="{840ABA1B-0427-4CC2-A81D-349A131DBAF0}"
+              DTS:DTSID="{65B6EBD5-14EC-4A1C-9D9D-C55F66B50ECC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -792,7 +801,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_BLOQ"
-              DTS:DTSID="{4C3E82D0-3351-49C2-94C0-A705EDE03786}"
+              DTS:DTSID="{CADD419C-D5FA-4BAB-A0C6-E56456E2E15F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -801,7 +810,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_DEVO"
-              DTS:DTSID="{8C2736AC-DCE2-4E1A-B75F-237D6D92331B}"
+              DTS:DTSID="{10E40AFA-CABC-42FC-AF60-7DA56E41256C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -810,7 +819,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PRECIO_STD"
-              DTS:DTSID="{2E9CB048-03F2-443C-84E8-F839764EC85D}"
+              DTS:DTSID="{F98A5136-1AFF-4213-9DF1-E2283D96B9DA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -819,7 +828,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PRECIO_VAR"
-              DTS:DTSID="{DE2DCB81-D1B3-4704-92A4-13E4417F1B81}"
+              DTS:DTSID="{B2A9D320-5F8D-495D-8014-EE7FC11A5DE6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -828,7 +837,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PRECIO_STD_ARF"
-              DTS:DTSID="{5FCE7BF5-AAAF-4CBB-83E4-B554DF435098}"
+              DTS:DTSID="{3E3AAB11-4A7F-415F-8458-BEA8CB7970A2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -837,7 +846,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PRECIO_VAR_ARF"
-              DTS:DTSID="{1CBD9EB9-79C2-4ECD-88FC-00C6ABA8E57A}"
+              DTS:DTSID="{8AC471C5-D8D5-42D2-892C-AE41DB0D368E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -846,7 +855,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANT_BASE"
-              DTS:DTSID="{CF9EC8E1-4C55-410B-AAB9-4C8843073113}"
+              DTS:DTSID="{90EC6C69-CA26-49B2-8C05-B804EDB56EDA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -855,7 +864,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CONT_PRECIO"
-              DTS:DTSID="{C285EED0-1AA1-4E4A-8968-2FDE18064B59}"
+              DTS:DTSID="{6A83DA40-A7C3-470D-BFE6-0BEF02E2810D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -864,7 +873,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TIPO_STOCK_ESP"
-              DTS:DTSID="{1C0484C0-ACE1-4E4C-A7D3-1CADC1B478D2}"
+              DTS:DTSID="{4AB6B8B4-F62A-498D-AA8E-DBCEFCB63D7E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -873,7 +882,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="STOCK_L_UTIL_2"
-              DTS:DTSID="{1A7AFD44-14EF-49D6-8294-9A62651D5134}"
+              DTS:DTSID="{0DDB1BE9-62BF-4E1F-B93B-EBB121CEF771}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -957,7 +966,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error  COPIA A DWPG"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -982,7 +991,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error 3"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1006,7 +1015,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error COPIA A DWFE"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1101,7 +1110,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Finalizo Ok"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3693,33 +3702,12 @@
                   name="Flat File Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[JERARQUÃA DE PRODUCTOS]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JERARQUÃA DE PRODUCTOS]"
-                      length="50"
-                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[JERARQUÃA DE PRODUCTOS]"
-                      name="JERARQUÃA DE PRODUCTOS"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[DESC JER ]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DESC JER ]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[DESC JER ]"
                       name="DESC JER "
                       truncationRowDisposition="FailComponent">
@@ -3740,7 +3728,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LINEA]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[LINEA]"
                       name="LINEA"
                       truncationRowDisposition="FailComponent">
@@ -3761,7 +3749,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MATERIAL]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[MATERIAL]"
                       name="MATERIAL"
                       truncationRowDisposition="FailComponent">
@@ -3782,30 +3770,9 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPCION]"
                       name="DESCRIPCION"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[NÂ°MATERIAL]"
-                      dataType="wstr"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NÂ°MATERIAL]"
-                      length="50"
-                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[NÂ°MATERIAL]"
-                      name="NÂ°MATERIAL"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -3824,7 +3791,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EST MAT ]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[EST MAT ]"
                       name="EST MAT "
                       truncationRowDisposition="FailComponent">
@@ -3845,7 +3812,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STK LI UT ]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[STK LI UT ]"
                       name="STK LI UT "
                       truncationRowDisposition="FailComponent">
@@ -3866,7 +3833,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[APROB CAL ]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[APROB CAL ]"
                       name="APROB CAL "
                       truncationRowDisposition="FailComponent">
@@ -3887,7 +3854,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CONTR CAL ]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[CONTR CAL ]"
                       name="CONTR CAL "
                       truncationRowDisposition="FailComponent">
@@ -3908,7 +3875,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PED PEND ]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[PED PEND ]"
                       name="PED PEND "
                       truncationRowDisposition="FailComponent">
@@ -3929,7 +3896,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ENT PEND ]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[ENT PEND ]"
                       name="ENT PEND "
                       truncationRowDisposition="FailComponent">
@@ -3950,9 +3917,72 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEUDA TOT ]"
-                      length="50"
+                      length="100"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[DEUDA TOT ]"
                       name="DEUDA TOT "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD]"
+                      length="100"
+                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD]"
+                      name="SOCIEDAD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[JERARQUÍA DE PRODUCTOS]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JERARQUÍA DE PRODUCTOS]"
+                      length="100"
+                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[JERARQUÍA DE PRODUCTOS]"
+                      name="JERARQUÍA DE PRODUCTOS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[N°MATERIAL]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[N°MATERIAL]"
+                      length="100"
+                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[N°MATERIAL]"
+                      name="N°MATERIAL"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -3969,70 +3999,75 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JERARQUÃA DE PRODUCTOS]"
-                      dataType="wstr"
-                      length="50"
-                      name="JERARQUÃA DE PRODUCTOS" />
-                    <externalMetadataColumn
                       refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DESC JER ]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="DESC JER " />
                     <externalMetadataColumn
                       refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[LINEA]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="LINEA" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[MATERIAL]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="MATERIAL" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DESCRIPCION]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="DESCRIPCION" />
-                    <externalMetadataColumn
-                      refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NÂ°MATERIAL]"
-                      dataType="wstr"
-                      length="50"
-                      name="NÂ°MATERIAL" />
                     <externalMetadataColumn
                       refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EST MAT ]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="EST MAT " />
                     <externalMetadataColumn
                       refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[STK LI UT ]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="STK LI UT " />
                     <externalMetadataColumn
                       refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[APROB CAL ]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="APROB CAL " />
                     <externalMetadataColumn
                       refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CONTR CAL ]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="CONTR CAL " />
                     <externalMetadataColumn
                       refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PED PEND ]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="PED PEND " />
                     <externalMetadataColumn
                       refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ENT PEND ]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="ENT PEND " />
                     <externalMetadataColumn
                       refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DEUDA TOT ]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="DEUDA TOT " />
+                    <externalMetadataColumn
+                      refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD]"
+                      dataType="wstr"
+                      length="100"
+                      name="SOCIEDAD" />
+                    <externalMetadataColumn
+                      refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[JERARQUÍA DE PRODUCTOS]"
+                      dataType="wstr"
+                      length="100"
+                      name="JERARQUÍA DE PRODUCTOS" />
+                    <externalMetadataColumn
+                      refId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[N°MATERIAL]"
+                      dataType="wstr"
+                      length="100"
+                      name="N°MATERIAL" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -4065,11 +4100,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\mm_stock_diario\OLE DB Destination"
+              refId="Package\mm_stock_diario\OLE DB Destination 1"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination"
+              name="OLE DB Destination 1"
               usesDispositions="true"
               version="4">
               <properties>
@@ -4122,7 +4157,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\mm_stock_diario\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\mm_stock_diario\OLE DB Destination 1.Connections[OleDbConnection]"
                   connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
                   connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
                   description="The OLE DB runtime connection used to access the database."
@@ -4130,167 +4165,185 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[LINEA]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[LINEA]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="LINEA"
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LINEA]"
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LINEA]"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[LINEA]" />
                     <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MATERIAL]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[MATERIAL]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="MATERIAL"
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL]"
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL]"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[MATERIAL]" />
                     <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DESCRIPCION]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DESCRIPCION]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="DESCRIPCION"
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPCION]"
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPCION]"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[DESCRIPCION]" />
                     <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[JERARQUÃA DE PRODUCTOS]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[SOCIEDAD]"
                       cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="JERARQUÃA DE PRODUCTOS"
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JERARQUIA_DE_PRODUCTOS]"
-                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[JERARQUÃA DE PRODUCTOS]" />
+                      cachedLength="100"
+                      cachedName="SOCIEDAD"
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
+                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD]" />
                     <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DESC JER ]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[JERARQUÍA DE PRODUCTOS]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
+                      cachedName="JERARQUÍA DE PRODUCTOS"
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[JERARQUIA_DE_PRODUCTOS]"
+                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[JERARQUÍA DE PRODUCTOS]" />
+                    <inputColumn
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DESC JER ]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
                       cachedName="DESC JER "
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESC_JER]"
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DESC_JER]"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[DESC JER ]" />
                     <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NÂ°MATERIAL]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[EST MAT ]"
                       cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="NÂ°MATERIAL"
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL_AS400]"
-                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[NÂ°MATERIAL]" />
-                    <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EST MAT ]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="EST MAT "
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EST_MAT]"
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EST_MAT]"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[EST MAT ]" />
                     <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[STK LI UT ]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DEUDA TOT ]"
                       cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="STK LI UT "
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LIBRE_UTILIZACION]"
-                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[STK LI UT ]" />
+                      cachedLength="100"
+                      cachedName="DEUDA TOT "
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DEUDA_TOTAL]"
+                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[DEUDA TOT ]" />
                     <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[APROB CAL ]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[PED PEND ]"
                       cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="APROB CAL "
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[APROBADO_CALIDAD]"
-                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[APROB CAL ]" />
-                    <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CONTR CAL ]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="CONTR CAL "
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CONTROL_CALIDAD]"
-                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[CONTR CAL ]" />
-                    <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PED PEND ]"
-                      cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="PED PEND "
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PENDIENTE_PEDIDOS]"
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PENDIENTE_PEDIDOS]"
                       lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[PED PEND ]" />
                     <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ENT PEND ]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[CONTR CAL ]"
                       cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="ENT PEND "
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PENDIENTE_ENTREGAS]"
-                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[ENT PEND ]" />
+                      cachedLength="100"
+                      cachedName="CONTR CAL "
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CONTROL_CALIDAD]"
+                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[CONTR CAL ]" />
                     <inputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DEUDA TOT ]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[APROB CAL ]"
                       cachedDataType="wstr"
-                      cachedLength="50"
-                      cachedName="DEUDA TOT "
-                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEUDA_TOTAL]"
-                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[DEUDA TOT ]" />
+                      cachedLength="100"
+                      cachedName="APROB CAL "
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[APROBADO_CALIDAD]"
+                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[APROB CAL ]" />
+                    <inputColumn
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[N°MATERIAL]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="N°MATERIAL"
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL_AS400]"
+                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[N°MATERIAL]" />
+                    <inputColumn
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[STK LI UT ]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="STK LI UT "
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LIBRE_UTILIZACION]"
+                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[STK LI UT ]" />
+                    <inputColumn
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ENT PEND ]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="ENT PEND "
+                      externalMetadataColumnId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PENDIENTE_ENTREGAS]"
+                      lineageId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output].Columns[ENT PEND ]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JERARQUIA_DE_PRODUCTOS]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD]"
+                      dataType="wstr"
+                      length="10"
+                      name="SOCIEDAD" />
+                    <externalMetadataColumn
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[JERARQUIA_DE_PRODUCTOS]"
                       dataType="wstr"
                       length="50"
                       name="JERARQUIA_DE_PRODUCTOS" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESC_JER]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DESC_JER]"
                       dataType="wstr"
                       length="50"
                       name="DESC_JER" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LINEA]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LINEA]"
                       dataType="wstr"
                       length="50"
                       name="LINEA" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL]"
                       dataType="wstr"
                       length="50"
                       name="MATERIAL" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPCION]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DESCRIPCION]"
                       dataType="wstr"
                       length="50"
                       name="DESCRIPCION" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL_AS400]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[MATERIAL_AS400]"
                       dataType="wstr"
                       length="50"
                       name="MATERIAL_AS400" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EST_MAT]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[EST_MAT]"
                       dataType="wstr"
                       length="10"
                       name="EST_MAT" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[LIBRE_UTILIZACION]"
-                      dataType="i4"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[LIBRE_UTILIZACION]"
+                      dataType="wstr"
+                      length="10"
                       name="LIBRE_UTILIZACION" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[APROBADO_CALIDAD]"
-                      dataType="i4"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[APROBADO_CALIDAD]"
+                      dataType="wstr"
+                      length="10"
                       name="APROBADO_CALIDAD" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CONTROL_CALIDAD]"
-                      dataType="i4"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[CONTROL_CALIDAD]"
+                      dataType="wstr"
+                      length="10"
                       name="CONTROL_CALIDAD" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PENDIENTE_PEDIDOS]"
-                      dataType="i4"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PENDIENTE_PEDIDOS]"
+                      dataType="wstr"
+                      length="10"
                       name="PENDIENTE_PEDIDOS" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PENDIENTE_ENTREGAS]"
-                      dataType="i4"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[PENDIENTE_ENTREGAS]"
+                      dataType="wstr"
+                      length="10"
                       name="PENDIENTE_ENTREGAS" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DEUDA_TOTAL]"
-                      dataType="i4"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[DEUDA_TOTAL]"
+                      dataType="wstr"
+                      length="10"
                       name="DEUDA_TOTAL" />
                     <externalMetadataColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
                       dataType="dbTimeStamp"
                       name="fecha" />
                   </externalMetadataColumns>
@@ -4298,22 +4351,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\mm_stock_diario\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\mm_stock_diario\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\mm_stock_diario\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\mm_stock_diario\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\mm_stock_diario\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\mm_stock_diario\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\mm_stock_diario\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\mm_stock_diario\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -4325,7 +4378,7 @@
           <paths>
             <path
               refId="Package\mm_stock_diario.Paths[Flat File Source Output]"
-              endId="Package\mm_stock_diario\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\mm_stock_diario\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
               startId="Package\mm_stock_diario\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
@@ -5904,13 +5957,13 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="156,42"
-          Id="Package\mm_mat_doc\Flat File Source"
-          TopLeft="327.000001564622,80.1052639692444" />
-        <NodeLayout
           Size="184,42.6666666666667"
           Id="Package\mm_mat_doc\OLE DB Destination 1"
           TopLeft="511.416662214945,149.157897544369" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\mm_mat_doc\Flat File Source"
+          TopLeft="327.000001564622,80.1052639692444" />
         <EdgeLayout
           Id="Package\mm_mat_doc.Paths[Flat File Source Output]"
           TopLeft="405.000001564622,122.105263969244">
@@ -5948,58 +6001,8 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <TaskHost
-    design-time-name="Package\mm_stock_diario">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="150.666666666667,42"
-          Id="Package\mm_stock_diario\Flat File Source"
-          TopLeft="332,55" />
-        <NodeLayout
-          Size="170.666666666667,42"
-          Id="Package\mm_stock_diario\OLE DB Destination"
-          TopLeft="567,102" />
-        <EdgeLayout
-          Id="Package\mm_stock_diario.Paths[Flat File Source Output]"
-          TopLeft="483,76">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="84,47"
-              Start="0,0"
-              End="76.5,47">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="38,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="38,0"
-                    Point2="42,0"
-                    Point3="42,4" />
-                  <mssgle:LineSegment
-                    End="42,43" />
-                  <mssgle:CubicBezierSegment
-                    Point1="42,43"
-                    Point2="42,47"
-                    Point3="46,47" />
-                  <mssgle:LineSegment
-                    End="76.5,47" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\mm_stock_diario\OLE DB Destination">
+    design-time-name="Package\mm_mat_doc\OLE DB Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -6011,6 +6014,56 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\mm_stock_diario">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150.666666666667,42"
+          Id="Package\mm_stock_diario\Flat File Source"
+          TopLeft="112.000003278255,83.7368426461629" />
+        <NodeLayout
+          Size="184,42.6666666666667"
+          Id="Package\mm_stock_diario\OLE DB Destination 1"
+          TopLeft="276.249995883554,202.526319601529" />
+        <EdgeLayout
+          Id="Package\mm_stock_diario.Paths[Flat File Source Output]"
+          TopLeft="187.333336611589,125.736842646163">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="180.916659271966,76.7894769553663"
+              Start="0,0"
+              End="180.916659271966,69.2894769553663">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.3947384776832" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.3947384776832"
+                    Point2="0,38.3947384776832"
+                    Point3="4,38.3947384776832" />
+                  <mssgle:LineSegment
+                    End="176.916659271966,38.3947384776832" />
+                  <mssgle:CubicBezierSegment
+                    Point1="176.916659271966,38.3947384776832"
+                    Point2="180.916659271966,38.3947384776832"
+                    Point3="180.916659271966,42.3947384776832" />
+                  <mssgle:LineSegment
+                    End="180.916659271966,69.2894769553663" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <TaskHost
     design-time-name="Package\mm_stock_mat">
     <LayoutInfo>
@@ -6075,7 +6128,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\mm_mat_doc\OLE DB Destination 1">
+    design-time-name="Package\mm_stock_diario\OLE DB Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
