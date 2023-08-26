@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">NTBK-PCONNON</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACZRZ8IGgH0S/zybCA2d5XQAAAAACAAAAAAADZgAAwAAAABAAAABWrYtAkSNY42uhd4rrha82AAAAAASAAACgAAAAEAAAAOTOi12uIcn191tfmq4KBZyIAAAAfux90azxhytgPvz6WBMgshG5HVW557kXv9O/cq3Owu9KjMhHIb9BSKnR/26zoC+9XlHuqojde2l4LGSgiYZniBZT6rI8Qj5lCfOn9BmvJJCeHsQBSueu8/JzKh6s6KAVgMsoouO6kME0rUl3kCfEutv+soaaXzNI1GaJu4gWTtB581R0c+SwshQAAAC9yaSoxkP0O9OrrKN24ry6xAfZgQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAACZRZ8IGgH0S/zybCA2d5XQAAAAACAAAAAAADZgAAwAAAABAAAAAsNAlMrjDLcSHb9zj7frHaAAAAAASAAACgAAAAEAAAAEwsjtCFks7u3JJecUPwp8qIAAAAqJ2nYv/fuRmt5sNkb4qoBM6ZDT+Wwg0nltZHVjOdm6lP9cuAaN7JRJbfrxwO+1JKpDhKx35ST0ZxtUnWVyfO7vtQSWYUHUG9G5ZLGULLDb52fb0HYZBd8HYEFvEctnVryULTnf2wpBAYpZ2mI4s3EXfQith7ftU67uC2LqAYJ2cXhq3NjKdkShQAAACBVwnjn6QA19lpDjQEZehakPjoqg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -6253,10 +6253,10 @@
                 <SSIS:Property SSIS:Name="Name">stock</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">46</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">48</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{49222B6C-9C51-456F-8C60-96C7FA0F9294}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{8F46112D-6ADE-4C13-B669-C80CB5844701}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -6334,7 +6334,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\foto_stock.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\foto_stock.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -6531,7 +6531,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\mm_mat_doc.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\mm_mat_doc.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -6728,7 +6728,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\mm_stock_diario.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\mm_stock_diario.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -6925,7 +6925,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\mm_stock_mat.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\mm_stock_mat.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -7059,10 +7059,10 @@
                 <SSIS:Property SSIS:Name="Name">entregas</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">53</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">54</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{34393412-8233-46B4-91FD-225A3FBC267F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{D7B38B80-5DCE-4E5F-AF0B-37F6469D06D1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -7140,7 +7140,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\mm_entrega.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\\APROCESAR\mm_entrega.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -7337,7 +7337,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\sd_cab_entregas.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\sd_cab_entregas.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -7534,7 +7534,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\sd_pos_entregas.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\sd_pos_entregas.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -7668,10 +7668,10 @@
                 <SSIS:Property SSIS:Name="Name">solped</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">39</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">40</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{328F9334-E0AA-49B9-BE37-497A17020BC8}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{6879A3BF-FAC8-4466-BC2F-0C63CFC9A353}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -7749,7 +7749,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\mm_solped.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\mm_solped.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -7946,7 +7946,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\mm_solped_imp.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\mm_solped_imp.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -8080,10 +8080,10 @@
                 <SSIS:Property SSIS:Name="Name">transportes</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">29</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">30</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{C10A41CB-EDF6-41F7-849F-BD0AABE5F61F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A3F9DDA3-589B-4134-8C89-7EFB68D7C98A}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -8161,7 +8161,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\sd_transportes.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\sd_transportes.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -8358,7 +8358,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\sd_transportes_costo.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\sd_transportes_costo.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -8509,10 +8509,10 @@
                 <SSIS:Property SSIS:Name="Name">condiciones de precio</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">39</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">40</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{EB2AA8A4-579F-495A-B4D9-F592B812EAD8}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{627F5C6E-6467-4E1C-A2D9-9CC4859A9321}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -8590,7 +8590,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd51_005_734.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd51_005_734.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -8787,7 +8787,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd51_010_114.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd51_010_114.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -8984,7 +8984,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd52_004_613.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd52_004_613.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -9181,7 +9181,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd52_005_720.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd52_005_720.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -9378,7 +9378,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd52_010_721.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd52_010_721.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -9575,7 +9575,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd52_020_710.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd52_020_710.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -9772,7 +9772,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd54_020_728.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd54_020_728.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -9969,7 +9969,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd54_030_729.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd54_030_729.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -10166,7 +10166,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd54_040_730.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd54_040_730.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -10363,7 +10363,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd54_050_418.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd54_050_418.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -10560,7 +10560,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd57_007_779.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd57_007_779.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -10757,7 +10757,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd57_010_707.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd57_010_707.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -10954,7 +10954,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd58_020_735.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd58_020_735.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -11151,7 +11151,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zd58_030_725.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zd58_030_725.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -11348,7 +11348,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\zpr0_010_700.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\zpr0_010_700.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -12603,10 +12603,10 @@
                 <SSIS:Property SSIS:Name="Name">cobranzas</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">38</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">39</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{5F770D33-8E37-4741-96DB-9CE3EF686D4B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{7A878A31-84AB-4CBF-9089-05BF9EE463B1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -12684,7 +12684,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\Cobranzas_realizadas_Detalles.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\Cobranzas_realizadas_Detalles.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -12881,7 +12881,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\Cobranzas_realizadas_Recibos.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\Cobranzas_realizadas_Recibos.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -13330,10 +13330,10 @@
                 <SSIS:Property SSIS:Name="Name">proveedores</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">51</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">52</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F82EEE0C-9662-4AF7-98A5-0DAAFAB95DA1}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{FD143D1E-65B4-4279-9AC1-FA1DF3664571}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -13411,7 +13411,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\Deuda.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\Deuda.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -13608,7 +13608,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\DM_Proveedores.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\DM_Proveedores.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -13805,7 +13805,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\FC_PROV.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\FC_PROV.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -14002,7 +14002,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\mm_facturas.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\mm_facturas.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -14199,7 +14199,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\PAGOS_PROV.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\PAGOS_PROV.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -14333,10 +14333,10 @@
                 <SSIS:Property SSIS:Name="Name">saldos contables</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">18</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">19</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{510223E9-C42E-4631-964B-0EB82352709E}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{F32F23CE-E574-4456-9A91-8771DD1D82DF}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -14414,7 +14414,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\SALDOSCONTABLES_ACTUAL.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\SALDOSCONTABLES_ACTUAL.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -14611,7 +14611,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\SALDOSCONTABLES_ANTERIOR.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\SALDOSCONTABLES_ANTERIOR.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -14745,213 +14745,16 @@
                 <SSIS:Property SSIS:Name="Name">almacenes y calidad</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">19</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">20</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{3D032E2F-4B5B-477B-BBCB-8BAF86357FB5}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{142A746B-BE30-4E38-8670-DF6CBAA91716}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.AlwaysCheckForRowDelimiters">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.CodePage">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">65001</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.ColumnNamesInFirstDataRow">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.ConnectByProxy">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\mm_inventarios.txt</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.DataRowsToSkip">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.Format">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Delimited</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.HeaderRowDelimiter">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property xml:space="preserve" SSIS:Name="Value">
-</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.HeaderRowsToSkip">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.LocaleID">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">11274</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.RowDelimiter">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.TextQualifier">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">&lt;none&gt;</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.Unicode">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.lotes de inspeccion.AlwaysCheckForRowDelimiters">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
@@ -15023,7 +14826,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\mm_loteinspeccion.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\mm_loteinspeccion.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -15149,6 +14952,203 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.AlwaysCheckForRowDelimiters">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.CodePage">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">65001</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.ColumnNamesInFirstDataRow">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">true</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.ConnectByProxy">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.ConnectionString">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\mm_inventarios.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.DataRowsToSkip">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.Format">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Delimited</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.HeaderRowDelimiter">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property xml:space="preserve" SSIS:Name="Value">
+</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.HeaderRowsToSkip">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.LocaleID">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">11274</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.RowDelimiter">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.TextQualifier">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">&lt;none&gt;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
+                <SSIS:Parameter SSIS:Name="CM.mm_inventarios.Unicode">
+                  <SSIS:Properties>
+                    <SSIS:Property SSIS:Name="ID">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="CreationName">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="Description">
+                    </SSIS:Property>
+                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
+                    <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
+                  </SSIS:Properties>
+                </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
             <SSIS:PackageMetaData SSIS:Name="precios transferencia.dtsx">
@@ -15157,10 +15157,10 @@
                 <SSIS:Property SSIS:Name="Name">precios transferencia</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">17</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">18</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{7F69224A-1AA8-448E-83BD-FAAA9F414084}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{C49E136D-6459-43C2-842B-3A9F73869E81}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -15238,7 +15238,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\Precio_Transferencia.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\dw\PRD\APROCESAR\Precio_Transferencia.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -15435,7 +15435,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\precios_transfer.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\precios_transfer.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -17569,10 +17569,10 @@
                 <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">11</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">12</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{D0F9D7C7-85C7-48D7-AB30-EE186AB0D64F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{A940D3A9-AF36-4817-B145-5D268E7237ED}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -17650,7 +17650,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">\\sapfs\FERRUM-DW\PRD\APROCESAR\DESVIOS_MASIVOS.txt</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">\\linuxfil\DW\PRD\APROCESAR\DESVIOS_MASIVOS.txt</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -17973,6 +17973,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -18186,6 +18188,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -18381,6 +18385,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -18576,6 +18582,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -18789,6 +18797,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -18984,6 +18994,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -19179,6 +19191,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -19374,6 +19388,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -19569,6 +19585,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -19764,6 +19782,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

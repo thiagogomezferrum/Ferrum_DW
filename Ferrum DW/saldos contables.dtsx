@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="saldos contables"
   DTS:PackageType="5"
-  DTS:VersionBuild="18"
-  DTS:VersionGUID="{510223E9-C42E-4631-964B-0EB82352709E}">
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{F32F23CE-E574-4456-9A91-8771DD1D82DF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="\\sapfs\FERRUM-DW\PRD\APROCESAR\SALDOSCONTABLES_ACTUAL.txt">
+          DTS:ConnectionString="\\linuxfil\dw\PRD\APROCESAR\SALDOSCONTABLES_ACTUAL.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EJERCICIO"
-              DTS:DTSID="{18C28D2E-8AE7-49CE-96AC-36BE0D09D034}"
+              DTS:DTSID="{BBE1D2B0-765F-4433-B9F0-022D01A527F7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LEDGER"
-              DTS:DTSID="{16E8A963-4BD8-4AB7-9154-A0BB94878385}"
+              DTS:DTSID="{9E00F3CF-EAD9-41E7-AFB7-17C7CCCD749A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NRO  CUENTA"
-              DTS:DTSID="{F9A57597-777E-4328-A765-B5B739B0BB16}"
+              DTS:DTSID="{C55C14BD-C815-41D4-B24C-0BF449D50086}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="SOCIEDAD"
-              DTS:DTSID="{4D691371-8279-4412-93E7-43340143D00F}"
+              DTS:DTSID="{18B02BFC-ED79-426A-B8F4-F67D645AEDD9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO COSTE"
-              DTS:DTSID="{48F29C43-182F-4484-B626-C9AED404F6D7}"
+              DTS:DTSID="{CDC5DD5F-FF8A-4B25-A4F7-E7192D210315}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="OP  REF "
-              DTS:DTSID="{8B0F2632-AEE2-4026-BDAE-AE0B23E89E60}"
+              DTS:DTSID="{DF71FA27-84A9-4259-8E34-06DC956F4397}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MONEDA"
-              DTS:DTSID="{9E692A97-7C48-4AD2-A69B-154DA52FF0D8}"
+              DTS:DTSID="{9D44B464-19D7-4013-84AB-607724D89DC7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DEBE HABER"
-              DTS:DTSID="{7645CBCF-ED10-4AA1-868D-7729C1F999E7}"
+              DTS:DTSID="{1F681FDB-02AE-4290-9D91-337F780EC998}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +111,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DIV  INTERLOC "
-              DTS:DTSID="{8A4E48E5-8C95-4607-8E61-7C1E5D726AD5}"
+              DTS:DTSID="{A391E777-E514-41D3-8167-AEE8C2610649}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +120,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  01"
-              DTS:DTSID="{F9FF935E-E0D1-4A82-937C-A5290A473A85}"
+              DTS:DTSID="{5865CB3F-C41F-40B8-B141-844EF9A315E4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +129,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  02"
-              DTS:DTSID="{4AA731AB-B94B-4094-93C1-1B3716A4B314}"
+              DTS:DTSID="{5B0022A1-4D63-4CD4-8C81-6B3E1D6186C9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +138,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  03"
-              DTS:DTSID="{8483B693-8290-4A08-82AE-778DAD21EC98}"
+              DTS:DTSID="{48CA6AFA-74F8-4B3D-8F15-5BF9742A3DDD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +147,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  04"
-              DTS:DTSID="{B723B523-9FDC-4DF4-B6F9-2B22FD99EEB2}"
+              DTS:DTSID="{AAF25C42-9F25-4F34-ABDB-D70568FF12E8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,7 +156,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  05"
-              DTS:DTSID="{FA653375-7DF7-4AF8-A2BD-588B7F89C0BF}"
+              DTS:DTSID="{C4E38032-72E5-4217-9725-CF993E55DA60}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -165,7 +165,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  06"
-              DTS:DTSID="{414CEDBE-E804-47AE-ABBC-76768924016B}"
+              DTS:DTSID="{0DA07A01-A025-4532-9A20-7BD62713D08F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -174,7 +174,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  07"
-              DTS:DTSID="{0A38111C-7B66-486D-A629-F4D73F15D591}"
+              DTS:DTSID="{078785EF-E3AC-4AEA-A69B-C4B3D3178910}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -183,7 +183,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  08"
-              DTS:DTSID="{AE424080-4A79-43D5-BAB5-515882A6EF8F}"
+              DTS:DTSID="{FFA184B4-A864-4CEF-ADDC-0C75FFB63DFC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -192,7 +192,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  09"
-              DTS:DTSID="{1F2E0AAA-6A68-42F0-93C5-800CA7373EAE}"
+              DTS:DTSID="{EAD9F5FF-19CD-4C3E-823C-932E6F5D791D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -201,7 +201,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  10"
-              DTS:DTSID="{07EBF078-E0C2-4FB9-B0FF-14F335D98A1E}"
+              DTS:DTSID="{1F30FC1B-344E-4526-879C-0A75B415113B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -210,7 +210,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  11"
-              DTS:DTSID="{D4762A84-D881-4F04-8904-FE5F2D574743}"
+              DTS:DTSID="{79D05D96-4DAE-48F8-A9B3-8984EED6891F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -219,7 +219,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  12"
-              DTS:DTSID="{A9A8BE9E-64B9-4409-89A6-FFA2392AD6F1}"
+              DTS:DTSID="{A669055C-9BDC-425A-8EDB-C2B00F72302E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -228,7 +228,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  13"
-              DTS:DTSID="{96EE4C1F-274F-4C88-BB46-79B9FF8C877F}"
+              DTS:DTSID="{F3859D15-E450-4FE3-873D-CA2A3C18CB1D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -237,7 +237,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  14"
-              DTS:DTSID="{C2F34AB6-FD27-4F1E-9EA8-863FCF0E7581}"
+              DTS:DTSID="{DE1C8BF3-2234-4A52-8054-38E1E1E84375}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -246,7 +246,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  15"
-              DTS:DTSID="{77974A34-EEFF-4929-8D62-CAC28EBD671B}"
+              DTS:DTSID="{6FD42CC4-592E-47B3-A5DC-E303675A0989}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -255,7 +255,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  16"
-              DTS:DTSID="{A31CB741-3526-4FC7-9BA3-80DF4DF54BDF}"
+              DTS:DTSID="{85D9EB5F-7826-4AA9-B7D4-E6B26A06E29B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -275,7 +275,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="\\sapfs\FERRUM-DW\PRD\APROCESAR\SALDOSCONTABLES_ANTERIOR.txt">
+          DTS:ConnectionString="\\linuxfil\dw\PRD\APROCESAR\SALDOSCONTABLES_ANTERIOR.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -284,7 +284,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="EJERCICIO"
-              DTS:DTSID="{92557E28-100B-434F-907D-2CD7D367CB54}"
+              DTS:DTSID="{462B2B1D-1688-496A-A873-EFDAD4C67473}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -293,7 +293,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="LEDGER"
-              DTS:DTSID="{DA658B1F-AC2A-47C9-BA04-40D0F9B8CD0B}"
+              DTS:DTSID="{53B14E50-914A-4540-9DAE-06D020E4F9EE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -302,7 +302,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NRO  CUENTA"
-              DTS:DTSID="{60C2AE6D-0D49-4E82-80C0-E72915C900CF}"
+              DTS:DTSID="{90131726-A708-4038-89F7-FBD008FFB1DF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -311,7 +311,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="SOCIEDAD"
-              DTS:DTSID="{9B9DCF9B-E852-4D8F-9655-CE1090127274}"
+              DTS:DTSID="{47C5EF16-4BD5-48DE-9151-25108D6A5FF2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -320,7 +320,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO COSTE"
-              DTS:DTSID="{764DCB05-44AC-4216-A5B0-E1A0FC0EE73D}"
+              DTS:DTSID="{BF6DB6ED-4CA3-4CD9-ADDD-2F913043717C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -329,7 +329,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="OP  REF "
-              DTS:DTSID="{CC56F2DA-BB68-4D9D-963C-C9C7BB5149AC}"
+              DTS:DTSID="{DAD160C2-F25F-44B3-9B27-8A3AAD3C11FC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -338,7 +338,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MONEDA"
-              DTS:DTSID="{F1B2F8C2-7E77-428F-9AFA-626D357F3164}"
+              DTS:DTSID="{DC86AC9D-BE63-4209-B792-50CE8220B8E6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -347,7 +347,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DEBE HABER"
-              DTS:DTSID="{60B5DC62-85FB-4F69-88A2-77A540049937}"
+              DTS:DTSID="{BA66A547-0010-4214-83E0-BC34FE32CECB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -356,7 +356,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DIV  INTERLOC "
-              DTS:DTSID="{7C60888A-B3EC-4E6B-8718-9EBDF97F3946}"
+              DTS:DTSID="{B54A123F-5D0B-4ACB-B232-0B3B5B8D1228}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -365,7 +365,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  01"
-              DTS:DTSID="{7BF430F6-3F9B-4BD3-BE10-28E7ED6243B0}"
+              DTS:DTSID="{C9A13272-750B-43A3-B046-532C4579A9A1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -374,7 +374,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  02"
-              DTS:DTSID="{EB44CFBE-6025-486C-A9CE-6F24DCF2B155}"
+              DTS:DTSID="{8D47E222-0815-491A-ADB4-1ACD1795DF03}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -383,7 +383,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  03"
-              DTS:DTSID="{B8874D27-D8AD-4CF8-B16C-10805EBBE55C}"
+              DTS:DTSID="{A9465BCB-64F6-4BA3-BBF1-FA3234EBFE5E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -392,7 +392,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  04"
-              DTS:DTSID="{45574AB4-8ED8-4C95-8527-07F1ACE3127A}"
+              DTS:DTSID="{8EFDC31E-1BE9-46DA-9647-5744487F9DCE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -401,7 +401,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  05"
-              DTS:DTSID="{684C71ED-1DDC-41A6-A326-EACEE339596B}"
+              DTS:DTSID="{C94FF5D0-0EF2-4D19-AA4E-A27AC20CDA3A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -410,7 +410,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  06"
-              DTS:DTSID="{3396A903-F9E7-4459-AEE7-3A64FABFA464}"
+              DTS:DTSID="{C6EB2CD2-8AB4-4DCE-BA5B-ACBC82A6CB11}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -419,7 +419,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  07"
-              DTS:DTSID="{FD2F4F40-D3F1-434A-9E7A-7EF49F16F184}"
+              DTS:DTSID="{52677543-FF39-48C3-88B8-7F6A0404E9EC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -428,7 +428,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  08"
-              DTS:DTSID="{7BC61E7B-0E51-40FA-80BB-A3D9AA61CF5D}"
+              DTS:DTSID="{40814D8B-3E7A-4994-9B1E-F46B6C839F91}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -437,7 +437,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  09"
-              DTS:DTSID="{13E3C62B-8D5F-464A-AC63-BA466782F072}"
+              DTS:DTSID="{F0D25C05-B2BD-4B2E-9C03-46632A688843}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -446,7 +446,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  10"
-              DTS:DTSID="{E82B3788-FAE4-4B7B-9194-F3501CA6C089}"
+              DTS:DTSID="{39E86A11-86B8-4D5A-BC44-F2B3A62A4BFA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -455,7 +455,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  11"
-              DTS:DTSID="{CB2B40C3-C425-41F7-A8A6-5ED068719729}"
+              DTS:DTSID="{BE3C70B4-283E-4744-936C-ED1A1196735D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -464,7 +464,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  12"
-              DTS:DTSID="{9F9C1B77-D973-41FA-A6F5-35DDA6C03787}"
+              DTS:DTSID="{4ADE2E7F-1218-4E7F-9285-330EBC95E114}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -473,7 +473,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  13"
-              DTS:DTSID="{B642D14D-EC1A-47B8-841A-D75A288D7383}"
+              DTS:DTSID="{6FE989B7-5BAA-44F8-8717-4B729792AC58}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -482,7 +482,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  14"
-              DTS:DTSID="{173A0BEF-180C-4413-A98C-0FFACFB1AF62}"
+              DTS:DTSID="{F8C0CBD4-A03C-43C8-9210-4B2465FFF951}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -491,7 +491,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  15"
-              DTS:DTSID="{FB73D5B8-386C-4F07-BB12-2BC3019D764F}"
+              DTS:DTSID="{8216A5DF-5714-44F1-92B3-FF659BFD598C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -500,7 +500,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TOTAL MOV  16"
-              DTS:DTSID="{C9BC509F-9630-4DA9-BFAB-F6F1D98F2D37}"
+              DTS:DTSID="{F6B6D470-CC70-4A0B-B28D-A166AD88A66C}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -616,7 +616,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error SALDOS CONTABLES ANTERiOR"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -639,7 +639,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Finalizo Ok"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
