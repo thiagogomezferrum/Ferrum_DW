@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="varios fi"
   DTS:PackageType="5"
-  DTS:VersionBuild="80"
-  DTS:VersionGUID="{B6BBEA10-227A-485F-B3D8-1D0BFE7B6391}">
+  DTS:VersionBuild="83"
+  DTS:VersionGUID="{4D09E227-126C-4DF4-8EFC-ADBF87816316}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -68,128 +68,128 @@
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BUKRS"
-              DTS:DTSID="{D67E9588-750E-4155-8794-39D00212BA6D}"
+              DTS:DTSID="{5BFC9F9D-6C33-44EB-BC65-090BC8C4A124}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="GJAHR"
-              DTS:DTSID="{F1FB2CCE-55E7-44C2-B1D9-D38A90641881}"
+              DTS:DTSID="{DD3E5208-99E0-45E4-9B1D-5B206C761A9E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BUZEI"
-              DTS:DTSID="{F26173F2-CE16-495A-84C2-F08729E510F8}"
+              DTS:DTSID="{26F7726D-A1BC-49AA-B1EE-51E881EC81CD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BSCHL"
-              DTS:DTSID="{21AF9BCC-BBF4-4A52-8CDD-151757DFB41B}"
+              DTS:DTSID="{C7D9A30F-49AE-4A90-AFBB-1479A28C5BE1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="XBLNR"
-              DTS:DTSID="{3B8EC798-E6B1-4EFD-B923-B3BE8C5E4FB2}"
+              DTS:DTSID="{9851BDF2-9212-4E49-94F2-4D4F61A28248}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="KUNNR"
-              DTS:DTSID="{B0418CD8-FF86-4E40-A26F-12D1671D2BF9}"
+              DTS:DTSID="{F8466DF2-3B9F-444F-8ACC-BC5EC1370CE7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BLART"
-              DTS:DTSID="{67C72287-0131-474E-A442-18197D2FB805}"
+              DTS:DTSID="{8E9B5E83-6AEC-489C-A989-A57823D97954}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BELNR"
-              DTS:DTSID="{065CCE38-C4CB-4987-8862-428578149050}"
+              DTS:DTSID="{3188C7D8-84CC-4D58-8DD4-F5E4F9144F39}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="BUDAT"
-              DTS:DTSID="{D71EF0A2-2E5F-44E3-A1D4-62CEEB9B1360}"
+              DTS:DTSID="{32522E0D-BEE1-473D-BE62-205F5651118C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ZTERM"
-              DTS:DTSID="{FD47114C-A257-43D4-8BD9-79E77BCC1D70}"
+              DTS:DTSID="{4D97240D-33A4-481C-9156-1E4259E487FA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="REBZG"
-              DTS:DTSID="{15002160-F107-4A16-B184-BE744C9CEBB9}"
+              DTS:DTSID="{D7B9FF6E-3598-4F7F-A574-5DD43E2D0654}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="REBZJ"
-              DTS:DTSID="{8189FCF4-34B5-4B46-8512-C03E4BAE181B}"
+              DTS:DTSID="{69B63CDF-6C6A-4C44-9872-9A70FC2273E8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x007C_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="DMBTR"
-              DTS:DTSID="{911F2096-A262-4A46-B933-C6FFEF3CE9E9}"
+              DTS:DTSID="{C2AF2F47-4237-4651-9B24-32DCAAFE24D3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x000A_"
-              DTS:MaximumWidth="50"
+              DTS:MaximumWidth="100"
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="VTO"
-              DTS:DTSID="{AEB4B34C-F8FA-492E-8ABF-D082855954FA}"
+              DTS:DTSID="{5EB26BF1-7282-4481-86E3-9413B0337D14}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1645,7 +1645,7 @@
       DTS:ExecutableType="Microsoft.FileSystemTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="copia INDICES"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <FileSystemData
@@ -1704,7 +1704,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BUKRS]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUKRS]"
                       name="BUKRS"
                       truncationRowDisposition="FailComponent">
@@ -1725,7 +1725,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[KUNNR]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[KUNNR]"
                       name="KUNNR"
                       truncationRowDisposition="FailComponent">
@@ -1746,7 +1746,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BLART]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BLART]"
                       name="BLART"
                       truncationRowDisposition="FailComponent">
@@ -1767,7 +1767,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BELNR]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BELNR]"
                       name="BELNR"
                       truncationRowDisposition="FailComponent">
@@ -1788,7 +1788,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GJAHR]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[GJAHR]"
                       name="GJAHR"
                       truncationRowDisposition="FailComponent">
@@ -1809,7 +1809,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BUDAT]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUDAT]"
                       name="BUDAT"
                       truncationRowDisposition="FailComponent">
@@ -1830,7 +1830,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ZTERM]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[ZTERM]"
                       name="ZTERM"
                       truncationRowDisposition="FailComponent">
@@ -1851,7 +1851,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REBZG]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[REBZG]"
                       name="REBZG"
                       truncationRowDisposition="FailComponent">
@@ -1872,7 +1872,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REBZJ]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[REBZJ]"
                       name="REBZJ"
                       truncationRowDisposition="FailComponent">
@@ -1893,7 +1893,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VTO]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[VTO]"
                       name="VTO"
                       truncationRowDisposition="FailComponent">
@@ -1914,7 +1914,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[XBLNR]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[XBLNR]"
                       name="XBLNR"
                       truncationRowDisposition="FailComponent">
@@ -1935,7 +1935,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BUZEI]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUZEI]"
                       name="BUZEI"
                       truncationRowDisposition="FailComponent">
@@ -1956,7 +1956,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BSCHL]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BSCHL]"
                       name="BSCHL"
                       truncationRowDisposition="FailComponent">
@@ -1977,7 +1977,7 @@
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DMBTR]"
-                      length="50"
+                      length="100"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[DMBTR]"
                       name="DMBTR"
                       truncationRowDisposition="FailComponent">
@@ -1998,72 +1998,72 @@
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BUKRS]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="BUKRS" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[KUNNR]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="KUNNR" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BLART]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="BLART" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BELNR]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="BELNR" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GJAHR]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="GJAHR" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BUDAT]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="BUDAT" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ZTERM]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="ZTERM" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REBZG]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="REBZG" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[REBZJ]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="REBZJ" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VTO]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="VTO" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[XBLNR]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="XBLNR" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BUZEI]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="BUZEI" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BSCHL]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="BSCHL" />
                     <externalMetadataColumn
                       refId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DMBTR]"
                       dataType="wstr"
-                      length="50"
+                      length="100"
                       name="DMBTR" />
                   </externalMetadataColumns>
                 </output>
@@ -2097,11 +2097,11 @@
               </outputs>
             </component>
             <component
-              refId="Package\CTACTE\OLE DB Destination"
+              refId="Package\CTACTE\OLE DB Destination 1"
               componentClassID="Microsoft.OLEDBDestination"
               contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
               description="OLE DB Destination"
-              name="OLE DB Destination"
+              name="OLE DB Destination 1"
               usesDispositions="true"
               version="4">
               <properties>
@@ -2154,7 +2154,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\CTACTE\OLE DB Destination.Connections[OleDbConnection]"
+                  refId="Package\CTACTE\OLE DB Destination 1.Connections[OleDbConnection]"
                   connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
                   connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
                   description="The OLE DB runtime connection used to access the database."
@@ -2162,178 +2162,185 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
                   errorOrTruncationOperation="Insert"
                   errorRowDisposition="FailComponent"
                   hasSideEffects="true"
                   name="OLE DB Destination Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BUKRS]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BUKRS]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="BUKRS"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BUKRS]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BUKRS]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUKRS]" />
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[KUNNR]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[KUNNR]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="KUNNR"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KUNNR]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[KUNNR]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[KUNNR]" />
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BLART]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BLART]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="BLART"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BLART]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BLART]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BLART]" />
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BELNR]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BELNR]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="BELNR"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BELNR]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BELNR]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BELNR]" />
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GJAHR]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[GJAHR]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="GJAHR"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GJAHR]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GJAHR]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[GJAHR]" />
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BUDAT]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BUDAT]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="BUDAT"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BUDAT]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BUDAT]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUDAT]" />
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ZTERM]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ZTERM]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="ZTERM"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZTERM]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ZTERM]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[ZTERM]" />
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[REBZG]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[REBZG]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="REBZG"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REBZG]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[REBZG]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[REBZG]" />
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[REBZJ]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[REBZJ]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="REBZJ"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REBZJ]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[REBZJ]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[REBZJ]" />
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VTO]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[VTO]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="VTO"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VTO]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[VTO]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[VTO]" />
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[XBLNR]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[XBLNR]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="XBLNR"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[XBLNR]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[XBLNR]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[XBLNR]" />
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BUZEI]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BUZEI]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="BUZEI"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BUZEI]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BUZEI]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BUZEI]" />
                     <inputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[BSCHL]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[BSCHL]"
                       cachedDataType="wstr"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="BSCHL"
-                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BSCHL]"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BSCHL]"
                       lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[BSCHL]" />
+                    <inputColumn
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[DMBTR]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="DMBTR"
+                      externalMetadataColumnId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[WRBTR]"
+                      lineageId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output].Columns[DMBTR]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BUKRS]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BUKRS]"
                       dataType="wstr"
                       length="50"
                       name="BUKRS" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[KUNNR]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[KUNNR]"
                       dataType="wstr"
                       length="50"
                       name="KUNNR" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BLART]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BLART]"
                       dataType="wstr"
                       length="50"
                       name="BLART" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BELNR]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BELNR]"
                       dataType="wstr"
                       length="50"
                       name="BELNR" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GJAHR]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[GJAHR]"
                       dataType="wstr"
                       length="50"
                       name="GJAHR" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BUDAT]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BUDAT]"
                       dataType="wstr"
                       length="50"
                       name="BUDAT" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ZTERM]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ZTERM]"
                       dataType="wstr"
                       length="50"
                       name="ZTERM" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REBZG]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[REBZG]"
                       dataType="wstr"
                       length="50"
                       name="REBZG" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[REBZJ]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[REBZJ]"
                       dataType="wstr"
                       length="50"
                       name="REBZJ" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[WRBTR]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[WRBTR]"
                       dataType="wstr"
                       length="50"
                       name="WRBTR" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VTO]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[VTO]"
                       dataType="wstr"
                       length="10"
                       name="VTO" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[XBLNR]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[XBLNR]"
                       dataType="wstr"
                       length="50"
                       name="XBLNR" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BUZEI]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BUZEI]"
                       dataType="wstr"
                       length="50"
                       name="BUZEI" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[BSCHL]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[BSCHL]"
                       dataType="wstr"
                       length="50"
                       name="BSCHL" />
                     <externalMetadataColumn
-                      refId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
                       dataType="dbTimeStamp"
                       name="fecha" />
                   </externalMetadataColumns>
@@ -2341,22 +2348,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\CTACTE\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\CTACTE\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  synchronousInputId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\CTACTE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\CTACTE\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\CTACTE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\CTACTE\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\CTACTE\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\CTACTE\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2368,7 +2375,7 @@
           <paths>
             <path
               refId="Package\CTACTE.Paths[Flat File Source Output]"
-              endId="Package\CTACTE\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              endId="Package\CTACTE\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
               name="Flat File Source Output"
               startId="Package\CTACTE\Flat File Source.Outputs[Flat File Source Output]" />
           </paths>
@@ -4273,7 +4280,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="DWFE"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -4289,7 +4296,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="DWPG"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -4330,7 +4337,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="error COPIA A DWFE"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -4354,7 +4361,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="error CTACTE"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -4378,7 +4385,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="error fi_cta_mayor"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -4450,7 +4457,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="error Indices"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5642,7 +5649,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error  DWPG"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5714,7 +5721,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error copia 1 1"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5738,7 +5745,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error riesgo_cambiario"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5761,7 +5768,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Finalizo Ok"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="6">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -9488,9 +9495,17 @@
           Id="Package\DWPG"
           TopLeft="1631.77529480679,657.588978805968" />
         <NodeLayout
+          Size="182.666666666667,42.6666666666667"
+          Id="Package\error COPIA A DWFE"
+          TopLeft="1382.23957936357,542.3245569926" />
+        <NodeLayout
           Size="189.333333333334,42.6666666666667"
           Id="Package\error CTACTE"
           TopLeft="416.666660519938,881.05263846898" />
+        <NodeLayout
+          Size="166.666666666667,42.6666666666667"
+          Id="Package\error fi_cta_mayor"
+          TopLeft="1495.31249075662,1207.71930880604" />
         <NodeLayout
           Size="189.333333333334,42.6666666666667"
           Id="Package\error gastos_estructura"
@@ -9503,6 +9518,10 @@
           Size="141.333333333334,42.6666666666667"
           Id="Package\fi_cta_mayor"
           TopLeft="1287.7083244126,1205.95113470498" />
+        <NodeLayout
+          Size="196,42.6666666666667"
+          Id="Package\Finaliza en error  DWPG"
+          TopLeft="1595.46874060528,538.026316787563" />
         <NodeLayout
           Size="131.333333333334,42.6666666666667"
           Id="Package\Finalizo Ok"
@@ -9711,25 +9730,97 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 19]"
-          TopLeft="704.744047705528,900.95582823249">
+          TopLeft="704.744047705528,900.955828232489">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-98.7440538522569,0"
+              EndConnector="-98.7440538522567,0"
               Start="0,0"
-              End="-91.2440538522569,0">
+              End="-91.2440538522567,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-91.2440538522569,0" />
+                    End="-91.2440538522567,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-60.8633745823785,5,30.4826953125,9.7490234375"
+              BoundingBox="-60.8633745823783,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 23]"
+          TopLeft="1429.04165774593,1228.16855508884">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="66.270833010695,0"
+              Start="0,0"
+              End="58.770833010695,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="58.770833010695,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="14.1440688490975,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 26]"
+          TopLeft="1476.15327197848,655.7863492071">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-70.7951255478337"
+              Start="0,0"
+              End="0,-63.2951255478337">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-63.2951255478337" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-15.24134765625,-36.5220744926668,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 27]"
+          TopLeft="1690.95535103937,657.588978805968">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-76.8959953517389"
+              Start="0,0"
+              End="0,-69.3959953517389">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-69.3959953517389" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-15.24134765625,-39.5725093946194,30.4826953125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -9851,14 +9942,14 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,61.0883452828265"
+              EndConnector="0,61.0883452828264"
               Start="0,0"
-              End="0,53.5883452828265">
+              End="0,53.5883452828264">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,53.5883452828265" />
+                    End="0,53.5883452828264" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10121,7 +10212,7 @@
           ParentId="Package"
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="423.333333333334,305.333333333334"
+          PanelSize="423.333333333334,306"
           Size="423.333333333334,348.666666666667"
           Id="2188d875-2b0a-4da8-b60f-398a95bdafc0"
           TopLeft="927.654755212545,780.688598779473">
@@ -10240,90 +10331,6 @@
             <s:String>Package.PrecedenceConstraints[Constraint 25]</s:String>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
-        <NodeLayout
-          Size="166.666666666667,42.6666666666667"
-          Id="Package\error fi_cta_mayor"
-          TopLeft="1495.31249075662,1207.71930880604" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 23]"
-          TopLeft="1429.04165774593,1228.16855508884">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="66.270833010695,0"
-              Start="0,0"
-              End="58.770833010695,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="58.770833010695,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="14.1440688490975,5,30.4826953125,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="182.666666666667,42.6666666666667"
-          Id="Package\error COPIA A DWFE"
-          TopLeft="1382.23957936357,542.3245569926" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 26]"
-          TopLeft="1476.15327197848,655.7863492071">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,-70.7951255478337"
-              Start="0,0"
-              End="0,-63.2951255478337">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-63.2951255478337" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-15.24134765625,-36.5220744926668,30.4826953125,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="196,42.6666666666667"
-          Id="Package\Finaliza en error  DWPG"
-          TopLeft="1595.46874060528,538.026316787563" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 27]"
-          TopLeft="1690.95535103937,657.588978805968">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,-76.8959953517389"
-              Start="0,0"
-              End="0,-69.3959953517389">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-69.3959953517389" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-15.24134765625,-39.5725093946194,30.4826953125,9.7490234375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -10331,7 +10338,7 @@
     design-time-name="Package\Contratos dolar futuros vigentes">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="186,42"
           Id="Package\Contratos dolar futuros vigentes\OLE DB Destination 1"
@@ -10367,7 +10374,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10401,7 +10410,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10463,56 +10474,54 @@
     design-time-name="Package\CTACTE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="177,42"
-          Id="Package\CTACTE\OLE DB Destination"
-          TopLeft="518,113" />
+          Size="184,42.6666666666667"
+          Id="Package\CTACTE\OLE DB Destination 1"
+          TopLeft="333.499995268881,149.736844359012" />
         <NodeLayout
-          Size="151,42"
+          Size="150.666666666667,42"
           Id="Package\CTACTE\Flat File Source"
-          TopLeft="207,94" />
+          TopLeft="109.500001452863,69.3684205890032" />
         <EdgeLayout
           Id="Package\CTACTE.Paths[Flat File Source Output]"
-          TopLeft="358,115">
+          TopLeft="184.833334786197,111.368420589003">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="160,19"
+              EndConnector="240.666660482685,38.368423770009"
               Start="0,0"
-              End="152.5,19">
+              End="240.666660482685,30.868423770009">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="76,0" />
+                    End="0,15.1842118850045" />
                   <mssgle:CubicBezierSegment
-                    Point1="76,0"
-                    Point2="80,0"
-                    Point3="80,4" />
+                    Point1="0,15.1842118850045"
+                    Point2="0,19.1842118850045"
+                    Point3="4,19.1842118850045" />
                   <mssgle:LineSegment
-                    End="80,15" />
+                    End="236.666660482685,19.1842118850045" />
                   <mssgle:CubicBezierSegment
-                    Point1="80,15"
-                    Point2="80,19"
-                    Point3="84,19" />
+                    Point1="236.666660482685,19.1842118850045"
+                    Point2="240.666660482685,19.1842118850045"
+                    Point3="240.666660482685,23.1842118850045" />
                   <mssgle:LineSegment
-                    End="152.5,19" />
+                    End="240.666660482685,30.868423770009" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\CTACTE\OLE DB Destination">
+    design-time-name="Package\CTACTE\OLE DB Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10528,7 +10537,7 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="177.333333333334,42"
           Id="Package\Data Flow Task\OLE DB Destination 1"
@@ -10580,7 +10589,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10602,7 +10613,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10624,7 +10637,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10646,7 +10661,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10760,7 +10777,7 @@
     design-time-name="Package\Excels Costo">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="186,42"
           Id="Package\Excels Costo\OLE DB Destination 1"
@@ -10804,7 +10821,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10826,7 +10845,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10848,7 +10869,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10936,7 +10959,7 @@
     design-time-name="Package\fi_cta_mayor">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="177.333333333334,42"
           Id="Package\fi_cta_mayor\OLE DB Destination"
@@ -10976,7 +10999,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10999,7 +11024,7 @@
     design-time-name="Package\gastos_estructura">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="156,42"
           Id="Package\gastos_estructura\Flat File Source"
@@ -11027,7 +11052,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11050,7 +11077,7 @@
     design-time-name="Package\riesgo_cambiario">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="177.333333333334,42"
           Id="Package\riesgo_cambiario\OLE DB Destination"
@@ -11078,7 +11105,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
