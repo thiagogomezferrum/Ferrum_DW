@@ -7,12 +7,12 @@
   DTS:CreatorName="NTFERRUM\pconnon"
   DTS:DTSID="{CE97A608-6D06-4B0F-9AD9-7256012E393A}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5270.0"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
   DTS:LocaleID="11274"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="10"
-  DTS:VersionGUID="{21DA0BE9-9FD9-48C2-B766-D954A9738373}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{AFAA0E86-8D94-467F-9DC0-499E3E69A6E7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="\\linuxfil\DW\PRD\APROCESAR\pp_bom.txt">
+          DTS:ConnectionString="\\linuxfil\DW\PRD\APROCESAR\pp_bom_total.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CODIGO MATERIAL"
-              DTS:DTSID="{5BBD453E-31C8-4FE7-A415-10A336A64B67}"
+              DTS:DTSID="{6D4D9642-AC14-4E7A-A78F-A26628E839DE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CENTRO"
-              DTS:DTSID="{7AAB8E06-E56F-4896-B4DE-97D13D9752C9}"
+              DTS:DTSID="{6A201F71-634A-4476-A50A-A21F70B43C69}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ALTERNATIVA"
-              DTS:DTSID="{E253CB30-993C-48E1-A921-798B9E41B9B9}"
+              DTS:DTSID="{95ED4D2D-16FC-45A5-BC95-81ABAEDC8997}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="POSICION"
-              DTS:DTSID="{167B0B5D-CCE0-4B0B-83E3-80D1638FEE47}"
+              DTS:DTSID="{46508C89-5F46-4328-9794-1EC48D8CD376}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANTIDAD BASE"
-              DTS:DTSID="{A052D1F6-30FE-438E-B817-C0F4C330894C}"
+              DTS:DTSID="{0B2A89A0-2ECE-4F04-91AD-C305B0CD0619}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="COMPONENTE"
-              DTS:DTSID="{0C1E9297-DD73-425C-B29C-FA30260D5DFD}"
+              DTS:DTSID="{9B03206C-E7C3-4A2C-9288-9F5E8B941682}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANTIDAD COMPONENTE"
-              DTS:DTSID="{FB6B145D-8173-433A-B757-EEA1C8D79295}"
+              DTS:DTSID="{E232446A-3653-4D79-9D42-81275B18C41A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="UM COMPONENTE"
-              DTS:DTSID="{49F615EA-BB18-4B72-9572-74C8F3B6CB07}"
+              DTS:DTSID="{9581C29F-685E-45DF-B435-0832F022D577}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -210,7 +210,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error  DWPG"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -257,7 +257,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Finalizo Ok"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -924,6 +924,10 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="173.333333333334,42.6666666666667"
+          Id="Package\Comienza Ejecución"
+          TopLeft="147.499997802079,157.299997187257" />
+        <NodeLayout
           Size="110.666666666667,42"
           Id="Package\DWFE"
           TopLeft="180.875004963949,323.499995234609" />
@@ -932,13 +936,59 @@
           Id="Package\DWPG"
           TopLeft="181.750006053597,406.433330381115" />
         <NodeLayout
-          Size="121.333333333334,42.6666666666667"
-          Id="Package\Truncate"
-          TopLeft="173.999998286367,85.9999988377094" />
+          Size="156,42.6666666666667"
+          Id="Package\Finaliza en error"
+          TopLeft="358.035708950566,239.333335192998" />
+        <NodeLayout
+          Size="192,42.6666666666667"
+          Id="Package\Finaliza en error  DWPG"
+          TopLeft="357.499994672835,409.316661540965" />
+        <NodeLayout
+          Size="230.666666666667,42.6666666666667"
+          Id="Package\Finaliza en error COPIA A DWFE"
+          TopLeft="355.624994700774,326.466662807862" />
+        <NodeLayout
+          Size="131.333333333334,42.6666666666667"
+          Id="Package\Finalizo Ok"
+          TopLeft="166.874997513369,500.016660169462" />
+        <NodeLayout
+          Size="164,42"
+          Id="Package\Genera número de proceso"
+          TopLeft="433.124993545935,18.1071425333624" />
         <NodeLayout
           Size="117.333333333334,42.6666666666667"
           Id="Package\pp_bom"
           TopLeft="177.12500170432,238.649996850192" />
+        <NodeLayout
+          Size="234.666666666667,42.6666666666667"
+          Id="Package\Selecciono el número de proceso"
+          TopLeft="118.660712517532,13.649999755919" />
+        <NodeLayout
+          Size="121.333333333334,42.6666666666667"
+          Id="Package\Truncate"
+          TopLeft="173.999998286367,85.9999988377094" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="433.124993545935,37.0452378113074">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-79.7976143617363,0"
+              Start="0,0"
+              End="-72.2976143617363,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-72.2976143617363,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
           TopLeft="236.000003334135,281.316663516859">
@@ -983,36 +1033,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="164,42"
-          Id="Package\Genera número de proceso"
-          TopLeft="433.124993545935,18.1071425333624" />
-        <NodeLayout
-          Size="234.666666666667,42.6666666666667"
-          Id="Package\Selecciono el número de proceso"
-          TopLeft="118.660712517532,13.649999755919" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="433.124993545935,37.0452378113074">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-79.7976143617363,0"
-              Start="0,0"
-              End="-72.2976143617363,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-72.2976143617363,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="235.330355401949,56.3166664225856">
@@ -1035,10 +1055,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="173.333333333334,42.6666666666667"
-          Id="Package\Comienza Ejecución"
-          TopLeft="147.499997802079,157.299997187257" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="234.416664710889,128.666665504376">
@@ -1083,10 +1099,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="156,42.6666666666667"
-          Id="Package\Finaliza en error"
-          TopLeft="358.035708950566,239.333335192998" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
           TopLeft="294.458335037654,260.324999354929">
@@ -1111,10 +1123,6 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="230.666666666667,42.6666666666667"
-          Id="Package\Finaliza en error COPIA A DWFE"
-          TopLeft="355.624994700774,326.466662807862" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
           TopLeft="291.541671630616,346.149995687902">
@@ -1139,10 +1147,6 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="192,42.6666666666667"
-          Id="Package\Finaliza en error  DWPG"
-          TopLeft="357.499994672835,409.316661540965" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
           TopLeft="295.08333938693,429.041662627707">
@@ -1167,10 +1171,6 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="131.333333333334,42.6666666666667"
-          Id="Package\Finalizo Ok"
-          TopLeft="166.874997513369,500.016660169462" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
           TopLeft="235.479168450149,448.433330381115">
@@ -1206,7 +1206,7 @@
           Id="Package\pp_bom\Flat File Source"
           TopLeft="141,106" />
         <NodeLayout
-          Size="177,42"
+          Size="177.333333333334,42"
           Id="Package\pp_bom\OLE DB Destination"
           TopLeft="485,87" />
         <EdgeLayout
