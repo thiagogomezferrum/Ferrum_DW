@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="transportes"
   DTS:PackageType="5"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{A3F9DDA3-589B-4134-8C89-7EFB68D7C98A}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{C068724C-8381-4003-8C1F-D616E53B645A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -39,7 +39,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NRO  TRANSPORTE"
-              DTS:DTSID="{366812F4-6206-4626-8ACE-18D8BB73931D}"
+              DTS:DTSID="{4D1EC143-775C-4A03-B559-3E6793902647}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="FECHA TRANSPORTE"
-              DTS:DTSID="{06D7CE0B-5682-4619-ACE9-2FC88E3228E6}"
+              DTS:DTSID="{82E618C7-715A-4CF2-8614-6C688CD14EF4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TRANSPORTISTA"
-              DTS:DTSID="{30A88FF0-6848-4DD7-B482-59F025C9C665}"
+              DTS:DTSID="{D708AA1D-4C59-4AAA-B7B8-792B14CF6BF3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CHOFER"
-              DTS:DTSID="{32385C37-376F-4BDD-8D76-2A6BE921165C}"
+              DTS:DTSID="{0C9ADB43-FC30-4C59-A066-7935718BE14B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PATENTE"
-              DTS:DTSID="{29B93A98-609E-4838-A6CF-4510B32B5D81}"
+              DTS:DTSID="{8170DC02-64E5-4253-A628-F5EA7D82CAD6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="RUTA"
-              DTS:DTSID="{B4C7EA22-5AA4-4EE6-9D13-0D3DDE475C54}"
+              DTS:DTSID="{90E4399C-2DC0-41DD-991E-CE9B3AB291FD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="KM RECORRIDOS"
-              DTS:DTSID="{5A762537-2038-4D4C-B2F7-A83482A74D49}"
+              DTS:DTSID="{0CD99C7F-6E85-42B5-ACE3-5FDB76B827A0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="R S TRANSPORTISTA"
-              DTS:DTSID="{3751521F-0F1F-483C-972D-024A8939AFA5}"
+              DTS:DTSID="{86AA3102-13A7-4FE9-9FE6-2B7E2979A8A9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -110,8 +110,17 @@
               DTS:MaximumWidth="50"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="FECHA_PLANIFICACION"
-              DTS:DTSID="{AE2A1084-2BC9-40DC-AA70-B03081DE91DE}"
+              DTS:ObjectName="FECHA PLANIFICACIÓN"
+              DTS:DTSID="{B8B0394B-9AB3-46E7-84D1-1A554C35EC1D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PTO PLANIF"
+              DTS:DTSID="{79C65EB6-9A24-4FEC-ACD6-8E574A372E1E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -119,8 +128,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="PTO.PLANIF"
-              DTS:DTSID="{662B72FE-C9D7-437E-A022-37F403DBFDB6}"
+              DTS:ObjectName="CLASE TRANSP"
+              DTS:DTSID="{99EFD520-A7FB-451F-BB22-CAD9A1F4AA51}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -149,7 +158,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NRO  TRANSPORTE"
-              DTS:DTSID="{E7708272-FD34-462E-A7F4-A9A2197CA0D0}"
+              DTS:DTSID="{91D39B78-1EAD-4E04-ACA7-AFEE0122F855}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -158,7 +167,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NRO  GASTO"
-              DTS:DTSID="{CE1EB543-2C31-457B-BB1B-558DC3737A43}"
+              DTS:DTSID="{059B4A23-DFAC-42DE-8509-ABD12CA60D65}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -167,7 +176,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="NRO  POSICIÓN"
-              DTS:DTSID="{B59E5D97-94E1-49A3-BD14-C2760ADBD901}"
+              DTS:DTSID="{0ACA32D7-99D1-478C-8C56-2D78C17AB6D2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -176,7 +185,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="COSTO POSICIÓN"
-              DTS:DTSID="{5D212753-DA91-489A-9F3E-BDBC7C6035B7}"
+              DTS:DTSID="{7CF1417B-6013-4B7D-A6C9-BF84CC7DA758}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -185,7 +194,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MONEDA"
-              DTS:DTSID="{FAB5DC04-2F13-4E7F-8AF2-4D94D230EBC8}"
+              DTS:DTSID="{4F65B99F-16C5-44D4-80B9-90C9407A28C4}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -194,7 +203,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ESTATUS CÁLCULO POS "
-              DTS:DTSID="{9D0C7EB8-381E-48D3-9058-9780AA665EB6}"
+              DTS:DTSID="{F1FEDBD4-CB7B-4AF8-A633-E561E6940E9B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -203,7 +212,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ESTATUS IMPUTACIÓN POS "
-              DTS:DTSID="{DB0267A4-3FA5-4FD4-8BD3-3439C2055011}"
+              DTS:DTSID="{07EAC581-C6BF-4828-A5C0-8599FEDB1657}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -212,7 +221,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="ESTATUS TRANSFERENCIA POS "
-              DTS:DTSID="{B68CDE21-3A2E-4595-89B0-3778A42ABF81}"
+              DTS:DTSID="{C6D27FCF-864E-429F-A1E0-096852F84CC4}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -524,19 +533,26 @@
                       externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[RS_TRANSPORTISTA]"
                       lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[R S TRANSPORTISTA]" />
                     <inputColumn
-                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA_PLANIFICACION]"
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA PLANIFICACIÓN]"
                       cachedDataType="wstr"
                       cachedLength="50"
-                      cachedName="FECHA_PLANIFICACION"
+                      cachedName="FECHA PLANIFICACIÓN"
                       externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_PLANIFICACION]"
-                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[FECHA_PLANIFICACION]" />
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[FECHA PLANIFICACIÓN]" />
                     <inputColumn
-                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PTO.PLANIF]"
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PTO PLANIF]"
                       cachedDataType="wstr"
                       cachedLength="50"
-                      cachedName="PTO.PLANIF"
+                      cachedName="PTO PLANIF"
                       externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PTO_PLANIF]"
-                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[PTO.PLANIF]" />
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[PTO PLANIF]" />
+                    <inputColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CLASE TRANSP]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CLASE TRANSP"
+                      externalMetadataColumnId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLASE_TRANSPORTE]"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[CLASE TRANSP]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -593,6 +609,11 @@
                       dataType="wstr"
                       length="50"
                       name="PTO_PLANIF" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CLASE_TRANSPORTE]"
+                      dataType="wstr"
+                      length="20"
+                      name="CLASE_TRANSPORTE" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -821,14 +842,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[FECHA_PLANIFICACION]"
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[FECHA PLANIFICACIÓN]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[FECHA_PLANIFICACION]"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[FECHA PLANIFICACIÓN]"
                       length="50"
-                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[FECHA_PLANIFICACION]"
-                      name="FECHA_PLANIFICACION"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[FECHA PLANIFICACIÓN]"
+                      name="FECHA PLANIFICACIÓN"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -842,14 +863,35 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[PTO.PLANIF]"
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[PTO PLANIF]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[PTO.PLANIF]"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[PTO PLANIF]"
                       length="50"
-                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[PTO.PLANIF]"
-                      name="PTO.PLANIF"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[PTO PLANIF]"
+                      name="PTO PLANIF"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[CLASE TRANSP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[CLASE TRANSP]"
+                      length="50"
+                      lineageId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].Columns[CLASE TRANSP]"
+                      name="CLASE TRANSP"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
@@ -906,15 +948,20 @@
                       length="50"
                       name="R S TRANSPORTISTA" />
                     <externalMetadataColumn
-                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[FECHA_PLANIFICACION]"
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[FECHA PLANIFICACIÓN]"
                       dataType="wstr"
                       length="50"
-                      name="FECHA_PLANIFICACION" />
+                      name="FECHA PLANIFICACIÓN" />
                     <externalMetadataColumn
-                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[PTO.PLANIF]"
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[PTO PLANIF]"
                       dataType="wstr"
                       length="50"
-                      name="PTO.PLANIF" />
+                      name="PTO PLANIF" />
+                    <externalMetadataColumn
+                      refId="Package\sd_transportes\sd_transportes.Outputs[Flat File Source Output].ExternalColumns[CLASE TRANSP]"
+                      dataType="wstr"
+                      length="50"
+                      name="CLASE TRANSP" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -1873,39 +1920,27 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="149,42"
+          Size="149.333333333334,42"
           Id="Package\sd_transportes\sd_transportes"
-          TopLeft="53,23" />
+          TopLeft="46.1250001024455,49.6842110285799" />
         <NodeLayout
-          Size="171,42"
+          Size="170.666666666667,42"
           Id="Package\sd_transportes\OLE DB Destination"
-          TopLeft="261,80" />
+          TopLeft="264.749999944121,52.6315784322258" />
         <EdgeLayout
           Id="Package\sd_transportes.Paths[Flat File Source Output]"
-          TopLeft="202,44">
+          TopLeft="195.458333435779,72.1578947304028">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="59,57"
+              EndConnector="69.2916665083418,0"
               Start="0,0"
-              End="51.5,57">
+              End="61.7916665083418,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="25.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="25.5,0"
-                    Point2="29.5,0"
-                    Point3="29.5,4" />
-                  <mssgle:LineSegment
-                    End="29.5,53" />
-                  <mssgle:CubicBezierSegment
-                    Point1="29.5,53"
-                    Point2="29.5,57"
-                    Point3="33.5,57" />
-                  <mssgle:LineSegment
-                    End="51.5,57" />
+                    End="61.7916665083418,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
