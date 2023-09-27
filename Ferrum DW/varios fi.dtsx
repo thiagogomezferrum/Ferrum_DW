@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="varios fi"
   DTS:PackageType="5"
-  DTS:VersionBuild="83"
-  DTS:VersionGUID="{4D09E227-126C-4DF4-8EFC-ADBF87816316}">
+  DTS:VersionBuild="86"
+  DTS:VersionGUID="{C9E9696E-B5C8-4B71-94DA-CA1A533D09F4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1011,6 +1011,179 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[val_estad]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{DEFE6FB6-4EC3-4ECD-984E-724D470061AC}"
+      DTS:ObjectName="val_estad">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="11274"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="\\linuxfil\DW\PRD\APROCESAR\Val_Estad.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="F  PROCESO"
+              DTS:DTSID="{C1395357-CCDC-41FC-A636-3F83191DF91B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SOCIEDAD CO"
+              DTS:DTSID="{EDEEE3B0-9ADB-420D-9E0F-992DDECF0DA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NRO  DOCUMENTO"
+              DTS:DTSID="{1053FCCD-C0C1-426E-A611-E2E1EF054968}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EJERCICIO"
+              DTS:DTSID="{C8A0D777-0CF1-41D8-A3B9-4C4062DF7D62}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="POSICION"
+              DTS:DTSID="{518523A8-0410-40C9-A026-681759C555AC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USUARIO"
+              DTS:DTSID="{55A898C6-D7ED-4F07-8791-61B20608D09B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TEXTO CAB"
+              DTS:DTSID="{FF836C40-F65C-4CFC-9D26-E1C549CD33FB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FECHA CONTAB "
+              DTS:DTSID="{CCA6069A-41EC-4595-B986-2C9853E79D8F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DOC  ANULAC "
+              DTS:DTSID="{0A02A85E-7754-4AED-AC91-3AB144FCD4B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CENTRO COSTO"
+              DTS:DTSID="{0C916EE0-F7D3-4BCF-9098-CE59F2A3528A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NOMBRE CECO"
+              DTS:DTSID="{75FADE9B-EF14-4220-A1AE-3C5524EEE174}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SOCIEDAD FI"
+              DTS:DTSID="{4CB12483-8D10-4261-869C-71885CA2635F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="VALOR ESTAD "
+              DTS:DTSID="{C5E2B136-C6E7-4D43-82DD-4D8BE40DB59C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NOMBRE VAL  EST "
+              DTS:DTSID="{F61771BA-5586-4470-8DC4-F9783C7204E4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CANTIDAD"
+              DTS:DTSID="{68C48232-AD05-485F-8D02-438030A39004}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UNIDAD VAL  EST "
+              DTS:DTSID="{945A5F40-EDE1-4974-9FC2-D0D3A65458A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TIPO DE VALOR"
+              DTS:DTSID="{1985E27A-D614-4A7E-AB02-2431D37AFF8E}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[índices]"
       DTS:CreationName="EXCEL"
       DTS:DTSID="{F5CB3373-EB60-4D03-96EC-BB814A1EA291}"
@@ -1645,7 +1818,7 @@
       DTS:ExecutableType="Microsoft.FileSystemTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="copia INDICES"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <FileSystemData
@@ -4280,7 +4453,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="DWFE"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -4296,7 +4469,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="DWPG"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -4385,7 +4558,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="error fi_cta_mayor"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -4457,12 +4630,36 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="error Indices"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
           SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 7, 'Indices'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="Proceso"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\error val_estad"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{059cbb0e-0300-41f1-bd8b-5a3ecd30a99b}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="error val_estad"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="6">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{077DE83F-AADD-48B6-8A3C-CE2A03BD7F26}"
+          SQLTask:SqlStatementSource="exec dbo.SP_Actualizar_Estados_Procesos ?, 7, 'valores_estadisticos'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ParameterBinding
             SQLTask:ParameterName="0"
             SQLTask:DtsVariableName="Proceso"
@@ -5619,7 +5816,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE riesgo_cambiario;&#xA;TRUNCATE TABLE  riesgo_cambiario_contratos;&#xA;truncate table gastos_estructura;&#xA;truncate table costos_cofemo;&#xA;truncate table costos_jornal;&#xA;truncate table costos_ordenes_de_trabajo;&#xA;truncate table fi_cta_mayor;&#xA;truncate table ctacte&#xA;truncate table indice_ARF201209&#xA;truncate table indice_FACPCE&#xA;truncate table indice_ISAC&#xA;truncate table indice_EMAE" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="TRUNCATE TABLE riesgo_cambiario;&#xA;TRUNCATE TABLE  riesgo_cambiario_contratos;&#xA;truncate table gastos_estructura;&#xA;truncate table costos_cofemo;&#xA;truncate table costos_jornal;&#xA;truncate table costos_ordenes_de_trabajo;&#xA;truncate table fi_cta_mayor;&#xA;truncate table ctacte&#xA;truncate table indice_ARF201209&#xA;truncate table indice_FACPCE&#xA;truncate table indice_ISAC&#xA;truncate table indice_EMAE&#xA;truncate table valores_estadisticos" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -5649,7 +5846,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error  DWPG"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5721,7 +5918,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error copia 1 1"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5745,7 +5942,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error riesgo_cambiario"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="5">
+      DTS:ThreadHint="4">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5768,7 +5965,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Finalizo Ok"
-      DTS:ThreadHint="6">
+      DTS:ThreadHint="5">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -9227,6 +9424,849 @@
         </SQLTask:SqlTaskData>
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\valores_estadisticos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{91B9E1F5-CB6A-47E0-BCCC-A9C7CDC727AA}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="valores_estadisticos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\valores_estadisticos\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="11274"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\valores_estadisticos\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[val_estad]"
+                  connectionManagerRefId="Package.ConnectionManagers[val_estad]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[F  PROCESO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[F  PROCESO]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[F  PROCESO]"
+                      name="F  PROCESO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD CO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD CO]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD CO]"
+                      name="SOCIEDAD CO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[NRO  DOCUMENTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NRO  DOCUMENTO]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[NRO  DOCUMENTO]"
+                      name="NRO  DOCUMENTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[EJERCICIO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EJERCICIO]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[EJERCICIO]"
+                      name="EJERCICIO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICION]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION]"
+                      name="POSICION"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[USUARIO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USUARIO]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[USUARIO]"
+                      name="USUARIO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[TEXTO CAB]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TEXTO CAB]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[TEXTO CAB]"
+                      name="TEXTO CAB"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA CONTAB ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA CONTAB ]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA CONTAB ]"
+                      name="FECHA CONTAB "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[DOC  ANULAC ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DOC  ANULAC ]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[DOC  ANULAC ]"
+                      name="DOC  ANULAC "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO COSTO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO COSTO]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO COSTO]"
+                      name="CENTRO COSTO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE CECO]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMBRE CECO]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE CECO]"
+                      name="NOMBRE CECO"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD FI]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD FI]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD FI]"
+                      name="SOCIEDAD FI"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[VALOR ESTAD ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VALOR ESTAD ]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[VALOR ESTAD ]"
+                      name="VALOR ESTAD "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE VAL  EST ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMBRE VAL  EST ]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE VAL  EST ]"
+                      name="NOMBRE VAL  EST "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD]"
+                      name="CANTIDAD"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[UNIDAD VAL  EST ]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UNIDAD VAL  EST ]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[UNIDAD VAL  EST ]"
+                      name="UNIDAD VAL  EST "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO DE VALOR]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO DE VALOR]"
+                      length="50"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO DE VALOR]"
+                      name="TIPO DE VALOR"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[F  PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      name="F  PROCESO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD CO]"
+                      dataType="wstr"
+                      length="50"
+                      name="SOCIEDAD CO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NRO  DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO  DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[EJERCICIO]"
+                      dataType="wstr"
+                      length="50"
+                      name="EJERCICIO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[POSICION]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[USUARIO]"
+                      dataType="wstr"
+                      length="50"
+                      name="USUARIO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TEXTO CAB]"
+                      dataType="wstr"
+                      length="50"
+                      name="TEXTO CAB" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[FECHA CONTAB ]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA CONTAB " />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[DOC  ANULAC ]"
+                      dataType="wstr"
+                      length="50"
+                      name="DOC  ANULAC " />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CENTRO COSTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO COSTO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMBRE CECO]"
+                      dataType="wstr"
+                      length="50"
+                      name="NOMBRE CECO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SOCIEDAD FI]"
+                      dataType="wstr"
+                      length="50"
+                      name="SOCIEDAD FI" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[VALOR ESTAD ]"
+                      dataType="wstr"
+                      length="50"
+                      name="VALOR ESTAD " />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NOMBRE VAL  EST ]"
+                      dataType="wstr"
+                      length="50"
+                      name="NOMBRE VAL  EST " />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UNIDAD VAL  EST ]"
+                      dataType="wstr"
+                      length="50"
+                      name="UNIDAD VAL  EST " />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[TIPO DE VALOR]"
+                      dataType="wstr"
+                      length="50"
+                      name="TIPO DE VALOR" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\valores_estadisticos\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[valores_estadisticos]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\valores_estadisticos\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4872443F-8F47-4522-A516-531857DA7FB7}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[192.168.200.44.STA.pbi_ferrum]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[EJERCICIO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="EJERCICIO"
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EJERCICIO]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[EJERCICIO]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[POSICION]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="POSICION"
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[POSICION]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[USUARIO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="USUARIO"
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[USUARIO]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CANTIDAD"
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[F  PROCESO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="F  PROCESO"
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[F_PROCESO]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[F  PROCESO]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SOCIEDAD CO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="SOCIEDAD CO"
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD_CO]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD CO]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NRO  DOCUMENTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NRO  DOCUMENTO"
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_DOCUMENTO]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[NRO  DOCUMENTO]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TEXTO CAB]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TEXTO CAB"
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TEXTO_CAB]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[TEXTO CAB]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[FECHA CONTAB ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="FECHA CONTAB "
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CONTAB]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[FECHA CONTAB ]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[DOC  ANULAC ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DOC  ANULAC "
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DOC_ANULAC]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[DOC  ANULAC ]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CENTRO COSTO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="CENTRO COSTO"
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_COSTO]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[CENTRO COSTO]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NOMBRE CECO]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NOMBRE CECO"
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_CECO]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE CECO]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SOCIEDAD FI]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="SOCIEDAD FI"
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD_FI]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[SOCIEDAD FI]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[VALOR ESTAD ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="VALOR ESTAD "
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_ESTAD]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[VALOR ESTAD ]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NOMBRE VAL  EST ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="NOMBRE VAL  EST "
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_VAL_EST]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[NOMBRE VAL  EST ]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UNIDAD VAL  EST ]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="UNIDAD VAL  EST "
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UNIDAD_VAL_EST]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[UNIDAD VAL  EST ]" />
+                    <inputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO DE VALOR]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="TIPO DE VALOR"
+                      externalMetadataColumnId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_DE_VALOR]"
+                      lineageId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO DE VALOR]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[F_PROCESO]"
+                      dataType="wstr"
+                      length="50"
+                      name="F_PROCESO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD_CO]"
+                      dataType="wstr"
+                      length="50"
+                      name="SOCIEDAD_CO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NRO_DOCUMENTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="NRO_DOCUMENTO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[EJERCICIO]"
+                      dataType="wstr"
+                      length="50"
+                      name="EJERCICIO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[POSICION]"
+                      dataType="wstr"
+                      length="50"
+                      name="POSICION" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[USUARIO]"
+                      dataType="wstr"
+                      length="50"
+                      name="USUARIO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TEXTO_CAB]"
+                      dataType="wstr"
+                      length="50"
+                      name="TEXTO_CAB" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[FECHA_CONTAB]"
+                      dataType="wstr"
+                      length="50"
+                      name="FECHA_CONTAB" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DOC_ANULAC]"
+                      dataType="wstr"
+                      length="50"
+                      name="DOC_ANULAC" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CENTRO_COSTO]"
+                      dataType="wstr"
+                      length="50"
+                      name="CENTRO_COSTO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_CECO]"
+                      dataType="wstr"
+                      length="50"
+                      name="NOMBRE_CECO" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SOCIEDAD_FI]"
+                      dataType="wstr"
+                      length="50"
+                      name="SOCIEDAD_FI" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[VALOR_ESTAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="VALOR_ESTAD" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NOMBRE_VAL_EST]"
+                      dataType="wstr"
+                      length="50"
+                      name="NOMBRE_VAL_EST" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD]"
+                      dataType="wstr"
+                      length="50"
+                      name="CANTIDAD" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UNIDAD_VAL_EST]"
+                      dataType="wstr"
+                      length="50"
+                      name="UNIDAD_VAL_EST" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_DE_VALOR]"
+                      dataType="wstr"
+                      length="50"
+                      name="TIPO_DE_VALOR" />
+                    <externalMetadataColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[fecha]"
+                      dataType="dbTimeStamp"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\valores_estadisticos\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\valores_estadisticos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\valores_estadisticos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\valores_estadisticos\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\valores_estadisticos.Paths[Flat File Source Output]"
+              endId="Package\valores_estadisticos\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\valores_estadisticos\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -9256,11 +10296,11 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 11]"
       DTS:CreationName=""
-      DTS:DTSID="{218A95F8-1A43-4325-8F51-B408D4D5E7B8}"
+      DTS:DTSID="{14CB15B6-89F9-480D-AF03-7B60108375E2}"
       DTS:From="Package\Data Flow Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 11"
-      DTS:To="Package\DWFE" />
+      DTS:To="Package\valores_estadisticos" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 12]"
       DTS:CreationName=""
@@ -9410,6 +10450,23 @@
       DTS:To="Package\Finaliza en error  DWPG"
       DTS:Value="1" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 28]"
+      DTS:CreationName=""
+      DTS:DTSID="{76EF0A39-E848-45EE-867A-50280087E647}"
+      DTS:From="Package\valores_estadisticos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 28"
+      DTS:To="Package\DWFE" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 29]"
+      DTS:CreationName=""
+      DTS:DTSID="{121A4F77-52B1-4872-96C6-69FFB2A61DCC}"
+      DTS:From="Package\valores_estadisticos"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 29"
+      DTS:To="Package\error val_estad"
+      DTS:Value="1" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
       DTS:DTSID="{C38F65F4-99E0-4D0B-9E43-43C46523AC3C}"
@@ -9489,15 +10546,15 @@
         <NodeLayout
           Size="110.666666666667,42"
           Id="Package\DWFE"
-          TopLeft="1423.40029792672,655.7863492071" />
+          TopLeft="1421.67410749044,571.099631771192" />
         <NodeLayout
           Size="113.333333333334,42"
           Id="Package\DWPG"
-          TopLeft="1631.77529480679,657.588978805968" />
+          TopLeft="1630.04910437051,572.90226137006" />
         <NodeLayout
           Size="182.666666666667,42.6666666666667"
           Id="Package\error COPIA A DWFE"
-          TopLeft="1382.23957936357,542.3245569926" />
+          TopLeft="1380.51338892729,457.637839556692" />
         <NodeLayout
           Size="189.333333333334,42.6666666666667"
           Id="Package\error CTACTE"
@@ -9521,11 +10578,11 @@
         <NodeLayout
           Size="196,42.6666666666667"
           Id="Package\Finaliza en error  DWPG"
-          TopLeft="1595.46874060528,538.026316787563" />
+          TopLeft="1593.742550169,453.339599351655" />
         <NodeLayout
           Size="131.333333333334,42.6666666666667"
           Id="Package\Finalizo Ok"
-          TopLeft="1828.90474444912,660.457392998004" />
+          TopLeft="1827.17855401284,575.770675562096" />
         <NodeLayout
           Size="164,42.6666666666667"
           Id="Package\gastos_estructura"
@@ -9586,28 +10643,6 @@
                     Point3="285.930056565197,64.5520030232528" />
                   <mssgle:LineSegment
                     End="285.930056565197,113.604006046506" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 11]"
-          TopLeft="1480.03348229669,865.333333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,-167.546984126233"
-              Start="0,0"
-              End="0,-160.046984126233">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-160.046984126233" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9684,7 +10719,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 15]"
-          TopLeft="1745.10862814012,680.189852568653">
+          TopLeft="1743.38243770384,595.503135132745">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9778,7 +10813,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 26]"
-          TopLeft="1476.15327197848,655.7863492071">
+          TopLeft="1474.4270815422,571.099631771192">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9802,7 +10837,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 27]"
-          TopLeft="1690.95535103937,657.588978805968">
+          TopLeft="1689.22916060309,572.90226137006">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9848,7 +10883,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="1534.06696459338,677.687664006534">
+          TopLeft="1532.3407741571,593.000946570626">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -10331,6 +11366,106 @@
             <s:String>Package.PrecedenceConstraints[Constraint 25]</s:String>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
+        <NodeLayout
+          Size="176,42.6666666666667"
+          Id="Package\valores_estadisticos"
+          TopLeft="1402.55951991127,673.308275552149" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11]"
+          TopLeft="1481.33333333333,865.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="9.22618657794033,-149.358391114518"
+              Start="0,0"
+              End="9.22618657794033,-141.858391114518">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-70.6791955572589" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-70.6791955572589"
+                    Point2="0,-74.6791955572589"
+                    Point3="4,-74.6791955572589" />
+                  <mssgle:LineSegment
+                    End="5.22618657794033,-74.6791955572589" />
+                  <mssgle:CubicBezierSegment
+                    Point1="5.22618657794033,-74.6791955572589"
+                    Point2="9.22618657794033,-74.6791955572589"
+                    Point3="9.22618657794033,-78.6791955572589" />
+                  <mssgle:LineSegment
+                    End="9.22618657794033,-141.858391114518" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 28]"
+          TopLeft="1490.55951991127,673.308275552149">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-13.5520790874973,-60.2086437809572"
+              Start="0,0"
+              End="-13.5520790874973,-52.7086437809572">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-26.1043218904786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-26.1043218904786"
+                    Point2="0,-30.1043218904786"
+                    Point3="-4,-30.1043218904786" />
+                  <mssgle:LineSegment
+                    End="-9.5520790874973,-30.1043218904786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-9.5520790874973,-30.1043218904786"
+                    Point2="-13.5520790874973,-30.1043218904786"
+                    Point3="-13.5520790874973,-34.1043218904786" />
+                  <mssgle:LineSegment
+                    End="-13.5520790874973,-52.7086437809572" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="139.333333333334,42.6666666666667"
+          Id="Package\error val_estad"
+          TopLeft="1626.66665942896,673.383462179023" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 29]"
+          TopLeft="1578.55951991127,694.679202198919">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48.1071395176862,0"
+              Start="0,0"
+              End="40.6071395176862,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="40.6071395176862,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="5.06222210259308,5,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -10474,7 +11609,7 @@
     design-time-name="Package\CTACTE">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="184,42.6666666666667"
           Id="Package\CTACTE\OLE DB Destination 1"
@@ -10514,7 +11649,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -10537,7 +11674,7 @@
     design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="177.333333333334,42"
           Id="Package\Data Flow Task\OLE DB Destination 1"
@@ -10589,9 +11726,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10613,9 +11748,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10637,9 +11770,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -10661,9 +11792,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -11115,6 +12244,69 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\riesgo_cambiario\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\valores_estadisticos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="154.666666666667,42.6666666666667"
+          Id="Package\valores_estadisticos\Flat File Source"
+          TopLeft="215,214" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\valores_estadisticos\OLE DB Destination"
+          TopLeft="506,234" />
+        <EdgeLayout
+          Id="Package\valores_estadisticos.Paths[Flat File Source Output]"
+          TopLeft="369.666666666667,235.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="136.333333333333,20"
+              Start="0,0"
+              End="128.833333333333,20">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="64.1666666666667,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="64.1666666666667,0"
+                    Point2="68.1666666666667,0"
+                    Point3="68.1666666666667,4" />
+                  <mssgle:LineSegment
+                    End="68.1666666666667,16" />
+                  <mssgle:CubicBezierSegment
+                    Point1="68.1666666666667,16"
+                    Point2="68.1666666666667,20"
+                    Point3="72.1666666666667,20" />
+                  <mssgle:LineSegment
+                    End="128.833333333333,20" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\valores_estadisticos\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Ferrum DW</Name>
-    <LastWriteTime>2023-09-19T11:37:50.3301275Z</LastWriteTime>
+    <LastWriteTime>2023-09-27T12:03:17.0852344Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -23,7 +23,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>costos.dtsx</Name>
-      <LastWriteTime>2023-08-18T15:11:33.648269Z</LastWriteTime>
+      <LastWriteTime>2023-09-21T16:45:46.0244088Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -108,7 +108,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>varios fi.dtsx</Name>
-      <LastWriteTime>2023-08-29T12:52:24.340161Z</LastWriteTime>
+      <LastWriteTime>2023-09-27T12:03:13.7312551Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>

@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="costos"
   DTS:PackageType="5"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{5A0A94CB-5BB1-47A6-B35A-65DADD8B7F84}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{71C739ED-DE05-4E0A-B26B-822A94D8D614}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -39,7 +39,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="MATERIAL"
-              DTS:DTSID="{86C2929A-F385-4765-BF6A-72094CD2DF19}"
+              DTS:DTSID="{73B06F93-D8E3-4FC3-976B-47D48CDB6801}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="TIPO DE COSTO"
-              DTS:DTSID="{FCE79756-6787-4ACB-91D5-418A3DDB0282}"
+              DTS:DTSID="{69BD3603-02BA-4B85-A3E6-8489F369C6EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="CANTIDAD BASE"
-              DTS:DTSID="{6DAEF038-0243-4325-A0F1-0F2EF7748117}"
+              DTS:DTSID="{3F62F6E1-DD03-487F-B0AA-B65A6DF040FC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="COSTO"
-              DTS:DTSID="{BEFCB31B-C057-4279-9583-944F58A7ED3B}"
+              DTS:DTSID="{D33B85E5-127F-410B-A619-2CF74E1E35A9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,25 @@
               DTS:DataType="130"
               DTS:TextQualified="True"
               DTS:ObjectName="PP1"
-              DTS:DTSID="{26C4CF1B-BF92-46BF-8376-883D88AC47F0}"
+              DTS:DTSID="{587A12A5-8B3A-4C2B-B8D1-928993A4F7EA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PP2"
+              DTS:DTSID="{AEEBBCED-CFBE-45A3-9C82-FB6C2959028A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x007C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PP3"
+              DTS:DTSID="{1F1587FD-3C6F-475B-B6D2-81712688B5BF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -83,8 +101,8 @@
               DTS:MaximumWidth="50"
               DTS:DataType="130"
               DTS:TextQualified="True"
-              DTS:ObjectName="Column 5"
-              DTS:DTSID="{B14A70B3-3124-4825-8923-9C5240FF546C}"
+              DTS:ObjectName="PC2"
+              DTS:DTSID="{800DE3A8-4531-45DF-99B3-EB4CAC6C1DCF}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -292,6 +310,69 @@
                           name="UseBinaryFormat">false</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PP2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PP2]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PP2]"
+                      name="PP2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PP3]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PP3]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PP3]"
+                      name="PP3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PC2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PC2]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PC2]"
+                      name="PC2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -321,10 +402,20 @@
                       length="50"
                       name="PP1" />
                     <externalMetadataColumn
-                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Column 5]"
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PP2]"
                       dataType="wstr"
                       length="50"
-                      name="Column 5" />
+                      name="PP2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PP3]"
+                      dataType="wstr"
+                      length="50"
+                      name="PP3" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PC2]"
+                      dataType="wstr"
+                      length="50"
+                      name="PC2" />
                   </externalMetadataColumns>
                 </output>
                 <output
@@ -443,12 +534,26 @@
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COSTO]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[COSTO]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO DE COSTO]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PP1]"
                       cachedDataType="wstr"
                       cachedLength="50"
-                      cachedName="TIPO DE COSTO"
-                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_DE_COSTO]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO DE COSTO]" />
+                      cachedName="PP1"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PP1]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PP1]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PP2]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="PP2"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PP2]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PP2]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PC2]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="PC2"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PC2]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PC2]" />
                     <inputColumn
                       refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CANTIDAD BASE]"
                       cachedDataType="wstr"
@@ -457,12 +562,19 @@
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_BASE]"
                       lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[CANTIDAD BASE]" />
                     <inputColumn
-                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PP1]"
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TIPO DE COSTO]"
                       cachedDataType="wstr"
                       cachedLength="50"
-                      cachedName="PP1"
+                      cachedName="TIPO DE COSTO"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TIPO_DE_COSTO]"
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[TIPO DE COSTO]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PP3]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="PP3"
                       externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[COSTO_REPO]"
-                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PP1]" />
+                      lineageId="Package\Data Flow Task\Flat File Source.Outputs[Flat File Source Output].Columns[PP3]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -580,7 +692,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error COPIA A DWFE"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -603,7 +715,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Finalizo Ok"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -753,39 +865,39 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="173.333333333334,42.6666666666667"
+          Size="173.6,42.4"
           Id="Package\Comienza Ejecución"
           TopLeft="299.999995529652,259.783329462906" />
         <NodeLayout
-          Size="152,42.6666666666667"
+          Size="152,42.4"
           Id="Package\COPIA A DWFE"
           TopLeft="307.375003213063,408.866660529772" />
         <NodeLayout
-          Size="152,42.6666666666667"
+          Size="152,42.4"
           Id="Package\Data Flow Task"
           TopLeft="309.624999580905,338.066661715309" />
         <NodeLayout
-          Size="156,42.6666666666667"
+          Size="156,42.4"
           Id="Package\Finaliza en error"
           TopLeft="61.1250068824738,332.766663714448" />
         <NodeLayout
-          Size="230.666666666667,50.6666666666667"
+          Size="230.4,50.4"
           Id="Package\Finaliza en error COPIA A DWFE"
           TopLeft="0.50000778585671,398.416662540535" />
         <NodeLayout
-          Size="131.333333333334,42.6666666666667"
+          Size="131.2,42.4"
           Id="Package\Finalizo Ok"
           TopLeft="318.625003045425,497.383330346246" />
         <NodeLayout
-          Size="164,42"
+          Size="164,41.6"
           Id="Package\Genera número de proceso"
           TopLeft="45.5892928282596,105.400000743866" />
         <NodeLayout
-          Size="234.666666666667,42.6666666666667"
+          Size="234.4,42.4"
           Id="Package\Selecciono el número de proceso"
           TopLeft="9.25000765547159,179.592856560052" />
         <NodeLayout
-          Size="118.666666666667,42.6666666666667"
+          Size="118.4,42.4"
           Id="Package\truncate"
           TopLeft="322.499996013939,179.099997512698" />
         <EdgeLayout
@@ -899,28 +1011,6 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="383.833336462577,451.533327196439">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45.8500031498074"
-              Start="0,0"
-              End="0,38.3500031498074">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.3500031498074" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
           TopLeft="309.624999580905,356.749996048212">
           <EdgeLayout.Curve>
@@ -968,6 +1058,28 @@
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="383.833336462577,451.533327196439">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45.8500031498074"
+              Start="0,0"
+              End="0,38.3500031498074">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38.3500031498074" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -977,39 +1089,39 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="170.666666666667,42"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="603,71" />
-        <NodeLayout
-          Size="150.666666666667,42"
+          Size="151.2,41.6"
           Id="Package\Data Flow Task\Flat File Source"
-          TopLeft="340,54" />
+          TopLeft="133.333328035143,137.800001095136" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="410.833317008284,164.66666797532" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Flat File Source Output]"
-          TopLeft="491,75">
+          TopLeft="284.533328035143,158.600001095136">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="112,17"
+              EndConnector="126.299988973141,26.8666668801838"
               Start="0,0"
-              End="104.5,17">
+              End="118.799988973141,26.8666668801838">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="52,0" />
+                    End="59.1499944865706,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="52,0"
-                    Point2="56,0"
-                    Point3="56,4" />
+                    Point1="59.1499944865706,0"
+                    Point2="63.1499944865706,0"
+                    Point3="63.1499944865706,4" />
                   <mssgle:LineSegment
-                    End="56,13" />
+                    End="63.1499944865706,22.8666668801838" />
                   <mssgle:CubicBezierSegment
-                    Point1="56,13"
-                    Point2="56,17"
-                    Point3="60,17" />
+                    Point1="63.1499944865706,22.8666668801838"
+                    Point2="63.1499944865706,26.8666668801838"
+                    Point3="67.1499944865706,26.8666668801838" />
                   <mssgle:LineSegment
-                    End="104.5,17" />
+                    End="118.799988973141,26.8666668801838" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
