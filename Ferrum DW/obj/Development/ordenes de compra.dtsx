@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="ordenes de compra"
   DTS:PackageType="5"
-  DTS:VersionBuild="66"
-  DTS:VersionGUID="{72A1B935-DDB4-4298-9A20-8F2FD0C75B5B}">
+  DTS:VersionBuild="67"
+  DTS:VersionGUID="{3E25DA46-BFB5-45B6-BBE0-CA5E9A76A205}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1338,7 +1338,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error COPIA A DWFE"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1362,7 +1362,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error COPIA A DWPG"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1434,7 +1434,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error mm_ocserv"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1457,7 +1457,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Finalizo Ok"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -7033,7 +7033,7 @@
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
           SQLTask:Connection="{4872443F-8F47-4522-A516-531857DA7FB7}"
-          SQLTask:SqlStatementSource="truncate table mm_cond_oc;&#xA;truncate table mm_oc;&#xA;truncate table fi_doc_pagados;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:SqlStatementSource="truncate table mm_cond_oc;&#xA;truncate table mm_oc;&#xA;truncate table fi_doc_pagados;&#xA;truncate table mm_ocserv;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
   </DTS:Executables>
@@ -7049,11 +7049,11 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{4DAA5D6F-BCFF-4028-A86C-7A7085246E6D}"
+      DTS:DTSID="{997E9748-1A74-4EC4-95CA-B5C3D11062A2}"
       DTS:From="Package\mm_cond_oc"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
-      DTS:To="Package\mm_oc" />
+      DTS:To="Package\mm_ocserv" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 10]"
       DTS:CreationName=""
@@ -7098,6 +7098,14 @@
       DTS:ObjectName="Constraint 14"
       DTS:To="Package\Finaliza en error mm_ocserv"
       DTS:Value="1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 15]"
+      DTS:CreationName=""
+      DTS:DTSID="{60CD9B0F-C2A9-49A0-B6FE-C09C01108AB8}"
+      DTS:From="Package\mm_ocserv"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 15"
+      DTS:To="Package\mm_oc" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
@@ -7176,7 +7184,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="173.333333333334,42.6666666666667"
           Id="Package\Comienza Ejecución"
@@ -7184,31 +7192,31 @@
         <NodeLayout
           Size="152,42.6666666666667"
           Id="Package\COPIA A DWFE"
-          TopLeft="244.625007888302,544.699993514418" />
+          TopLeft="240.71875794651,607.134205215903" />
         <NodeLayout
           Size="153.333333333334,42.6666666666667"
           Id="Package\COPIA A DWPG"
-          TopLeft="243.250007878989,631.066659739415" />
+          TopLeft="239.343757937197,693.5008714409" />
         <NodeLayout
           Size="153.333333333334,42.6666666666667"
           Id="Package\fi_doc_pagados"
-          TopLeft="240.250004600733,458.699995374083" />
+          TopLeft="236.343754658941,521.134207075568" />
         <NodeLayout
           Size="196.666666666667,42.6666666666667"
           Id="Package\Finaliza en error  mm_oc"
-          TopLeft="466.374998966232,370.466666294734" />
+          TopLeft="462.46874902444,432.900877996219" />
         <NodeLayout
           Size="230.666666666667,42.6666666666667"
           Id="Package\Finaliza en error COPIA A DWFE"
-          TopLeft="471.374998891726,549.866663086811" />
+          TopLeft="467.468748949934,612.300874788296" />
         <NodeLayout
           Size="232,42.6666666666667"
           Id="Package\Finaliza en error COPIA A DWPG"
-          TopLeft="468.874998928979,639.56666148285" />
+          TopLeft="464.968748987187,702.000873184335" />
         <NodeLayout
           Size="232,42.6666666666667"
           Id="Package\Finaliza en error fi_doc_pagados"
-          TopLeft="476.37499881722,461.466664667527" />
+          TopLeft="472.468748875428,523.900876369012" />
         <NodeLayout
           Size="221.333333333334,42.6666666666667"
           Id="Package\Finaliza en error mm_cond_oc"
@@ -7216,11 +7224,11 @@
         <NodeLayout
           Size="213.333333333334,42.6666666666667"
           Id="Package\Finaliza en error mm_ocserv"
-          TopLeft="0.166666703919574,128.049997710288" />
+          TopLeft="465.010409777208,357.260528340397" />
         <NodeLayout
           Size="131.333333333334,42.6666666666667"
           Id="Package\Finalizo Ok"
-          TopLeft="265.750001955777,732.483328323861" />
+          TopLeft="250.125002188608,782.088592415452" />
         <NodeLayout
           Size="164,42"
           Id="Package\Genera número de proceso"
@@ -7232,11 +7240,11 @@
         <NodeLayout
           Size="114.666666666667,42.6666666666667"
           Id="Package\mm_oc"
-          TopLeft="263.625004163012,372.249994827807" />
+          TopLeft="259.71875422122,434.684206529292" />
         <NodeLayout
           Size="133.333333333334,42.6666666666667"
           Id="Package\mm_ocserv"
-          TopLeft="58.875005038455,47.0666695026555" />
+          TopLeft="249.500002197921,360.092991184073" />
         <NodeLayout
           Size="234.666666666667,42.6666666666667"
           Id="Package\Selecciono el número de proceso"
@@ -7268,30 +7276,8 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="322.270835852561,330.766663017074">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,41.4833318107333"
-              Start="0,0"
-              End="0,33.9833318107333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.9833318107333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10]"
-          TopLeft="393.583337934067,481.416663354138">
+          TopLeft="389.677087992275,543.850875055623">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7315,7 +7301,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11]"
-          TopLeft="396.625007888302,568.616661633948">
+          TopLeft="392.71875794651,631.050873335433">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7339,7 +7325,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 12]"
-          TopLeft="396.583341212322,652.399993072748">
+          TopLeft="392.67709127053,714.834204774233">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7375,30 +7361,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 13]"
-          TopLeft="319.916674545656,673.733326406081">
+          TopLeft="315.901046729569,736.167538107566">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="11.4999940767883,58.7500019177797"
+              EndConnector="0,45.9210543078857"
               Start="0,0"
-              End="11.4999940767883,51.2500019177797">
+              End="0,38.4210543078857">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.3750009588899" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.3750009588899"
-                    Point2="0,29.3750009588899"
-                    Point3="4,29.3750009588899" />
-                  <mssgle:LineSegment
-                    End="7.49999407678831,29.3750009588899" />
-                  <mssgle:CubicBezierSegment
-                    Point1="7.49999407678831,29.3750009588899"
-                    Point2="11.4999940767883,29.3750009588899"
-                    Point3="11.4999940767883,33.3750009588899" />
-                  <mssgle:LineSegment
-                    End="11.4999940767883,51.2500019177797" />
+                    End="0,38.4210543078857" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7409,43 +7383,31 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 14]"
-          TopLeft="125.541671705122,89.7333361693222">
+          TopLeft="382.833335531255,380.010093095568">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-18.7083383345354,38.3166615409658"
+              EndConnector="82.1770742459535,0"
               Start="0,0"
-              End="-18.7083383345354,30.8166615409658">
+              End="74.6770742459535,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,15.1583307704829" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,15.1583307704829"
-                    Point2="0,19.1583307704829"
-                    Point3="-4,19.1583307704829" />
-                  <mssgle:LineSegment
-                    End="-14.7083383345354,19.1583307704829" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-14.7083383345354,19.1583307704829"
-                    Point2="-18.7083383345354,19.1583307704829"
-                    Point3="-18.7083383345354,23.1583307704829" />
-                  <mssgle:LineSegment
-                    End="-18.7083383345354,30.8166615409658" />
+                    End="74.6770742459535,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-24.5955168235177,24.1583307704829,30.4826953125,9.7490234375"
+              BoundingBox="22.0971894667268,5,30.4826953125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="318.937504381873,414.916661494474">
+          TopLeft="315.031254440081,477.350873195959">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7467,7 +7429,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="318.770839577851,501.36666204075">
+          TopLeft="314.864589636059,563.800873742235">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7489,7 +7451,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="320.270841216979,587.366660181085">
+          TopLeft="316.364591275187,649.80087188257">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7601,7 +7563,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
-          TopLeft="378.291670829679,392.691663894604">
+          TopLeft="374.385420887887,455.125875596089">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7621,6 +7583,50 @@
             <mssgm:EdgeLabel
               BoundingBox="25.0503164120266,5,30.4826953125,9.7490234375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="319.875001536682,330.766663017074">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,29.3263281669994"
+              Start="0,0"
+              End="0,21.8263281669994">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.8263281669994" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 15]"
+          TopLeft="316.60937820957,402.75965785074">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.9245486785521"
+              Start="0,0"
+              End="0,24.4245486785521">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.4245486785521" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -7794,19 +7800,32 @@
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\mm_oc\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\mm_ocserv">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="154.666666666667,42.6666666666667"
-          Id="Package\mm_ocserv\Flat File Source"
-          TopLeft="206.125002486631,43.6315789216113" />
-        <NodeLayout
           Size="184,42.6666666666667"
           Id="Package\mm_ocserv\OLE DB Destination 1"
           TopLeft="384.999996200204,99.8596509773206" />
+        <NodeLayout
+          Size="154.666666666667,42.6666666666667"
+          Id="Package\mm_ocserv\Flat File Source"
+          TopLeft="206.125002486631,43.6315789216113" />
         <EdgeLayout
           Id="Package\mm_ocserv.Paths[Flat File Source Output]"
           TopLeft="360.791669153298,64.9649122549446">
@@ -7846,19 +7865,6 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\mm_ocserv\OLE DB Destination 1">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\mm_oc\OLE DB Destination 1">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
