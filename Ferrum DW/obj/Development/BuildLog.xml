@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>Ferrum DW</Name>
-    <LastWriteTime>2023-09-27T12:03:17.0852344Z</LastWriteTime>
+    <LastWriteTime>2023-09-28T12:40:03.0949276Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -149,6 +149,11 @@
     <ProjectBuildItemInfo>
       <Name>facturas.dtsx</Name>
       <LastWriteTime>2023-08-22T18:23:41.8551204Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Control_Costos.dtsx</Name>
+      <LastWriteTime>2023-09-28T12:36:19.790498Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
