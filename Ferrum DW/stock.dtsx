@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="stock"
   DTS:PackageType="5"
-  DTS:VersionBuild="48"
-  DTS:VersionGUID="{8F46112D-6ADE-4C13-B669-C80CB5844701}">
+  DTS:VersionBuild="49"
+  DTS:VersionGUID="{18473977-9138-4A91-9E2C-10802630BFD9}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -949,7 +949,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="COPIA A DWPG"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -966,7 +966,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error  COPIA A DWPG"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -991,7 +991,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error 3"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -1015,7 +1015,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error COPIA A DWFE"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -5456,7 +5456,7 @@
           Id="Package\Comienza Ejecución"
           TopLeft="103.972223474334,163.650003707706" />
         <NodeLayout
-          Size="152,42.6666666666667"
+          Size="157.333333333334,42.6666666666667"
           Id="Package\COPIA A DWFE"
           TopLeft="113.041672462597,628.214808817395" />
         <NodeLayout
@@ -5613,25 +5613,25 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 12]"
-          TopLeft="265.041672462597,649.348141933768">
+          TopLeft="270.37500579593,649.348141933768">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="100.930544306214,0"
+              EndConnector="95.5972109728806,0"
               Start="0,0"
-              End="93.430544306214,0">
+              End="88.0972109728806,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="93.430544306214,0" />
+                    End="88.0972109728806,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="31.473924496857,5,30.4826953125,9.7490234375"
+              BoundingBox="28.8072578301903,5,30.4826953125,9.7490234375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -5749,7 +5749,7 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="191.180559089407,583.398143518357">
+          TopLeft="192.513892422741,583.398143518357">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -5771,18 +5771,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="186.2500078169,670.881475484062">
+          TopLeft="191.708339129264,670.881475484062">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,37.8833320896823"
+              EndConnector="-8.24999595806,37.8833320896823"
               Start="0,0"
-              End="0,30.3833320896823">
+              End="-8.24999595806,30.3833320896823">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.3833320896823" />
+                    End="0,14.9416660448412" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.9416660448412"
+                    Point2="0,18.9416660448412"
+                    Point3="-4,18.9416660448412" />
+                  <mssgle:LineSegment
+                    End="-4.24999595806,18.9416660448412" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.24999595806,18.9416660448412"
+                    Point2="-8.24999595806,18.9416660448412"
+                    Point3="-8.24999595806,22.9416660448412" />
+                  <mssgle:LineSegment
+                    End="-8.24999595806,30.3833320896823" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5955,7 +5967,7 @@
     design-time-name="Package\mm_mat_doc">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="184,42.6666666666667"
           Id="Package\mm_mat_doc\OLE DB Destination 1"
@@ -5995,7 +6007,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6018,15 +6032,15 @@
     design-time-name="Package\mm_stock_diario">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="150.666666666667,42"
-          Id="Package\mm_stock_diario\Flat File Source"
-          TopLeft="112.000003278255,83.7368426461629" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="184,42.6666666666667"
           Id="Package\mm_stock_diario\OLE DB Destination 1"
           TopLeft="276.249995883554,202.526319601529" />
+        <NodeLayout
+          Size="150.666666666667,42"
+          Id="Package\mm_stock_diario\Flat File Source"
+          TopLeft="112.000003278255,83.7368426461629" />
         <EdgeLayout
           Id="Package\mm_stock_diario.Paths[Flat File Source Output]"
           TopLeft="187.333336611589,125.736842646163">
@@ -6058,7 +6072,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -6081,7 +6097,7 @@
     design-time-name="Package\mm_stock_mat">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="170.666666666667,42"
           Id="Package\mm_stock_mat\OLE DB Destination"
@@ -6121,7 +6137,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

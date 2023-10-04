@@ -11,8 +11,8 @@
   DTS:LocaleID="11274"
   DTS:ObjectName="pedidos"
   DTS:PackageType="5"
-  DTS:VersionBuild="70"
-  DTS:VersionGUID="{C1475FC2-3578-431E-BD78-ACB56E174813}">
+  DTS:VersionBuild="71"
+  DTS:VersionGUID="{391DB207-3063-4878-A19F-5D2A722FFC41}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2290,7 +2290,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error  DWPG"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -2362,7 +2362,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="Finaliza en error posiciones pedidos"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="3">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -2385,7 +2385,7 @@
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Finalizo Ok"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="3">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -3769,7 +3769,7 @@
                       name="POSICION" />
                     <externalMetadataColumn
                       refId="Package\posiciones pedidos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CANTIDAD_PEDIDA]"
-                      dataType="i4"
+                      dataType="r8"
                       name="CANTIDAD_PEDIDA" />
                     <externalMetadataColumn
                       refId="Package\posiciones pedidos\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[MOTIVO_DE_RECHAZO]"
@@ -4109,21 +4109,21 @@
           Id="Package\DWPG"
           TopLeft="346.125006658956,551.366661110917" />
         <NodeLayout
-          Size="240,42.6666666666667"
-          Id="Package\Finaliza en error cabecera pedidos"
-          TopLeft="16.3333411564431,301.066667410533" />
-        <NodeLayout
           Size="192,42.6666666666667"
           Id="Package\Finaliza en error  DWPG"
           TopLeft="73.1249989103526,551.366661575834" />
         <NodeLayout
-          Size="246.666666666667,42.6666666666667"
-          Id="Package\Finaliza en error posiciones pedidos"
-          TopLeft="15.6249997671694,391.483328323861" />
+          Size="240,42.6666666666667"
+          Id="Package\Finaliza en error cabecera pedidos"
+          TopLeft="16.3333411564431,301.066667410533" />
         <NodeLayout
           Size="230.666666666667,42"
           Id="Package\Finaliza en error COPIA A DWFE"
           TopLeft="44.9999993294477,467.64999464184" />
+        <NodeLayout
+          Size="246.666666666667,42.6666666666667"
+          Id="Package\Finaliza en error posiciones pedidos"
+          TopLeft="15.6249997671694,391.483328323861" />
         <NodeLayout
           Size="131.333333333334,42.6666666666667"
           Id="Package\Finalizo Ok"
@@ -4488,11 +4488,11 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="171,42"
+          Size="170.666666666667,42"
           Id="Package\posiciones pedidos\OLE DB Destination"
           TopLeft="697,111" />
         <NodeLayout
-          Size="151,42"
+          Size="150.666666666667,42"
           Id="Package\posiciones pedidos\Flat File Source"
           TopLeft="422,61" />
         <EdgeLayout
